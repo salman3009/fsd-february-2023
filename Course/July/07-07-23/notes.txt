@@ -19,4 +19,21 @@ https://git-scm.com/downloads
 =====================
 install github 
 ==========================
-
+Web Development
+Web - information sharing using internet 
+html - hyper text markup language 
+hyper - link 
+text - information
+markup - <tag>
+language 
+==========================
+Web Development - MERN - Mongodb - Expressjs - Reactjs - Nodejs
+html - information 
+css - presentation
+javascript - heart - dynamic-action-interactive
+Reactjs 
+Nodejs 
+Mongodb
+============================
+html
+//create new file lowercase_letter
