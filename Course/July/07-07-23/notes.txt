@@ -1,0 +1,9 @@
+Git and github:
+Github:
+//It is repository to store all coding related files insid the cloud.
+//alternate to github --> gitlab,bigbucket etc..
+git:
+git - communication between my local system and cloud system
+local code to cloud
+from cloud to local
+====================================================
