@@ -7,3 +7,16 @@ git - communication between my local system and cloud system
 local code to cloud
 from cloud to local
 ====================================================
+git:
+git clone https://github.com/salman3009/fsd-february-2023.git
+git pull 
+git add .
+git commit -m "code"
+git push 
+=====================
+Install git software
+https://git-scm.com/downloads
+=====================
+install github 
+==========================
+
