@@ -32,7 +32,14 @@ attribute
   2.height 
   3.width 
   4.title 
-
-
+=========================================
+3.table 
+//It consists of rows and columns
+ rows - <tr>
+ columns - <td> or <th>
+To segregate between heading and body 
+     1.<thead>
+     2.<tbody>
+========================
 
 
