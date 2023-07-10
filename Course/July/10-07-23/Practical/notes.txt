@@ -41,5 +41,13 @@ To segregate between heading and body
      1.<thead>
      2.<tbody>
 ========================
+4.list 
+    list is divided into two types 
+          1.ordered list  -(1,2,3) or (a,b,c)
+          2.unordered list - square box 
+    attribute:
+       type - it will change the sequence
+==================
+
 
 
