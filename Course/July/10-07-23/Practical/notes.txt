@@ -1,0 +1,26 @@
+Topics:
+<img>
+<iframe>
+<table>
+<li>
+==================================
+Interview Topics:
+1.How to Design table?
+2.How to form numeric list? 
+3.what is iframe?
+4.what are the attributes for image tag?
+=========================================
+1.<img>
+//There is no closing tag 
+attribute 
+//extra information about that particular tag 
+//it is not mandatory to use attribute 
+    1.src - link  
+    2.width - left to right  
+    3.height - top to bottom 
+extension for image - .png or .jpeg or .jpg 
+
+
+
+
+
