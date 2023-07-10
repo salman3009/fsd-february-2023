@@ -36,7 +36,7 @@ attribute
 3.table 
 //It consists of rows and columns
  rows - <tr>
- columns - <td> or <th>
+ columns or cells - <td> or <th>
 To segregate between heading and body 
      1.<thead>
      2.<tbody>
