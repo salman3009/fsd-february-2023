@@ -47,6 +47,8 @@ To segregate between heading and body
           2.unordered list - square box 
     attribute:
        type - it will change the sequence
+        ol - type = "a" or "A" or "1" or "i" or "I" 
+        ul - type = "square" or "disc" 
 ==================
 
 
