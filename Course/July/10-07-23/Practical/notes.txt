@@ -25,6 +25,13 @@ Failed to load resource: net::ERR_FILE_NOT_FOUND
 2.wrong extension 
 3.wrong file location 
 =================================================
+2.<iframe>
+//Embedding another html page inside our page.
+attribute
+  1.src 
+  2.height 
+  3.width 
+  4.title 
 
 
 
