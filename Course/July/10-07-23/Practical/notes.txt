@@ -18,8 +18,13 @@ attribute
     1.src - link  
     2.width - left to right  
     3.height - top to bottom 
-extension for image - .png or .jpeg or .jpg 
-
+extension for image - .png or .jpeg or .jpg
+Error Message:
+Failed to load resource: net::ERR_FILE_NOT_FOUND
+1.wrong image name 
+2.wrong extension 
+3.wrong file location 
+=================================================
 
 
 
