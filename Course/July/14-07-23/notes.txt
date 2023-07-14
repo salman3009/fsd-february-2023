@@ -65,5 +65,12 @@ interview
 5.radio 
 6.checkbox 
 7.file 
-
-
+==========================================
+radio 
+   - name property should be same 
+checkbox 
+   - name property can be different
+select 
+    - if you need one option to be selected then don't add 'multiple' attribute in select tag.
+    - if you need multiple option to be selected then you need to add 'multiple' attribute in select tag.
+    - select tag will not have value attribute only option tag will have value attribute.
