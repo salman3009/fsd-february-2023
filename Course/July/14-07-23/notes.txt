@@ -87,6 +87,12 @@ method
 1.Get - url  --> less secure - limited data  
 2.Post -body -->more secure - lengthy data
 ================================================
+Semantic Tags:
+1.header 
+2.footer 
+3.nav 
+4.section 
+5.article
 
 
 
