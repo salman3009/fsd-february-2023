@@ -77,4 +77,16 @@ select
 
 textarea 
      -If you more than 2 words or sentence 
-     
+===============================================
+validation 
+1.required - something we need to type.
+
+
+===============================================
+method 
+1.Get - url  --> less secure - limited data  
+2.Post -body -->more secure - lengthy data
+================================================
+
+
+
