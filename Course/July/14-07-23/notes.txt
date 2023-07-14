@@ -96,6 +96,13 @@ Semantic Tags:
 3.nav 
 4.section 
 ===============================================
+html 5 features:
+1.semantic tag 
+2.input url,color,placeholder 
+3.video 
+4.audio 
+==========================================
+
 
 
 
