@@ -88,11 +88,15 @@ method
 2.Post -body -->more secure - lengthy data
 ================================================
 Semantic Tags:
+//Elements used to make dividing the web page into different section.
+//So it will helps web developer to understand the layout of the web page.
+//It is not mandatory but good to follow for design standards.
 1.header 
 2.footer 
 3.nav 
 4.section 
-5.article
+===============================================
+
 
 
 
