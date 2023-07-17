@@ -32,3 +32,34 @@ Pseudo-elements
 1.before (::before) - it will add content from css to html before the text of that particular tag
 2.after (::after) - it will add content from css to html after the text.
 3.selection (::selection) - it is use to highlight the content of web page.
+
+Pseudo-class 
+
+1.Psuedo-class-basic- (mainly in input tag)
+    1.focus - (input:focus)
+    2.required - (input:required)
+
+2.Pseudo-class-anchor - (mainly in anchor tag)
+       1.link - (a:link) - newly link elements
+       2.active - (a:active) - once you press the mouse
+       3.visited -(a:visited) - already you visited the page
+       4.hover - (a:hover) - mouse over
+
+3.Psuedo-class-general - (mostly used in li tags)
+      1.first-child - (li:first-child) - first element in the list will have the impact
+      2.nth-child - (li:nth-child(2n))
+             2n - even number 
+             2n+1 - odd number
+      3.nth-of-type - both nth-child and nth-of-type will work in same way 
+         //nth-child - will consider all siblings as their own element and it will you the wrong result.
+         //nth-of-type - always it will consider the exact siblings element
+      4.nth-last-child - (li:nth-last-child(2n)) - opposite of nth-child
+
+attribute Selectors 
+1.General attribute Selector 
+2.Attribute with matching value selector 
+3.Attribute with starting value (^)
+4.Attribute with ending value ($)
+5.Attribuite with anywhere matching value(*)
+6.Attribute selector with pipe symbol (|)
+7.Attribute selector with tilde symbol (~)
