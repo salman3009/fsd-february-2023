@@ -1,0 +1,9 @@
+CSS - cascading style sheet 
+Three ways of writing 
+1.internal 
+2.external 
+3.inline - writing within the tag
+Any project will prefer external.css
+
+property:
+color - always value hexadecimal is the standard one.
