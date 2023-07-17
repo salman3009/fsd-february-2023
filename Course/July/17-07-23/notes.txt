@@ -7,3 +7,9 @@ Any project will prefer external.css
 
 property:
 color - always value hexadecimal is the standard one.
+
+comparison:
+1.inline 
+2.internal 
+3.external
+//!important will given first priority 
