@@ -13,3 +13,10 @@ comparison:
 2.internal 
 3.external
 //!important will given first priority 
+
+Types of selectors
+1.element selector 
+2.class selector 
+3.id selector 
+4.grouping selector 
+5.universalselector
