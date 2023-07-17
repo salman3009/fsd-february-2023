@@ -15,8 +15,8 @@ comparison:
 //!important will given first priority 
 
 Types of selectors
-1.element selector 
-2.class selector 
-3.id selector 
+1.element selector - it will target the particular element
+2.class selector - it helps for grouping
+3.id selector - it will target unique element
 4.grouping selector 
 5.universalselector
