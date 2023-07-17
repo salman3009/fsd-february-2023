@@ -15,9 +15,16 @@ comparison:
 //!important will given first priority 
 
 Types of selectors
+Basic Selector 
 1.element selector - it will target the particular element
 2.class selector - it helps for grouping
 3.id selector - it will target unique element
 4.grouping selector - it will group (class,id,element) together to apply common css 
 5.universalselector - it will apply to the elements
+
+Combinator Selector - relationship between two tags 
+1.descendant (space) - parent/child/grandchild
+2.child (>) - parent/child
+3.adjacent siblings (+)  brother/sister/first tags
+4.general siblings (~)  brohter/sister/all tags 
 
