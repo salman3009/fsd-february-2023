@@ -28,3 +28,7 @@ Combinator Selector - relationship between two tags
 3.adjacent siblings (+)  brother/sister/first tags
 4.general siblings (~)  brother/sister/all tags (larger area)
 
+Pseudo-elements 
+1.before (::before) - it will add content from css to html before the text of that particular tag
+2.after (::after) - it will add content from css to html after the text.
+3.selection (::selection) - it is use to highlight the content of web page.
