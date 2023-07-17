@@ -23,8 +23,8 @@ Basic Selector
 5.universalselector - it will apply to the elements
 
 Combinator Selector - relationship between two tags 
-1.descendant (space) - parent/child/grandchild
+1.descendant (space) - parent/child/grandchild - (larger area)
 2.child (>) - parent/child
 3.adjacent siblings (+)  brother/sister/first tags
-4.general siblings (~)  brohter/sister/all tags 
+4.general siblings (~)  brother/sister/all tags (larger area)
 
