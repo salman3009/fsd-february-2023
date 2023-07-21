@@ -71,4 +71,17 @@ it will divide equal portion of left and right section.
 media query:
 we are writing different dimension css code to make it mobile , tab responsive
 =========================================================
-
+common properties:
+1.width 
+2.margin 
+3.padding
+4.text-align 
+5.flex 
+6.font-weight
+7.border 
+8.border-radius
+9.background-color
+======================================
+width most of the time apply in % mainly for box section 
+padding,border-radius,border - px 
+===============================================
