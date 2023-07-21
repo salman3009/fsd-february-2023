@@ -62,6 +62,19 @@ to make it column wise
 display:flex
 flex-direction:column
 =========================================
+grid:
+It is 2D-dimension-layout 
+It will work in both row and column wise 
+some properties:
+grid-template-row:repeat()
+grid-template-column:repeat()
+repeat:
+    //It is function it will take two parameters 
+              1.first parameter:Total number of division needed in rows or column wise 
+              2.Second parameter:Total number of space needed to accommodate 
+units:
+  fr: 1 available space
+=============================================
 inline 
 //to make it center we need to use "text-align:center" because width and height is not supported on inline element 
 block 
@@ -86,3 +99,10 @@ width most of the time apply in % mainly for box section
 padding,border-radius,border - px 
 fr - 1part of available space
 ===============================================
+font-icons
+//it is predefined icons we can use it in our project 
+//it will support only two properties:
+1.font-size - to increase or decrease the size of icons 
+2.color - to apply the color 
+=================================================
+CDN - content delivery network
