@@ -47,4 +47,18 @@ To develop any project :
 4.form 
 5.grid - two dimension
 ============================================
+Navbar:
+
+
+
+
+=====================================
+centerAlignment:
+inline 
+//to make it center we need to use "text-align:center" because width and height is not supported on inline element 
+block 
+//to make it center we can use "text-align:center" but if you have given width and height we need to use margin:auto 
+margin:auto 
+it will divide equal portion of left and right section.
+=========================================================
 
