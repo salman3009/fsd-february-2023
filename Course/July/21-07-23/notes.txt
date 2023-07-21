@@ -99,10 +99,14 @@ width most of the time apply in % mainly for box section
 padding,border-radius,border - px 
 fr - 1part of available space
 ===============================================
-font-icons
+font-icons - CDN - content delivery network
+Steps to Add icons in your project
+1.Add cdn link inside the head : <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+2.Go to this website: https://fontawesome.com/v6/icons/passport?f=classic&s=solid
+3.Select any icon and copy i tag and paste inside the html file
 //it is predefined icons we can use it in our project 
 //it will support only two properties:
 1.font-size - to increase or decrease the size of icons 
 2.color - to apply the color 
 =================================================
-CDN - content delivery network
+
