@@ -22,3 +22,11 @@ CSS style import externally
 properties:inherit
 reusing the parent tag functionality
 ======================================
+Table:
+rows - tr 
+columns - th/td
+======================
+font-awesome icons:
+color 
+font-size 
+===================
