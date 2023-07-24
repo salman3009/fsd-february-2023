@@ -1,0 +1,11 @@
+Form Design
+input tag - inline element
+display:block,inline,inline-block,flex,grid 
+flex - 1-dimension
+grid - 2-dimension
+block - it will occupy the entire row 
+inline - element will continue in same line 
+inline-block- element will continue in same line with block 
+block - will support width and height property 
+inline - it will not support width and height property
+======================================================
