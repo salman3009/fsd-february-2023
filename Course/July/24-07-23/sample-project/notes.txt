@@ -30,3 +30,5 @@ font-awesome icons:
 color 
 font-size 
 ===================
+margin and padding for zero don't add px
+==========================
