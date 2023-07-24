@@ -1,0 +1,5 @@
+https://my.newtonschool.co/playground/markup/p1m0ujeyybhj
+Grid 
+position 
+transform ->linear gradient,radical gradient
+revert intial unset inherit

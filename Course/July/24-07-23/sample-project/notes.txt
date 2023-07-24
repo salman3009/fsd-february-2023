@@ -9,3 +9,16 @@ inline-block- element will continue in same line with block
 block - will support width and height property 
 inline - it will not support width and height property
 ======================================================
+Debugging:
+javascript - line by line execution 
+html+css - there is no line by line execution 
+html - html formatter 
+css - css formatter 
+=========================
+CSS style import externally 
+1.link  - it is supported only inside the html extension <head></head>
+2.@import - it is supported directly inside the css extension (new feature currently available) and inside the html we need use style tag.
+==============================================================
+properties:inherit
+reusing the parent tag functionality
+======================================
