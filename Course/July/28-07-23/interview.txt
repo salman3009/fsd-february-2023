@@ -69,4 +69,11 @@ what is media query?
 //To align the element position properly in all the devices and to make responsive in every devices.
 min - base value from there and max till the browser reaches its limit
 max - base value will be zero and max will be given value 
+@media only screen and (min-width:600px){
+    //works for tablet and desktop
+}
+
+@media only screen and (max-width:600px){
+   //works for mobile
+}
 
