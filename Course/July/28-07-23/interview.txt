@@ -49,5 +49,5 @@ what is z-index
 //z-index:-1 - particular element will be behind
 
 //relative similar to static - left-top-bottom-right
-//fixed-stick - both are similar it will fixed in particular position
-//absolute - always posotion with browser parent
+//fixed-sticky - both are similar it will fixed in particular position
+//absolute - always position with browser parent
