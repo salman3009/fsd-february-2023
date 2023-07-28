@@ -24,3 +24,13 @@ It is going to follow normal flow of the page. After each element it will be pos
 Will Position have some property to move the element?
 //Yes position have left,right,bottom,top property to move the element in different direction
 //static position don't have this property 
+
+Sticky position:
+//It will stick in particular position and it will not move from there 
+//Whenever we scroll other elements will be hidden inside the sticky position
+
+Fixed Position:
+It will fixed in one particular position and it will not move from there.
+//It is similar to sticky position 
+//Main difference between sticky and fixed position-->
+
