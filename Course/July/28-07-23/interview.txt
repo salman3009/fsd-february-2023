@@ -48,6 +48,11 @@ what is z-index
 //z-index:1 - particular element will be shown in forward 
 //z-index:-1 - particular element will be behind
 
-//relative similar to static - left-top-bottom-right
-//fixed-sticky - both are similar it will fixed in particular position
+what is opacity?
+//To make element transparent we can use the value from 0 to 1
+
+
+//relative similar to static but will relative you have  - left-top-bottom-right
+//fixed-sticky - both are similar it will fixed in particular position 
 //absolute - always position with browser parent
+
