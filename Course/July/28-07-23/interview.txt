@@ -61,4 +61,8 @@ How will you overcome if content is going out of the box?
 example:
 overflow:auto;
 
+What is text-overflow property?
+//text-overflow will give three dots at the end so user can understand that more content is hidden inside the box.
+//text-overflow will work with the combination of overflow hidden 
+
 
