@@ -4,6 +4,20 @@ What is Flex?
 example:
     display:flex 
     flex-direction:row or column 
-    
+
 Inside the flex how you will make element to continue on next line if that particular line is full?
     flex-wrap:wrap
+
+what are types of position?
+1.static 
+2.relative
+3.absolute 
+4.sticky 
+5.fixed 
+
+What is position?
+Position of the element will be placed depends upon parent element or browser position 
+
+Static position:
+It is going to follow normal flow of the page. After each element it will be position according parent scope. It is default in the browser.
+
