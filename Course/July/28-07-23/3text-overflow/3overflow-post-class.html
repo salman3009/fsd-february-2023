@@ -1,0 +1,24 @@
+https://my.newtonschool.co/playground/markup/4jv9qp14p7ex
+
+<style>
+    div:before{
+    content:'⬇️⬇️ HOVER ⬇️⬇️'
+}
+p.long-para {
+    width: 200px;
+    border: 1px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Write your code here */
+}
+
+p.long-para:hover{
+    overflow: visible;
+}
+</style>
+<div>
+    <p class="long-para">
+        This is a loooooooooooooooooooong text! This will not fit in this box.
+    </p>
+</div>
