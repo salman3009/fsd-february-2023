@@ -56,3 +56,9 @@ what is opacity?
 //fixed-sticky - both are similar it will fixed in particular position 
 //absolute - always position with browser parent
 
+How will you overcome if content is going out of the box?
+//We can use overflow property with scroll or auto to make it scrollable the particular box whenver content is huge.
+example:
+overflow:auto;
+
+
