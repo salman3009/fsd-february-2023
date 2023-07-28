@@ -35,15 +35,19 @@ It will fixed in one particular position and it will not move from there.
 //Main difference between sticky and fixed position-->
 
 relative position
-It is similar to static position 
-But in relative it will support position property(left,right,top,bottom)
-While using position top will cover only for entire element together
+//It is similar to static position 
+//But in relative it will support position property(left,right,top,bottom)
+//While using position top will cover only for entire element together
 
 absolute position 
-It will not follow normal flow of the page 
-It will always position with browser parent element (body)
+//It will not follow normal flow of the page 
+//It will always position with browser parent element (body)
 
 what is z-index 
-If two elements are above each other. which elements to be shown z-index will help 
-z-index:1 - particular element will be shown in forward 
-z-index:-1 - particular element will be behind
+//If two elements are above each other. which elements to be shown z-index will help 
+//z-index:1 - particular element will be shown in forward 
+//z-index:-1 - particular element will be behind
+
+//relative similar to static - left-top-bottom-right
+//fixed-stick - both are similar it will fixed in particular position
+//absolute - always posotion with browser parent
