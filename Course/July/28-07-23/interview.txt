@@ -21,3 +21,6 @@ Position of the element will be placed depends upon parent element or browser po
 Static position:
 It is going to follow normal flow of the page. After each element it will be position according parent scope. It is default in the browser.
 
+Will Position have some property to move the element?
+//Yes position have left,right,bottom,top property to move the element in different direction
+//static position don't have this property 
