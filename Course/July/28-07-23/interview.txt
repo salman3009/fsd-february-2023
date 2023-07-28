@@ -1,0 +1,9 @@
+What is Flex?
+//Flex is single-dimension position 
+//we can make element either in row wise or in column wise 
+example:
+    display:flex 
+    flex-direction:row or column 
+    
+Inside the flex how you will make element to continue on next line if that particular line is full?
+    flex-wrap:wrap
