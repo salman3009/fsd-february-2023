@@ -4,7 +4,8 @@ flex-direction:row|row-reverse|column|column-reverse
 flex-wrap:wrap|nowrap:wrap-reverse
 order:0|1|-1|-2
 justify-content:flex-start|flex-end|space-between|space-evenly|center
-align-item -center
+align-item -center|end|baseline
+align-self -center|end|baseline
 Notes:
 wrap - It will divide into multiple lines 
 nowrap -It will continue in the same line 
@@ -13,3 +14,4 @@ order - whichever element you are going to select that is zero base
        //if you want to move right direction we need to use 1
 justify-content - working in horizental way
 align-items - working in vertical way
+align-self - It is similar to align-items - It will target only one element at a time.
