@@ -6,7 +6,10 @@ order:0|1|-1|-2
 justify-content:flex-start|flex-end|space-between|space-evenly|center
 align-item -center|end|baseline
 align-self -center|end|baseline
+flex-direction - row|column|row-reverse|column-reverse
+align-content-center|base:baseline
 Notes:
+baseline- default starting position
 wrap - It will divide into multiple lines 
 nowrap -It will continue in the same line 
 order - whichever element you are going to select that is zero base 
@@ -14,4 +17,5 @@ order - whichever element you are going to select that is zero base
        //if you want to move right direction we need to use 1
 justify-content - working in horizental way
 align-items - working in vertical way
+align-content - working in similar way to align-items.Only one difference we need to flex-wrap:wrap then only it will work.
 align-self - It is similar to align-items - It will target only one element at a time.
