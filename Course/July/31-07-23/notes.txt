@@ -1,3 +1,5 @@
+horizontal - left -right
+vertical - top-bottom
 Flex Box:
 display:flex;
 flex-direction:row|row-reverse|column|column-reverse 
@@ -19,3 +21,18 @@ justify-content - working in horizental way
 align-items - working in vertical way
 align-content - working in similar way to align-items.Only one difference we need to flex-wrap:wrap then only it will work.
 align-self - It is similar to align-items - It will target only one element at a time.
+===============================================
+Boilerplate - sample structure already given for you.
+//If you change anything given in the sample structure test case will get failed.
+How to push the code in gihub:
+git clone url 
+git status 
+git add .
+git commit -m "code"
+git push
+==================
+Wheenver you do code changes 
+git add .
+git commit -m "code"
+git push
+===========================
