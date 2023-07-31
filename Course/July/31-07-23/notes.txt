@@ -1,0 +1,13 @@
+Flex Box:
+display:flex;
+flex-direction:row|row-reverse|column|column-reverse 
+flex-wrap:wrap|nowrap:wrap-reverse
+order:0|1|-1|-2
+justify-content:flex-start|flex-end|space-between|space-evenly|center
+
+Notes:
+wrap - It will divide into multiple lines 
+nowrap -It will continue in the same line 
+order - whichever element you are going to select that is zero base 
+       //if you want to move left direction we need to use -1 
+       //if you want to move right direction we need to use 1

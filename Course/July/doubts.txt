@@ -1,9 +1,12 @@
 CSS grid garden
 transform ->linear gradient,radical gradient
 revert intial unset inherit
+Border-size
 
 
 Flex-box
 https://my.newtonschool.co/playground/game/t3w8pn9e0mg2
 Position
 https://my.newtonschool.co/playground/markup/nk06p4do98q3
+Grid position
+https://my.newtonschool.co/playground/project/jxlgyjt1c4c7
