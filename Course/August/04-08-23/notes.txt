@@ -10,3 +10,21 @@ How to create your own repository?
 //git add .
 //git commit -m "code"
 //git push 
+==============================
+box-sizing:border-box;
+//It will adjust padding within the width and height 
+Any project setup:
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+================================
+Bootstrap:
+//Basic html 
+//Basic css 
+//Predefined css and html content 
+Bootstrap we have 4 and 5 version 
+currently we are using 4 version 
+===========================
+CDN: Content Delivery Network 
