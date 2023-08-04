@@ -1,0 +1,11 @@
+How to create your own repository?
+//Go to https://github.com/
+//click on New button 
+//repo name:html_basic_table
+//Make public - So everyone I able to open it
+//Add readme file 
+//Create repo 
+//Inside your system: git clone url 
+//git add .
+//git commit -m "code"
+//git push 
