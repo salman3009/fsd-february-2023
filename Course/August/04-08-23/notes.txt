@@ -28,3 +28,8 @@ Bootstrap we have 4 and 5 version
 currently we are using 4 version 
 ===========================
 CDN: Content Delivery Network 
+Grid:
+To create row - row 
+To create column - .col|.col-sm-|.col-md-|.col-lg-|.col-xl-
+Bootstrap grid system - It is 2-dimension 
+======================================
