@@ -5,6 +5,7 @@ How to create your own repository?
 //Make public - So everyone I able to open it
 //Add readme file 
 //Create repo 
+//copy https 
 //Inside your system: git clone url 
 //git add .
 //git commit -m "code"
