@@ -33,3 +33,15 @@ To create row - row
 To create column - .col|.col-sm-|.col-md-|.col-lg-|.col-xl-
 Bootstrap grid system - It is 2-dimension 
 ======================================
+Important Boostrap Topics:
+1.color 
+2.form 
+3.table 
+4.navbar 
+5.container 
+6.grid-system 
+7.alerts 
+8.breadcrumb 
+9.pagination 
+10.modal
+===================
