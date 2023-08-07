@@ -1,2 +1,12 @@
 Grid:
 //It is 2-dimension 
+grid-template-columns/grid-template-rows 
+//Units we can use px,em,%,repeat(),fr 
+grid-column-start/grid-column-end
+//grid-column-start:span 3
+//span keyword will occupy the entire width of given number of columns
+//Both are working in same way 
+grid-column:2/4
+//first part refers to which column 
+//second part it will fill the entire width till that column it will work in logic (column+1)
+
