@@ -9,4 +9,9 @@ grid-column-start/grid-column-end
 grid-column:2/4
 //first part refers to which column 
 //second part it will fill the entire width till that column it will work in logic (column+1)
-
+grid-row:2/4 
+//first part refert to which row 
+//second part it will fill entire width till that row(row+1)
+grid order:
+-1 --> towards end of left side
++1 --> towards end of right side
