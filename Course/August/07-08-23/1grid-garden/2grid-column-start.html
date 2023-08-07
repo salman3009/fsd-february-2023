@@ -8,22 +8,21 @@
                 display: grid;
                 gap:25px;
                 justify-content: center;
-                /* grid-template-columns: 25% 25% 25%; */
-                /* grid-template-columns: 50%; */
-                /* grid-template-columns: repeat(3,30%); */
-                /* grid-template-columns: 5em 4em 3em 4em; */
-                /* grid-template-columns: 2fr 2fr 4fr; */
-                /* grid-template-columns: 50px 1fr 1fr; */
+                grid-template-columns: repeat(3,25%);
+              
             }
             .box{
                 background-color: blue;
+            }
+            .item1{
+                grid-column-start: span 1;
             }
         </style>
 
     </head>
     <body>
         <div class="garden">
-            <div class="box">1</div>
+            <div class="box item1">1</div>
             <div class="box">2</div>
             <div class="box">3</div>
             <div class="box">4</div>
