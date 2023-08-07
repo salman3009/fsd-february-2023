@@ -1,17 +1,34 @@
 Grid:
 //It is 2-dimension 
+
 grid-template-columns/grid-template-rows 
 //Units we can use px,em,%,repeat(),fr 
+
 grid-column-start/grid-column-end
 //grid-column-start:span 3
 //span keyword will occupy the entire width of given number of columns
 //Both are working in same way 
+
 grid-column:2/4
 //first part refers to which column 
 //second part it will fill the entire width till that column it will work in logic (column+1)
+
 grid-row:2/4 
 //first part refert to which row 
 //second part it will fill entire width till that row(row+1)
+
 grid order:
 -1 --> towards end of left side
 +1 --> towards end of right side
+
+grid-area:
+grid-area:2/1/span 2/span 3 
+//grid-row-start/grid-column-start/grid-row-end/grid-column-end 
+//2- row starting point 
+//1 - column starting point 
+//span 2 - row width expansion 
+//span 4 - column width expansion 
+
+grid-template: 150px 150px / auto auto auto;
+//each 150px refers to height of each row 
+//each auto refers to number of columns in each row 
