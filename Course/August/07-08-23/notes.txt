@@ -1,0 +1,7 @@
+width we can use %
+height we can use px 
+margin and padding we can use px 
+center - text-align/margin:auto 
+1dimension - flex 
+2dimension - grid
+===================================
