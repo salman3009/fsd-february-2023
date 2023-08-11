@@ -27,7 +27,13 @@ nav .nav-second-list{
     margin-top:5px;
 }
 
-
+nav .input-search{
+    border: 0;
+    background-color: #eef3f9;
+    width: 155%;
+    height: 40px;
+    padding-left: 30px;
+}
 
 
 
@@ -43,4 +49,12 @@ nav .nav-second-list{
 .fa-linkedin{
     font-size: 35px;
     color: #0d67c2;
+}
+.fa-magnifying-glass{
+    position: absolute;
+    margin: 10px 8px;
+}
+
+li{
+    cursor: pointer;
 }
