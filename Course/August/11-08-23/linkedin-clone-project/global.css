@@ -53,6 +53,18 @@ nav .input-search{
     height: 300px;
 }
 
+.box-one .background{
+    background-color: #a0b4b7;
+    width: 100%;
+    height: 50px;
+}
+.box-one .fa-regular{
+    font-size: 50px;
+    color: #ce95ff;
+    position: absolute;
+    margin: -24px 77px;
+}
+
 .left-content .box-two{
     background-color: white;
     width: 100%;
