@@ -50,38 +50,76 @@ nav .input-search{
 .left-content .box-one{
     background-color: white;
     width: 100%;
-    height: 300px;
+    height: 255px;
+    border-radius: 15px;
 }
 
-.box-one .background{
+.left-content  .box-one .background{
     background-color: #a0b4b7;
     width: 100%;
     height: 50px;
 }
-.box-one .fa-regular{
+.left-content  .box-one .fa-regular{
     font-size: 50px;
     color: #ce95ff;
     position: absolute;
     margin: -24px 77px;
 }
 
-.box-one .heading{
+.left-content  .box-one .heading{
     text-align: center;
     margin-top: 45px;
     font-size: 20px;
     font-weight: 700;   
 }
 
-.box-one .sub-heading{
+.left-content  .box-one .sub-heading{
     text-align: center;
+    color:grey;
     margin-top: 10px;
+}
+.left-content  .box-one .para-column{
+    margin-top:15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-content  .box-one .para-column .one{
+     color:grey;
+     font-size: 12px;
+     margin-left: 5px;
+}
+.left-content  .box-one .para-column .two{
+    color:#0d67c2;
+    font-size: 12px;
+    margin-right: 5px;
 }
 
 .left-content .box-two{
     background-color: white;
     width: 100%;
     margin-top:20px;
-    height: 200px;
+    min-height: 200px;
+}
+.left-content .box-two .heading{
+    font-size: 17px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.left-content .box-two .list{
+    width: 60%;
+    margin: auto;
+    padding:10px;
+}
+
+.left-content .box-two .list .list-one{
+    display: inline-block;
+}
+
+.left-content .box-two .list .list-two{
+    display: inline-block;
+    margin-left:10px;
 }
 
 .main-section .middle-content{
