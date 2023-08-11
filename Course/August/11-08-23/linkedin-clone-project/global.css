@@ -35,7 +35,33 @@ nav .input-search{
     padding-left: 30px;
 }
 
+.main-section{
+    width: 80%;
+    display: flex;
+    margin:20px auto;
+    justify-content: center;
+    gap:40px;
+}
 
+
+
+.left-content{
+    width: 100%;
+    background-color: white;
+    height: 300px;
+}
+
+.middle-content{
+    width: 100%;
+    background-color: white;
+    height: 100px;
+}
+
+.right-content{
+    width: 100%;
+    background-color: white;
+    height: 300px;
+}
 
 
 
