@@ -4,3 +4,42 @@ body{
     padding:0;
     box-sizing: border-box;
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav .nav-first-list{
+    display: flex;
+    gap:40px;
+    list-style-type: none;
+}
+
+nav .nav-second-list{
+    display: flex;
+    gap:40px;
+    padding-right: 40px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav-second-list .label-text{
+    margin-top:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* icons */
+.fa-linkedin{
+    font-size: 35px;
+    color: #0d67c2;
+}
