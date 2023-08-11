@@ -65,6 +65,18 @@ nav .input-search{
     margin: -24px 77px;
 }
 
+.box-one .heading{
+    text-align: center;
+    margin-top: 45px;
+    font-size: 20px;
+    font-weight: 700;   
+}
+
+.box-one .sub-heading{
+    text-align: center;
+    margin-top: 10px;
+}
+
 .left-content .box-two{
     background-color: white;
     width: 100%;
