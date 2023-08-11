@@ -7,6 +7,7 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 nav .nav-first-list{
     display: flex;
