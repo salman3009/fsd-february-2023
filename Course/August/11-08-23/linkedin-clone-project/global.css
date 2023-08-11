@@ -36,33 +36,30 @@ nav .input-search{
 }
 
 .main-section{
-    width: 80%;
     display: flex;
-    margin:20px auto;
     justify-content: center;
+    width: 80%;
+    margin:20px auto;
     gap:40px;
 }
 
-
-
-.left-content{
-    width: 100%;
+.main-section .left-content{
     background-color: white;
-    height: 300px;
+    width: 100%;
+    height: 200px;
 }
 
-.middle-content{
-    width: 100%;
+.main-section .middle-content{
     background-color: white;
-    height: 100px;
+    width: 100%;
+    height: 200px;
 }
 
-.right-content{
-    width: 100%;
+.main-section .right-content{
     background-color: white;
-    height: 300px;
+    width: 100%;
+    height: 200px;
 }
-
 
 
 
