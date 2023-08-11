@@ -140,7 +140,8 @@ nav .input-search {
 
 .middle-content .box-one .search {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 25px;
 }
 
 .middle-content .box-one .search .input {
@@ -153,6 +154,11 @@ nav .input-search {
     font-size: 16px;
 }
 
+.middle-content .box-one .search .fa-regular{
+    font-size:55px;
+    margin-top:20px;
+    color: #ce95ff;
+} 
 
 .middle-content .box-two {
     background-color: white;
