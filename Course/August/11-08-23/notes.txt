@@ -1,0 +1,33 @@
+Important project:
+1.box-modal 
+     1.width * height 
+     2.border 
+     3.padding 
+     4.margin 
+
+2.flex 
+    justify-content:space-between|center|space-evenly 
+    flex-direction:column:row 
+    gap:20px;
+
+3.font 
+    font-size:10px;
+    font-weight:bold;
+
+4.color 
+    color:hex decimal color 
+    background-color 
+
+5.center 
+     text-align 
+     margin:auto 
+
+6.position 
+absolute
+
+7.fontawesome icons how to use it 
+     font-size 
+     color 
+
+8.external css 
+
