@@ -1,0 +1,16 @@
+Text effects:
+1.overflow:auto,hidden
+2.white-space:nowrap;
+3.text-overflow:ellipsis
+4.word-break:break-all,break-word 
+5.writing-mode:verticle-rl,verticle-lr,horizontal-tb
+==================================================
+
+
+
+
+
+
+
+
+

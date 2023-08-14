@@ -1,0 +1,90 @@
+Position:
+0.All position property will have alignment left,right,bottom,top except static 
+1.static position we don't have alignment(left,right,bottom,top)
+2.Browser default position is static.It means elements are arrange according to parent position.
+3.sticky/fixed - It will fixed in one particular position
+4.relative - It is similar to static position but it will support alignment(left,right,top,bottom)
+5.absolute - it will not follow the normal flow of the document. always it will position depends upon thse parent tag body.
+opacity - It will make the element transparent - 0 to 1
+z-index - when element is overriding which elements to be shown behind and forward 
+  z-index:-1 ---> Element will go behind the screen 
+  z-index:1 ---> Element will be in forward screen 
+====================================================
+Text-shadow:
+//To apply some shadow for text.
+example:
+ h1
+ {
+                text-shadow: 1px 2px 3px green;
+ }
+
+ 1px - to move from left to right 
+ 2px - to move from top to bottom 
+ 3px - to make it blur
+ green - color 
+ =================================
+ box-shadow:
+ //to apply shadow for box
+ example:
+ .box
+ {
+                 box-shadow: 1px 2px 3px green;
+ }
+
+ 1px - to move from left to right 
+ 2px - to move from top to bottom 
+ 3px - to make it blur
+ green - color 
+ ==============================
+ animation:
+ 1.animation-name 
+ //any animation name you can use it
+ example:
+   animation-name: box-change-color;
+
+ 2.animation-duration
+ //any animation duration you can give in seconds
+       animation-duration: 10s;
+ 3.@keyframes
+   @keyframes box-change-color {
+                   from{background-color: green;}
+                   to{background-color: yellow;}
+            }
+==============================     
+what are the properties present inside the font?
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size:30px;
+font-weight: 900;
+font-style: normal;
+===============================
+Mobile responsive or Media query or Breakpoints
+1.we have breakpoints to target the device screen.
+2.we need to write media query for following devices:
+   (i)phone and mobile - max-width:480px
+   (ii)low resolution tablet and ipad - (min-width:481px) and (max-width:767px)
+   (iii)portrait mode tablet and ipad - (min-width:768px) and (max-width:1024px)
+   (iv)laptop - (min-width:1025px) and (max-width:1280px)
+   (v)extra large screen - (min-width:1281px)
+example:
+@media (max-width:480px){
+
+}  
+3.Browser will take care automatically.
+4.just we need to write breakpoints
+=================================
+CSS Units:
+1.px -font-size-border-padding-height
+2.% - width-margin-height
+3.rem - it will inherit from parent element.
+2px - 1rem=2px
+4.vw - 1vw = 1% of viewport width
+5.vh - 1vh = 1% of viewport height.
+6.em  - 1em = 16px
+======================================
+Any project layout 
+//You can always proceed with px 
+//always use flex or grid 
+====================================
+box-sizing:
+//Padding wil be adjusted whatever the width and height we have given for that particular element.
+=======================================

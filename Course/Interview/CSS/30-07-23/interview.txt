@@ -1,0 +1,169 @@
+CSS - cascading stylesheet 
+//It is use for presentation purpose.
+//without css also we can able to develop website but presentation will not be good.
+//Inside any browser three languages are supported by default 
+     1.html 
+     2.css 
+     3.javascript 
+//you can able to run css separately inside the browser.
+//always we need to create html page before css.  
+
+
+css properties:
+color:red 
+//if you have more then one property semi-colon in between is mandatory for inline style.
+color:red;text-align:center;
+
+
+Writing the css we have three approach:
+   1.inline  - within the tag itself you are going to write the style.
+   example:
+   style="color:red"
+   style -> attribute 
+   color --> property of css or key of css 
+   : --> colon operator
+   red --> value of css 
+   entire property enclosed with double quotes or single quotes
+   2.internal 
+      //internal style can be written anywhere inside the html page.
+      //mostly it is written in the head tag and sometimes in body tag.
+      example:
+        <style>
+          h2{
+            color:red;
+            text-align: center;
+          } 
+          p{
+            color:blue;
+            text-align: center;
+          }      
+       </style>
+   3.external 
+   // we are going to write html and css separately in two files:
+   //external.html 
+    <head>
+         <link rel="stylesheet" href="./external.css">
+         //rel - relationship
+    </head>
+   //external.css
+h1{
+    color:green;
+    text-align: center;
+}
+Element selector:
+/.to select html tags to apply css.
+head tag:
+//title 
+//meta tag 
+//link tag
+
+comparison:
+1.inline
+2.internal
+3.external 
+first priority:
+1.inline -  always priority to inline style
+Depends upon the browser last load will be given priority for internal and external
+2.internal 
+3.external
+attribute: !important 
+//it will give utmost priority for that style.
+//please dont use this propery unnecessary. if something is breaking then only we have to use 
+this property.
+
+
+Basic selector:
+1.element selector 
+  //we are targeting particular element name.
+  //it will apply css for all the tag which is mentioned in entire file 
+  example:
+   <style>
+     h1{
+        color:red;
+     }
+   </style>
+2.id selector 
+    //id should be unique attribute in entire web page.
+    //id is used to target the css for particular element 
+    example:
+      <style>
+    #first-para{
+        color:red;
+    }    
+   </style>
+     <p id="first-para">html head body tag</p>
+3.class selector 
+    //It is combination of group of tags to apply some common css.
+      <style>
+    .font-styling{
+        font-size:10px;
+        color:blue;
+    }
+   </style>
+   <body>
+    <h1 class="font-styling">Welcome to html</h1>
+    <p class="font-styling">font-size,text-algin properties</p>
+    <h1 class="font-styling">Welcome to javascript</h1>
+</body>
+4.grouping selector 
+    //combine one or more others selector together 
+    //element + id + class 
+    <style>
+    .font-styling,h4,#heading{
+        font-size:10px;
+        color:blue;
+    } 
+   </style>
+
+5.universal selector 
+    //it is use to apply for entire web page whatever is written inside this property 
+    example:
+       <style>
+    *{
+        color:blue;
+    }
+   </style>
+
+what is box modal
+//Each and every element inside the html will consists of box modal 
+//alignment of each element total depends on the adjustment of box modal
+
+1.width and height 
+2.padding
+   //It will increase or adjustment within around the width and height  
+   left,top,right,bottom
+3.border 
+   left,top,right,bottom
+example:
+/* border:10px solid black; */
+/* border:10px dotted green; */
+border: 10px double black;
+4.margin
+   //It will change the layout of the element
+   //top,left,right,bottom
+
+display property:
+1.block 
+example:<div>,<h1>,<h2>,<h3>,<ol><ul><p><table><form>
+display:block
+//it will block entire line and next tag will start in new line
+//width and height will work here
+//mostly we can change the inline to block if requirment is there
+
+2.inline 
+example:<span><a>
+display:inline
+//it will continue in the same line
+//width and height will not work here
+//block to inline mostly we will not have this requirement.
+//inline element will not allow width and height property 
+
+3.inline-block - button,img,input
+//it will continue in the same line but will accept the width and height.
+//inline to inline-block and block to inline-block.
+
+4flex 
+//single-dimension layout it similar to inline-block but we have extra functionality 
+
+5grid
+//2-dimension layout we can adjust row and column together 

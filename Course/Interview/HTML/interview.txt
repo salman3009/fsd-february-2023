@@ -1,0 +1,201 @@
+Network - it is going to connect with one system to another system (to share the information)
+Internet - anyone can able to access this information
+Intranet - within the network (particular set of system)
+WWW (world wide web)- we are going to share the information in the network in the form of hypertext document and it is available for entire world 
+Page - some set of information 
+Webpage - sharing the page information to network 
+Website - collection of webpage 
+Browser - to access the website we need the browser 
+HTTP - Hyper text transer protocol 
+IP - Internet Protocol 
+
+What is HTML?
+HYPER TEXT MARKUP LANGUAGE 
+HYPER - Link 
+Text - information 
+markup - <>
+language - programming language
+
+How many section in html?
+//Two section 
+//Head Section
+      //title tag 
+      //link tag 
+      //style tag 
+      //script tag 
+      //meta tag  
+//Body Section 
+       //heading tag 
+       //table tag 
+       //paragrapha tag 
+       //form tag 
+       //list tag 
+
+What is Doctype in html?
+//To mention version of html 
+//currently default it will take latest version of html 
+//latest version of html 5 
+
+what is attribute in html? 
+//It is extra information about the tag 
+//src,href,width,height,class,id 
+What is the attribute in image or anchor or p or h1?
+//class,id,name
+
+How you will move from one page to another page?
+//anchor tag 
+//Inside the anchor tag we need to provide href link 
+//If you want to open in the new tab we need to use target attribute with _blank 
+//If you want to open in the same page need to use anything it is default.
+
+HTML is divided into two elements: 
+(i)block element - It will not allow next tag in the same line
+(ii)inline element - It will allow multiple tag in the same line 
+
+Example:
+<p> is block element
+<h1>to <h6> is block element 
+<div> important tag block element (plain block element)
+
+Inline element:
+<span> tag - plain inline element 
+img tag 
+input tag 
+anchor tag 
+li tag 
+b tag 
+td tag 
+
+Why div is used in many places in reactjs or other application?
+//div tag is plain block element we can apply our own custom css 
+
+what is Meta tag?
+//meta tag will be available inside the head section 
+//google search keyword or description will match with your meta tag 
+//metag tag will increase the rank in SEO
+//SEO - search engine optimization
+syntax:
+example:
+<meta name="Keywords" content="Laptop,Mobile,Desktop">
+<meta name="Description" content="But online e-commerce,
+50%offer on laptop">
+<meta name="author" content="flipkart">
+<meta name="viewport" content="device=device-width,initial-scale=1">
+<meta charset="utf-8">
+utf-8 - website is written in english language 
+viewport - To adjust zoom in mobile,tab,Desktop
+
+Semantic Elements:
+//the tag should have some meaning
+p --- paragraph 
+h1 -- heading tag 
+img -- image tag
+non-semantic:
+1.div 
+2.span 
+
+HTML 5:
+below tag are block level semantic elements
+//For developer understanding they have given the below tag.
+//before that we are using div tag to segregate the page.
+example:
+1.header - Important heading 
+2.nav - menu bar
+3.footer - in the end page footer 
+4.section - chapter information or set of details
+5.article - article information 
+
+
+
+How to add bullet list in html?
+//we need to use unordered list 
+example:
+  <ul>
+    <li>pen</li>
+    <li>pencil</li> 
+  </ul>
+
+What is new in html 5 or how to add media tag?
+//audio tag 
+//video tag 
+//new semantic tag 
+
+what is iframe or How you will include more then one html in the same page 
+//iframe helps to integrate one or more html pages in the same file.
+
+How you will create rows inside the table?
+tr tag 
+
+How you will create heading or cell indie te table?
+th tag and td tag 
+
+what is rowspan  and colspan in table?
+rowspan: it will occupy two or given number of rows into one column 
+colspan: it will occupy two or given number of columns into one row 
+
+How you will segregate header,footer and body inside the table?
+//thead 
+//tbody 
+//tfoot 
+
+How you will get information from the end user?
+//By using Form tag we can get information from the end user
+List of Form Tag 
+1.input tag 
+2.select tag 
+3.textArea
+Inside the input tag we have following attributes 
+1.type 
+2.id 
+3.name 
+4.value 
+5.class 
+7.placeholder attribue --> you can use any text box field
+8.disabled attribue --> anywhere we can you this one.
+9.readonly --> anywhere we can you this one.
+10.checked -->radio and checkbox.
+11.selected -->select tag.
+12.autofocus -->anywhere we can use it.
+validation:
+13.required -- mandatory something you need to type.
+14.maxlength --> you can use with textbox
+15.minlength--> you can use with textbox
+16.min --------> you can use with type="number"
+17.max -------> you can use with type="number"
+18.pattern --> regular expression
+19.email ---> type="email" 
+
+What are the value for type attribute 
+1.text 
+2.password 
+3.dob 
+4.file 
+5.radio 
+6.checkbox 
+7.hidden 
+8.submit 
+9.reset
+10.image
+11.url 
+
+Form can be submitted in two ways:
+Inside the Form tag we have attribute 
+method="post" 
+enctype="multipart/form-data" 
+action="successpage.html" - after form is submitted where it should go
+
+1.GET -- data will travel in the head section of http.
+url:http://google.com?name="salman"&email="salman%40gmail.com" ---> url encoding
+Query string parameter. 
+//data is not secure 
+//sensitive information we cannot send in the url.
+//enctype - x-www-form-urlencoded
+
+2.POSt --> Data will travel in the body section of 
+http:
+//it will travel in the form of key and value pair.
+fullName:"salman"
+address:"India"
+//sensitive information 
+//mainly to upload image,audio,video
+//multipart/formData --whenever you have file please attach the multipart/formData.

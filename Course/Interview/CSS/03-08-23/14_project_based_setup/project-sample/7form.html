@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <style>
+        form {
+            border: 1px solid grey;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        input#email,select,input#contact-number{
+            width: 98%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        input#first-name,input#last-name{
+            width: 49%;
+            padding:5px;
+            margin-bottom:10px;
+        }
+        input#consent-checkbox{
+            display: inline-block;
+            width: 2%;
+            cursor: pointer;
+        }
+        span{
+            display: inline-block;
+            width: 80%;
+        }
+        button{
+            display: block;
+            cursor: pointer;
+            margin-top:10px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <section id="students-offer">
+        <form>
+            <input type="email" name="email" id="email" placeholder="Email address" required autocomplete="off" />
+            <input type="text" name="first-name" id="first-name" placeholder="First Name" required required
+                autocomplete="off" />
+            <input type="text" name="last-name" id="last-name" placeholder="Last Name" required required
+                autocomplete="off" />
+            <p>Where do you go to school?</p>
+            <label for="country">Country</label>
+            <select name="country" id="country" required>
+                <option value="india">India</option>
+                <option value="spain">Spain</option>
+                <option value="germany">Germany</option>
+                <option value="japan">Japan</option>
+                <option value="france">France</option>
+            </select>
+            <label for="college-university">Name of college/ university</label>
+            <select name="college-university" id="college-university" required>
+                <option value="indian-school-business">Indian School of Business</option>
+                <option value="delhi-university">Delhi University</option>
+                <option value="iit">IIT</option>
+                <option value="bits">BITS</option>
+                <option value="imi">IMI</option>
+            </select>
+            <label for="contact-number">Contact Number</label>
+            <input type="number" name="contact-number" id="contact-number" placeholder="Contact Number" required
+                autocomplete="off" />
+            <input type="checkbox" name="consent-checkbox" id="consent-checkbox" required />
+            <span>By checking this box and clicking "Submit", you consent to use information for verification.</span>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </section>
+</body>
+
+</html>

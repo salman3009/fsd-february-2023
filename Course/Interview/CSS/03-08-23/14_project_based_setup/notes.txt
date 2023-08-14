@@ -1,0 +1,112 @@
+Important selector:
+1.element selector 
+2.class selector 
+3.id selector 
+4.grouping selector 
+5.universal selector 
+6.descendant selector
+7.pseudo_elements_before
+8.pseudo_elements_after 
+9.pseudo_elemetns_selection
+==============================================
+Pseudo-class 
+
+1.Psuedo-class-basic- (mainly in input tag)
+    1.focus - (input:focus)
+    2.required - (input:required)
+
+2.Pseudo-class-anchor - (mainly in anchor tag)
+       1.link - (a:link) - newly link elements
+       2.active - (a:active) - once you press the mouse
+       3.visited -(a:visited) - already you visited the page
+       4.hover - (a:hover) - mouse over
+
+3.Psuedo-class-general - (mostly used in li tags)
+      1.first-child - (li:first-child) - first element in the list will have the impact
+      2.nth-child - (li:nth-child(2n))
+             2n - even number 
+             2n+1 - odd number
+      3.nth-of-type - both nth-child and nth-of-type will work in same way 
+         //nth-child - will consider all siblings as their own element and it will you the wrong result.
+         //nth-of-type - always it will consider the exact siblings element
+      4.nth-last-child - (li:nth-last-child(2n)) - opposite of nth-child
+
+attribute Selectors 
+1.General attribute Selector 
+2.Attribute with matching value selector 
+3.Attribute with starting value (^)
+4.Attribute with ending value ($)
+5.Attribuite with anywhere matching value(*)
+6.Attribute selector with pipe symbol (|)
+7.Attribute selector with tilde symbol (~)
+================================================================
+To develop any project :
+1.nav bar - flex - one dimension
+2.button - responsive in mobile device as well show have some highlight.
+3.how to design 
+4.form 
+5.grid - two dimension
+============================================
+Navbar:
+
+
+
+
+=====================================
+flex:
+It is 1D-dimension-layout
+It will work either in row wise or column wise 
+to make it row wise 
+display:flex 
+to make it column wise 
+display:flex
+flex-direction:column
+=========================================
+grid:
+It is 2D-dimension-layout 
+It will work in both row and column wise 
+some properties:
+grid-template-row:repeat()
+grid-template-column:repeat()
+repeat:
+    //It is function it will take two parameters 
+              1.first parameter:Total number of division needed in rows or column wise 
+              2.Second parameter:Total number of space needed to accommodate 
+units:
+  fr: 1 available space
+=============================================
+inline 
+//to make it center we need to use "text-align:center" because width and height is not supported on inline element 
+block 
+//to make it center we can use "text-align:center" but if you have given width and height we need to use margin:auto 
+margin:auto 
+it will divide equal portion of left and right section.
+media query:
+we are writing different dimension css code to make it mobile , tab responsive
+=========================================================
+common properties:
+1.width 
+2.margin 
+3.padding
+4.text-align 
+5.flex 
+6.font-weight
+7.border 
+8.border-radius
+9.background-color
+======================================
+width most of the time apply in % mainly for box section 
+padding,border-radius,border - px 
+fr - 1part of available space
+===============================================
+font-icons - CDN - content delivery network
+Steps to Add icons in your project
+1.Add cdn link inside the head : <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+2.Go to this website: https://fontawesome.com/v6/icons/passport?f=classic&s=solid
+3.Select any icon and copy i tag and paste inside the html file
+//it is predefined icons we can use it in our project 
+//it will support only two properties:
+1.font-size - to increase or decrease the size of icons 
+2.color - to apply the color 
+=================================================
+

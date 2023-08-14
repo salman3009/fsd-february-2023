@@ -14,3 +14,9 @@ margin:39px 45px 44px 66px (clock wise direction)
 top-->right->bottom-->left
 margin:50px 25px
 top-bottom  right-left 
+
+Projects:
+1.linkedin 
+2.myntra or amazon of flipkart
+3.porfolio
+4.TicTacToe

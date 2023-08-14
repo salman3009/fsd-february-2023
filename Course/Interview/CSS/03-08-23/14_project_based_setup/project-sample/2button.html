@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <style>
+        section {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap:15px;
+        }
+
+        button {
+            background-color: #c01919;
+            color: white;
+            padding: 15px;
+            width: 46%;
+            border: 0;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        button:hover{
+            background-color: green;
+            transform: scale(1.1);
+        }
+
+        @media (max-width:650px) {
+            section{
+                flex-direction: column;
+            }
+            button{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <button>
+            WINDOWS
+        </button>
+        <button>
+            MAC OS
+        </button>
+    </section>
+</body>
+
+</html>

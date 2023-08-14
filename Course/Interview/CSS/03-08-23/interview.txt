@@ -1,0 +1,20 @@
+How to maintain the contain which flow outside the box?
+overflow:auto 
+//This will add auto-scroll whenever the content is going outside the box.
+CSS value 'inherit' which value it will take?
+//It will take parent tag value 
+what is gradient?
+//It is combination of color with background-image 
+//It consists of two types 
+     1.linear  
+     2.radial
+
+Important Points:
+flex
+   //display:flex
+   //justify-content:space-between|center 
+   //gap:10px
+grid
+margin:auto
+text-align-center
+media query 
