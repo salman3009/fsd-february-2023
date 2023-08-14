@@ -48,8 +48,8 @@ How you will move from one page to another page?
 //If you want to open in the new tab we need to use target attribute with _blank 
 //If you want to open in the same page need to use anything it is default.
 
-HTML is divided into two elements: 
-(i)block element - It will not allow next tag in the same line
+HTML is divided into two types: 
+(i)block element - It will not allow next tag to continue in the same line
 (ii)inline element - It will allow multiple tag in the same line 
 
 Example:
@@ -72,7 +72,7 @@ Why div is used in many places in reactjs or other application?
 what is Meta tag?
 //meta tag will be available inside the head section 
 //google search keyword or description will match with your meta tag 
-//metag tag will increase the rank in SEO
+//meta tag will increase the rank in SEO
 //SEO - search engine optimization
 syntax:
 example:
@@ -126,7 +126,7 @@ what is iframe or How you will include more then one html in the same page
 How you will create rows inside the table?
 tr tag 
 
-How you will create heading or cell indie te table?
+How you will create heading or cell indie the table?
 th tag and td tag 
 
 what is rowspan  and colspan in table?
