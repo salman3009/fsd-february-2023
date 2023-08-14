@@ -233,6 +233,20 @@ nav .input-search {
     padding-right:10px;
  }
 
+ .middle-content .box-two .link{
+    width: 95%;
+    margin:15px;
+}
+
+.middle-content .box-two .link .header{
+    font-weight: bold;
+    font-size:14px;
+}
+
+.middle-content .box-two .link .sub-header{
+    font-size:10px;
+}
+
 .main-section .right-content {
     background-color: white;
     width: 50%;
