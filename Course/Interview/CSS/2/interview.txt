@@ -74,7 +74,7 @@ example:
 =================================
 CSS Units:
 1.px -font-size-border-padding-height
-2.% - width-margin-height
+2.% - width-margin
 3.rem - it will inherit from parent element.
 2px - 1rem=2px
 4.vw - 1vw = 1% of viewport width
