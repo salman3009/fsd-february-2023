@@ -209,6 +209,12 @@ nav .input-search {
     font-size:12px;
 }
 
+.middle-content .box-two .paragraph{
+    width: 95%;
+    margin:10px auto;
+    text-align: justify;
+}
+
 .main-section .right-content {
     background-color: white;
     width: 50%;
