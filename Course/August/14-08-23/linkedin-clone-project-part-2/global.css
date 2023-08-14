@@ -176,7 +176,7 @@ nav .input-search {
     background-color: white;
     width: 100%;
     margin-top: 20px;
-    height: 300px;
+    height: 350px;
 }
 
 .middle-content .box-two .profile{
@@ -247,11 +247,35 @@ nav .input-search {
     font-size:10px;
 }
 
+.middle-content .box-two hr{
+    width: 95%;
+    margin:auto;
+}
+
+.middle-content .box-two .icons{
+    margin:20px auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.middle-content .box-two .icons .fa-text{
+    color:#808080;    
+ }
+
+.middle-content .box-two .icons .text{
+   padding-left:10px;
+   color:#808080;
+    
+}
+
 .main-section .right-content {
     background-color: white;
     width: 50%;
     height: 200px;
 }
+
 
 .right-content .heading{
     width: 95%;
@@ -314,4 +338,7 @@ nav .input-search {
 
 li {
     cursor: pointer;
+}
+.fa-text{
+     color:#808080;
 }
