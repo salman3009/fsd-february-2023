@@ -179,6 +179,36 @@ nav .input-search {
     height: 300px;
 }
 
+.middle-content .box-two .profile{
+    width: 95%;
+    margin:10px auto;
+    display: flex;
+    gap:10px;
+}
+
+.middle-content .box-two .profile .circle{
+    width: 46px;
+    height: 33px;
+    margin-top:20px;
+    border-radius: 100%;
+    background-color: #0d67c2;
+    color: white;
+    text-align: center;
+    padding-top: 6px;
+    font-size: 22px;
+}
+
+.middle-content .box-two .profile .description{
+    margin-top: 20px;
+}
+
+.middle-content .box-two .profile .description .name{
+    font-weight: bold;
+}
+.middle-content .box-two .profile .description .designation{
+    font-size:12px;
+}
+
 .main-section .right-content {
     background-color: white;
     width: 50%;
