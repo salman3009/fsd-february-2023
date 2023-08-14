@@ -1,0 +1,16 @@
+Navbar:
+1.We need use flexbox 
+     display:flex;
+     justify-content:space-between
+2.Icons can be taken from font-awesome 
+Main section layout 
+1.We need know flexbox 
+      display:flex;
+      justify-content:center;
+      gap:20px;
+
+shorthand property - 
+margin:39px 45px 44px 66px (clock wise direction)
+top-->right->bottom-->left
+margin:50px 25px
+top-bottom  right-left 
