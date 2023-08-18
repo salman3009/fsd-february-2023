@@ -62,6 +62,14 @@ Why we need Javascript?
 //React to user actions - mouse click and keyboard events
 //We can send http request to backend 
 //we can keep data on frontend side (session storage,local storage)
-
-
+Advantage of javascript:
+1.Less server interaction 
+2.Instance response to visitors 
+3.Rich interface 
+4.speed 
+Disadvantage of javascript:
+1.Code always visible 
+2.less security 
+3.Stop render - if something error came in realtime.
+=====================================================
 
