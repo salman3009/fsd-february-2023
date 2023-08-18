@@ -1,0 +1,8 @@
+Frontend Deployment:
+Linkedin problem statement 
+1.plan
+2.code 
+3.github 
+4.release
+//release is the deployment stage in real time server we are going to deploy 
+
