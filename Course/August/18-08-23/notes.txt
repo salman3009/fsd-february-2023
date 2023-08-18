@@ -34,4 +34,34 @@ Steps:
        8. live --> click blue link 
 =========================================
 Javascript:
+1.It is part of web application 
+2.Web application consists of three main language 
+      1.html - Display 
+      2.css  - Presentation 
+      3.javascript - Dynamic 
+3.javascript is a scripting language 
+==================================
+Programming language 
+//Entire code --> byte code --> machine --> output 
+//suppose any error in the code the entire code will not run 
+scripting language 
+//Code --> line by line execution -->browser --output 
+//till that particular line code will run if error came it will stop executing.
+==============================================
+Javscript History:
+//1995 
+//From 2021 onwards no:1 language in the world 
+//Initial it is developed to support html and css to make web content dynamic.
+//Later in 2008 it become serverside language as well because of Nodejs 
+====================================
+Javascript framework/library 
+Reactjs,Angular,Vuejs 
+=========================
+Why we need Javascript?
+//Add new html tags,edit html tags,delete html tags ,update html tags example:<p><h1><table>
+//React to user actions - mouse click and keyboard events
+//We can send http request to backend 
+//we can keep data on frontend side (session storage,local storage)
+
+
 
