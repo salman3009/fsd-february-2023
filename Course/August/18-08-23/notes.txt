@@ -5,4 +5,33 @@ Linkedin problem statement
 3.github 
 4.release
 //release is the deployment stage in real time server we are going to deploy 
+website link: https://dashboard.render.com/
+//Static host - html/css deploy 
+//server - nodejs/expressjs/mongodb 
+
+1.Create login inside the render.com 
+2.Create one new repo link inside that paste html and css code 
+=============================================================
+website link: https://dashboard.render.com/
+//always first file should be index.html 
+========================================
+Steps:
+1. render.com login 
+2. new repo we need to create inside the github and paste your html and css code.
+     1. Go to any location cmd: git clone url 
+     2. git add . 
+     3. git commit -m "Code"
+     4. git push
+3. first html file name should be index.html 
+4.render.com 
+       1. New 
+       2. static site 
+       3. public repository : url github 
+       4.continue 
+       5.project name: linkedin 
+       6.publish directory: . 
+       7. start server 
+       8. live --> click blue link 
+=========================================
+Javascript:
 
