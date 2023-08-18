@@ -72,4 +72,7 @@ Disadvantage of javascript:
 2.less security 
 3.Stop render - if something error came in realtime.
 =====================================================
-
+Two of writing Javascript 
+1.internal javascript - within the html file we are going to write javascript extension .html 
+2.external javascript - Writing outside the html file and extension will be .js 
+======================================================
