@@ -14,7 +14,7 @@ Where to write Javascript?
 Two ways of writing javascript 
 1.internal 
 2.external 
-
+//external is best approach 
 ===================================================
 HTML 
 //It is written in the form of parent - child relationship 
@@ -32,3 +32,8 @@ behaviour
 walk()
 foodInTake()
 sleep()
+============================
+Variable and Datatypes 
+variable  - to create address so that we can store value in that address 
+datatypes - It helps javascript to find the particular so that it can create particular set of space inside the memory.
+===========================================
