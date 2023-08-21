@@ -1,0 +1,9 @@
+What is Nodejs?
+1.Nodejs is run environment or compiler  for javascript to run outside the browser
+2.All browser will support javascript 
+js --> html - web page dynamic
+What is Vanilla Js?
+It is pure javascript with no third party functionality.
+Framework:
+//Already some set of functionality is given by default.
+============================================
