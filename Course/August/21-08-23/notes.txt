@@ -7,3 +7,28 @@ It is pure javascript with no third party functionality.
 Framework:
 //Already some set of functionality is given by default.
 ============================================
+Where to write Javascript?
+//Best approach is bottom of the page 
+//Because html and CSS should be loaded first so UI will be presentable to users. 
+//In some situation we need to add javascript in head tag where css has dependence with javascript.
+Two ways of writing javascript 
+1.internal 
+2.external 
+
+===================================================
+HTML 
+//It is written in the form of parent - child relationship 
+//Tree data structure 
+//Entire javascript is build using object 
+//window object is attached to DOM
+Object 
+//It consists of properties and behaviour 
+Person 
+properties 
+weight 
+color 
+height 
+behaviour 
+walk()
+foodInTake()
+sleep()
