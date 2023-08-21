@@ -37,3 +37,22 @@ Variable and Datatypes
 variable  - to create address so that we can store value in that address 
 datatypes - It helps javascript to find the particular so that it can create particular set of space inside the memory.
 ===========================================
+Datatypes is divided into two types:
+1.primitive types 
+   1.string - a set of character
+   2.number  - it can be integer or floating point everything is number in javascript
+   3.boolean 
+   4.undefined
+   5.Symbol - unique value
+2.derived Types 
+    1.Array 
+    2.Object 
+    3.Null
+Javascript have dynamic datatype 
+//typeof will help to find the datatype 
+=====================
+Arithmetic operator 
+1.assignment operator (=)   
+Comparison operator 
+//Final return value for comparison operator is boolean
+1.double equality operator(--) 
