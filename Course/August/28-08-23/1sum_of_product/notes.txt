@@ -1,0 +1,12 @@
+Input 
+45 67 
+(7*5) + (6*4) = 35 + 24 = 59
+34 4778
+(8*4) + (7*3) + (7*0) + (4*0) = 32 + 21 + 0 + 0 = 53
+
+1.function with parameter 
+2.toString()
+3.length 
+4.for loop 
+5.parseInt 
+6.how to find last digit and reminder fo the number 
