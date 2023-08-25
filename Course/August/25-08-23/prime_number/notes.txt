@@ -14,3 +14,12 @@ function function_name(parameters,parameters){
 
 }
 ================================================
+Time complexity
+1 O(1)
+2.O(n)
+3.O(log n)
+4.O(n2)
+==================================
+for loop - O(n)
+nested for loop - O(n^2) --> 90% of the code will fail here
+for loop and sqrt - O(n) + O(log n)

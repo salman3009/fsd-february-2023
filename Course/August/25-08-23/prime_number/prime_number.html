@@ -2,7 +2,8 @@ https://my.newtonschool.co/playground/code/sbb4pfkmfo7y?lecture_hash=l8zffawwjkw
 <script>
  
  function isPrime(num){
-    for(var i=2;i<num;i++){
+    let end = Math.sqrt(num);
+    for(var i=2;i<end;i++){
         if(num%i==0){
             return false;
         }
