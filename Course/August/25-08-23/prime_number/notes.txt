@@ -1,0 +1,12 @@
+1.function with return
+2.loops 
+3.decision making statement 
+4.comparison operator 
+4.Math method 
+
+Function:
+//To reuse the code block 
+example:
+function function_name(parameters,parameters){
+
+}

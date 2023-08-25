@@ -53,7 +53,38 @@ Javascript have dynamic datatype
 =====================
 Arithmetic operator 
 1.assignment operator (=)   
+2.addition(+) 
+3.subtraction(-) 
+4.multiplication(*) 
+5.division(/)  
+6.modulo(%) 
+7.increment(++) 
+8.decrement(--)
+shorthand operator 
++=
+-=
+/=
+%=
 Comparison operator 
 //Final return value for comparison operator is boolean
-1.double equality operator(--) 
+1.double equality operator(==)  --> will compare only only
+2. === -->will compare value + datatype
+3. > 
+4. >= 
+5. < 
+6. <= 
+7. != 
+8. !==
+logical operator 
+//final return value is boolean
+1.&&
+ -->both true it will return true
+ -->anyone false it will return false 
+ -->In case of zero instead of returning false it will return zero
+ -->always start with negative condition on left side
+2.|| 
+  -->anyone true means it will give true result
+  -->always start with positive condition on left side
+3.!
+true --> false 
 ==================================
