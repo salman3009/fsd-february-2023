@@ -1,8 +1,8 @@
 1.function with return
-2.loops 
-3.decision making statement 
-4.comparison operator 
-4.Math method 
+2.loops - (normal for loop)
+3.decision making statement - (if)
+4.comparison operator (>)
+4.Math method (sqrt)
 
 Function:
 //To reuse the code block 
