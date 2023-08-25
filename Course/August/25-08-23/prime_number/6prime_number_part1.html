@@ -1,0 +1,24 @@
+https://my.newtonschool.co/playground/code/sbb4pfkmfo7y?lecture_hash=l8zffawwjkwr
+<script>
+
+function isEven(input){
+     if(input%2==0){
+        return true;
+     }
+     return false;
+}
+
+function FindEven(N)
+{
+      var count = 0;
+      for(var i=2;i<=N;i++){
+          var res = isEven(i);
+          if(res){
+            count++;
+          }
+         
+      }
+      return count;
+ }
+ console.log(FindEven(5));
+</script>
