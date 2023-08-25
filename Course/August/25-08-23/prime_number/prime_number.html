@@ -3,7 +3,7 @@ https://my.newtonschool.co/playground/code/sbb4pfkmfo7y?lecture_hash=l8zffawwjkw
  
  function isPrime(num){
     let end = Math.sqrt(num);
-    for(var i=2;i<end;i++){
+    for(var i=2;i<=end;i++){
         if(num%i==0){
             return false;
         }
@@ -23,5 +23,5 @@ function numberOfPrimes(N)
       }
       return count;
  }
- numberOfPrimes(5);
+ console.log(numberOfPrimes(5));
 </script>
