@@ -1,7 +1,10 @@
 1.function with return
 2.loops - (normal for loop)
+  //initialization 
+  //end 
+  //increment/decrement
 3.decision making statement - (if)
-4.comparison operator (>)
+4.comparison operator (>,==,<=)
 4.Math method (sqrt)
 
 Function:
