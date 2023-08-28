@@ -3,7 +3,8 @@ https://my.newtonschool.co/playground/code/lyxvr6vu93py?lecture_hash=usxa5qpksx5
 <script>
     function sumOfProductOfDigits(n1, n2)
 {  
-     var sum = 0;
+    try{
+        var sum = 0;
      var r1 = n1.toString().length;
      var r2 = n2.toString().length;
      var count = r1>r2?r2:r1;
@@ -13,10 +14,13 @@ https://my.newtonschool.co/playground/code/lyxvr6vu93py?lecture_hash=usxa5qpksx5
          n1 = parseInt(n1/10);
          n2 = parseInt(n2/10);
      }
-
-
-
      return sum;
+    }catch(err){
+         //navigate to error page 
+         //error message alert
+           return 0;
+    }
+    
 }
 console.log(sumOfProductOfDigits(35,6798))
 </script>

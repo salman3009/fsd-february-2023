@@ -1,0 +1,4 @@
+try and catch block
+//It is use to catch error in realtime
+//It helps to prevent code break
+
