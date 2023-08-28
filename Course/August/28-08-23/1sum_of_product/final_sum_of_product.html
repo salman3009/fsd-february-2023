@@ -1,1 +1,22 @@
 https://my.newtonschool.co/playground/code/lyxvr6vu93py?lecture_hash=usxa5qpksx51
+
+<script>
+    function sumOfProductOfDigits(n1, n2)
+{  
+     var sum = 0;
+     var r1 = n1.toString().length;
+     var r2 = n2.toString().length;
+     var count = r1>r2?r2:r1;
+
+     for(var i=0;i<count;i++){
+         sum+=(n1%10)*(n2%10);
+         n1 = parseInt(n1/10);
+         n2 = parseInt(n2/10);
+     }
+
+
+
+     return sum;
+}
+console.log(sumOfProductOfDigits(35,6798))
+</script>

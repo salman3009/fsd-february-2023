@@ -1,10 +1,11 @@
 <script>
     function sumOfProductOfDigits(n1){
-        for(var i=0;i<3;i++){
+        var count = n1.toString().length;
+        for(var i=0;i<count;i++){
          var last_digit = n1%10;
          console.log(last_digit);
          n1 = parseInt(n1/10);
         }
     }
-    sumOfProductOfDigits(456);
+    sumOfProductOfDigits(45766);
 </script>
