@@ -1,0 +1,28 @@
+Problem statement:
+ [[1, 4, 3] ,4, 1]
+ 1,4,3 --> array of integer
+ 4-->upper bound 
+ 1-->lower bound
+ 1 --> min 
+ 4 --> max 
+ 1,2--->2 is the missing number 
+ Concept:
+ 1.array concept 
+ 2.array find method 
+ 3.function 
+ 4.loops 
+ 5.break 
+ 6.if statement 
+ 7.logical not operator 
+
+score of subjects 
+maths = 56 
+science = 50
+social = 80 
+english = 70
+
+array - it will store  the data continously inside the memory
+akash_subjects=[56,50,80,70];
+akash_subjects[1]
+suresh_subjects=[44,"english",true,67,null,undefined]
+
