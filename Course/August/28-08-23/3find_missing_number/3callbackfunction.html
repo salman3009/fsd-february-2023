@@ -1,0 +1,15 @@
+<script>
+    function sum_of_number(arr,callback){
+          var sum=0;
+        for(var i=0;i<arr.length;i++){
+           sum+=arr[i];
+        }
+        callback(sum)
+    }
+
+    function final_result(input){
+        console.log("final value of this function",input);
+    }
+
+    sum_of_number([33,44,55],final_result);
+</script>
