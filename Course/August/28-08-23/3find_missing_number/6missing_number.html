@@ -1,0 +1,17 @@
+https://my.newtonschool.co/playground/code/6fmlmh3tieji?lecture_hash=pp1etgaiwer2
+<script>
+    function findMissingNumber(arrayOfIntegers, upperBound, lowerBound) {
+
+        for(var i=lowerBound;i<=upperBound;i++){
+            var input = arrayOfIntegers.find(function(obj){
+                  return obj === i;
+            })
+            if(!input){
+                console.log(i);
+                break;
+            }
+        }
+
+    }
+    findMissingNumber([1, 4, 3], 4, 1);
+</script>
