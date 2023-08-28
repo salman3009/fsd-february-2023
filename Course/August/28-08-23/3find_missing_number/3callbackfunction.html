@@ -7,9 +7,14 @@
         callback(sum)
     }
 
-    function final_result(input){
-        console.log("final value of this function",input);
+    function addition_result(input){
+        console.log("final value of this  addition function",input);
     }
 
-    sum_of_number([33,44,55],final_result);
+    function subtraction_result(input){
+        console.log("final value of this subtraction function",input);
+    }
+
+    sum_of_number([33,44,55],addition_result);
+    sum_of_number([33,44,55],subtraction_result);
 </script>

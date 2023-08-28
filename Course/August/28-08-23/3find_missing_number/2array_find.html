@@ -1,6 +1,9 @@
 <script>
     var arr=['india','usa','germany','russia','france'];
     var input = 'russia';
-    var result = arr.find()
+    var result = arr.find(function(obj){
+           return obj === input;
+    })
+    console.log(result);
 
 </script>
