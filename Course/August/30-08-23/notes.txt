@@ -1,0 +1,26 @@
+Switch Statement:
+//For decision making if we have multiple statement we can use this switch 
+example:
+switch(){
+    case condition:
+          //code 
+          break;
+    case condition:
+          //code 
+          break;
+    default:
+        //code
+}
+//We need to use break keyword after each case 
+//If you have multiple statement inside the case no need of {} braces 
+//If you writing inside the function you can use return keyword also in the place of break keyword.
+
+//If you have condition inside the switch statement then make switch function to true and inside the case you can write the condition.
+switch(true){
+        case salary >=0 && salary <=5000:
+             tax = salary * 0.1;
+             break;
+        default:
+              console.log('nothing');
+}     
+=================================================
