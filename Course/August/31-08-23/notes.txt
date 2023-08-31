@@ -1,0 +1,4 @@
+Object:
+//in array key is constant
+//in object key is dynamic
+//once you use function inside the object it is called method.
