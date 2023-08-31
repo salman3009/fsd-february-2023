@@ -17,4 +17,7 @@ Methods available inside the object
 2.Object.values() 
 3.Object.entries()
 ================================
+Loops inside the object 
+for in 
+===================================
 
