@@ -11,4 +11,10 @@ create
 read 
 update 
 delete 
+==================================
+Methods available inside the object 
+1.Object.keys()
+2.Object.values() 
+3.Object.entries()
+================================
 
