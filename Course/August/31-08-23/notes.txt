@@ -2,3 +2,13 @@ Object:
 //in array key is constant
 //in object key is dynamic
 //once you use function inside the object it is called method.
+//object can have any values example:string,number,boolean,array,object,function,null,undefined
+//this will refer to current object 
+//you cannot have duplicate key in array and object
+//in array key order will not change but in object there is no order available
+//CRUD
+create
+read 
+update 
+delete 
+
