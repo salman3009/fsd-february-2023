@@ -1,0 +1,52 @@
+<style>
+    .day {
+    background-color: white;
+    color: black;
+}
+
+.night {
+    background-color: black;
+    color: gold;
+}
+
+.button_night {
+    background-color: darkblue;
+    color: white;
+}
+
+.button_day{
+    background-color: white;
+    color: black;
+}
+
+html, body {
+    margin: 0px;
+    height: 100%;
+}
+
+#app {
+    height: 100%;
+    padding: 10px;
+}
+
+</style>
+
+<div id="app" class="day">
+    <p>I am a Newton School student, ready to become an awesome full stack developer</p>
+    <button onclick="swapTheme()" id="swap" class="button_day">Toggle theme</button>
+</div>
+
+<script>
+    function swapTheme() {
+    var mainDiv = document.getElementById('app');
+    var button = document.getElementById('swap');
+    if(mainDiv.className == 'day'){
+        mainDiv.className = 'night';
+        button.className = 'button_night'
+    }
+    else{
+         mainDiv.className = 'day';
+        button.className = 'button_day'
+    }
+}
+</script>
