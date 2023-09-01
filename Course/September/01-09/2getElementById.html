@@ -1,0 +1,18 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="demo" class="list" name="heading">
+            Welcome to html
+        </div>
+    </body>
+    <script>
+         console.log(document.getElementById("demo"));
+         var list = document.getElementById("demo");
+         console.log(list.getAttribute('name'));
+         console.log(list.getAttribute('class'));
+         console.log(list.getAttribute('id'));
+         list.setAttribute('name','subheading');
+    </script>
+</html>
