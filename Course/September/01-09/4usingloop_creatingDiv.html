@@ -6,9 +6,10 @@
             justify-content: center;
             width: 100%;
             gap:20px;
+            flex-wrap: wrap;
            }
            .flex-box{
-              width: 100%;
+              width: 300px;
               text-align: center;
               height: 50px;
               font-size: 30px;
@@ -20,11 +21,24 @@
     </head>
     <body>
         <div id="demo" class="box">
-            <div class="flex-box">2</div>
-            <div class="flex-box">4</div>
-            <div class="flex-box">6</div>
-            <div class="flex-box">4</div>
-            <div class="flex-box">5</div>
+            
         </div>
+        <script>
+            var global = document.getElementById('demo');
+            for(var i=2;i<=200;i+=2){
+             //<div></div>
+              var parent = document.createElement('div');
+             //2
+              var child = document.createTextNode(i);
+              //<div>2</div>
+              parent.appendChild(child);
+              //<div class="flex-box">2</div>
+              parent.setAttribute('class','flex-box');
+              //<div id=demo><div class="flex-box">2</div></div>
+              global.appendChild(parent);
+
+            }
+
+        </script>
     </body>
 </html>
