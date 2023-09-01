@@ -1,0 +1,14 @@
+<div id="container">
+
+</div>
+<script>
+    function createDiv(width,height,text){
+        var global = document.getElementById('container');
+        var parent = document.createElement('div');
+        parent.textContent = text;
+        parent.style.width = width+"px";
+        parent.style.height = height+"px";
+        global.appendChild(parent);
+    }
+    // createDiv(200,100,"welcome");
+</script>

@@ -1,62 +1,67 @@
 <html>
-    <head>
-        <style>
-           .box{
+
+<head>
+    <style>
+        .box {
             display: flex;
             justify-content: center;
             width: 100%;
-            gap:20px;
+            gap: 20px;
             flex-wrap: wrap;
-           }
-           .flex-box{
-              width: 300px;
-              text-align: center;
-              height: 50px;
-              font-size: 30px;
-              padding-top:20px;
-              background-color: red;
-           }
-           input,button{
+        }
+
+        .flex-box {
+            width: 300px;
+            text-align: center;
+            height: 50px;
+            font-size: 30px;
+            padding-top: 20px;
+            background-color: red;
+        }
+
+        input,
+        button {
             display: block;
-            margin:20px auto;
+            margin: 20px auto;
             width: 100px;
-           }
+        }
+    </style>
 
-        </style>
+</head>
 
-    </head>
-    <body>
-        <input type="number" id="add"/>
-        <button id="submit" onclick="onSubmitHandler()">Submit</button>
-        <div id="demo" class="box">
-            
-        </div>
-        <script>
+<body>
+    <input type="number" id="add" />
+    <button id="submit" onclick="onSubmitHandler()">Submit</button>
+    <div id="demo" class="box">
 
-            function onSubmitHandler(){
-                  var input = document.getElementById('add').value;
-                  input = Number(input);
-                  console.log(input);
-                  console.log(typeof input);
-                  var global = document.getElementById('demo');
-            for(var i=2;i<=input;i+=2){
-             //<div></div>
-              var parent = document.createElement('div');
-             //2
-              var child = document.createTextNode(i);
-              //<div>2</div>
-              parent.appendChild(child);
-              //<div class="flex-box">2</div>
-              parent.setAttribute('class','flex-box');
-              //<div id=demo><div class="flex-box">2</div></div>
-              global.appendChild(parent);
+    </div>
+    <script>
+
+        function onSubmitHandler() {
+            var input = document.getElementById('add').value;
+            input = Number(input);
+            console.log(input);
+            console.log(typeof input);
+            var global = document.getElementById('demo');
+            for (var i = 2; i <= input; i += 2) {
+                //<div></div>
+                var parent = document.createElement('div');
+                //2
+                var child = document.createTextNode(i);
+                //<div>2</div>
+                parent.appendChild(child);
+                //<div class="flex-box">2</div>
+                parent.setAttribute('class', 'flex-box');
+                //<div id=demo><div class="flex-box">2</div></div>
+                global.appendChild(parent);
 
             }
-            }
-           
+        }
 
-           
 
-        </script>
-    </body>
+
+
+    </script>
+</body>
+
 </html>
