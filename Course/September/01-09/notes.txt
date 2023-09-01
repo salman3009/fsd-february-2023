@@ -1,0 +1,29 @@
+Revision of Object:
+DOM assignment
+DOM - Document object Modal 
+//To interact with javascript and html
+======================================= 
+Basic about object 
+var employee={
+    fullName:"akash",
+    age: 34,
+    list:[2,3,5,6],
+    getDisplay:function(){
+
+    }
+}
+===========================
+Understand DOM structure:
+html:
+<html>
+<head>
+</head>
+<body>
+<p>Hello world</p>
+</body>
+//on the top of DOM tree they have attached window object 
+//window object is global object in javascript 
+//window object consists of lots of inbuilt methods and inbuilt properties to support interaction with html tags.
+//this keyword - it will refer to current object 
+//Inside the window object we have one more object called document object.
+//document object play important accessing html tags.
