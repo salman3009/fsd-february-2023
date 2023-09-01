@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="demo">
+
+        </div>
+        <script>
+            //creating p tag
+            var creatingofTag = document.createElement('p');
+            //creating text content
+            var creatingTextNode = document.createTextNode('welcome to javascript');
+            //merge the tag with text content 
+           creatingofTag.appendChild(creatingTextNode);
+          
+            var demo = document.getElementById('demo');
+            demo.appendChild(creatingofTag);
+        </script>
+    </body>
+</html>
