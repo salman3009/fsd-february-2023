@@ -8,20 +8,28 @@
         </div>
     </body>
     <script>
-         console.log(document.getElementById("demo"));
+        //  console.log(document.getElementById("demo"));
          var list = document.getElementById("demo");
 
          //setting and getting attribute
-         console.log(list.getAttribute('name'));
-         console.log(list.getAttribute('class'));
-         console.log(list.getAttribute('id'));
-         list.setAttribute('name','subheading');
+        //  console.log(list.getAttribute('name'));
+        //  console.log(list.getAttribute('class'));
+        //  console.log(list.getAttribute('id'));
+        //  list.setAttribute('name','subheading');
 
 
          //getting and setting content of html
-         console.log(list.textContent);
-         console.log(list.innerText);
-         console.log(list.innerHTML);
-         list.innerHTML = "welcome to javascript";
+        //  console.log(list.textContent);
+        //  console.log(list.innerText);
+        //  console.log(list.innerHTML);
+        //  list.innerHTML = "welcome to javascript";
+
+         //setting style 
+         list.style.color = "red";
+         list.style.marginLeft = "40px";
+         list.style.fontSize = "40px";
+         list.style.backgroundColor = 'yellow';
+         list.style.textAlign = "center";
+         console.log(list.style.color);
     </script>
 </html>
