@@ -1,9 +1,14 @@
 <html>
     <head>
-
+      <style>
+         .list{
+            background-color: red;
+            font-size:20px;
+         }
+      </style>
     </head>
     <body>
-        <div id="demo" class="list" name="heading">
+        <div id="demo" name="heading">
             Welcome to html
         </div>
     </body>
@@ -25,11 +30,14 @@
         //  list.innerHTML = "welcome to javascript";
 
          //setting style 
-         list.style.color = "red";
-         list.style.marginLeft = "40px";
-         list.style.fontSize = "40px";
-         list.style.backgroundColor = 'yellow';
-         list.style.textAlign = "center";
-         console.log(list.style.color);
+        //  list.style.color = "red";
+        //  list.style.marginLeft = "40px";
+        //  list.style.fontSize = "40px";
+        //  list.style.backgroundColor = 'yellow';
+        //  list.style.textAlign = "center";
+        //  console.log(list.style.color);
+
+        //setting class
+        list.setAttribute('class','list');
     </script>
 </html>
