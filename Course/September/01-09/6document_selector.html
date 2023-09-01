@@ -10,10 +10,17 @@
         <div class="heading">welcome to nodejs</div>
         <h1 class="heading">welcome to expressjs</h1>
         <script>
+            //will return single object
             var list = document.getElementById("demo");
+
+            //will return list of array
             var arrayList = document.getElementsByClassName('heading');
             console.log(arrayList.length);
             arrayList[0].innerHTML = 'world';
+
+            //will return single object
+            var query = document.querySelector("p.heading");
+            console.log(query);
 
         </script>
     </body>
