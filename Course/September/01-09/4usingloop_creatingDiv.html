@@ -16,16 +16,30 @@
               padding-top:20px;
               background-color: red;
            }
+           input,button{
+            display: block;
+            margin:20px auto;
+            width: 100px;
+           }
+
         </style>
 
     </head>
     <body>
+        <input type="number" id="add"/>
+        <button id="submit" onclick="onSubmitHandler()">Submit</button>
         <div id="demo" class="box">
             
         </div>
         <script>
-            var global = document.getElementById('demo');
-            for(var i=2;i<=200;i+=2){
+
+            function onSubmitHandler(){
+                  var input = document.getElementById('add').value;
+                  input = Number(input);
+                  console.log(input);
+                  console.log(typeof input);
+                  var global = document.getElementById('demo');
+            for(var i=2;i<=input;i+=2){
              //<div></div>
               var parent = document.createElement('div');
              //2
@@ -38,6 +52,10 @@
               global.appendChild(parent);
 
             }
+            }
+           
+
+           
 
         </script>
     </body>
