@@ -1,0 +1,6 @@
+https://my.newtonschool.co/playground/markup/448jo16xqqh5?lecture_hash=zl52i9v627ps
+Topics:
+1.document selector 
+2.function with parameter 
+3.onchange event with event object 
+4.attributes (value,max)
