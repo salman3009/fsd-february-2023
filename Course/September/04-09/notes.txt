@@ -30,3 +30,15 @@ console.log(event.target.value);
 }
 <script>
 =================================
+https://my.newtonschool.co/playground/markup/1jc76f52hdbd?lecture_hash=zl52i9v627ps
+Bootstrap 5:
+1.floating 
+2.mb-3,mt-5,m-3 
+3.d-flex justify-content-center 
+4.form-switch 
+5.form-control
+shortform 
+mt - marign-top 
+m - margin 
+mb - margin bottom 
+=============================
