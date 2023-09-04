@@ -4,6 +4,7 @@ Topics:
 2.function with parameter 
 3.onchange event with event object 
 4.attributes (value,max)
+5.innerHTML
 Events in Javascript:
 //Events will get called whenever user actions happen
 //We have different kinds of events depends upon mouse and keyboard actions 
@@ -28,3 +29,4 @@ function myFunction(event){
 console.log(event.target.value);
 }
 <script>
+=================================
