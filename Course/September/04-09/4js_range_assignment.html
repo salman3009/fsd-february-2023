@@ -20,12 +20,18 @@
          total_sum = Number(event.target.value);
          rangeAValue = Number(document.querySelector(selector_one).value);
          rangeBValue = Number(document.querySelector(selector_two).value);
-         console.log(rangeAValue,rangeBValue);
+         settingMaxvalues();
     }
     function rangeAChangeHandler(event){
 
     }
     function rangeBChangeHandler(event){
 
+    }
+
+    function settingMaxvalues(){
+     document.getElementById('sum').innerHTML = rangeAValue + rangeBValue;
+     document.querySelector(selector_one).max = total_sum - rangeBValue;
+     document.querySelector(selector_two).max = total_sum - rangeAValue;
     }
 </script>
