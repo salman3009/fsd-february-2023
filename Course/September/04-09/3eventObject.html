@@ -3,11 +3,19 @@
 
     </head>
     <body>
-        <input type="text" onchange="onChangeHandler()">
+        <input type="text" name="fullName" id="fullName" onchange="onChangeHandler(event)">
+        <input type="range" name="scaler" id="scaler" value="0" min="10" max="40" onchange="onChangeRangeHandler(event)">
     </body>
     <script>
-        function onChangeHandler(){
-            alert("onchnage");
+        function onChangeHandler(event){
+                 console.log(event.target.value);    
+                 console.log(event.target.id); 
+                 console.log(event.target.name); 
+        }
+        function onChangeRangeHandler(event){
+            console.log("current value",event.target.value);
+            console.log("min value",event.target.min);
+            console.log("max value",event.target.max);
         }
     </script>
 </html>

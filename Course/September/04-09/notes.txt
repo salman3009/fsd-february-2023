@@ -17,3 +17,14 @@ function myFunction(){
 }
 <script>
 =============================================
+Event Object:
+//Every event function will have one default parameter called event object 
+//Using event object we can able to access current value,name,id attribute of that particular tag.
+//Inside the event object we have target object inside that we have all the property
+example:
+<input type="text" onchange="myFunction(event)">
+<script>
+function myFunction(event){
+console.log(event.target.value);
+}
+<script>
