@@ -15,7 +15,7 @@
     var selector_one = "#range-a-holder input";
     var selector_two = "#range-b-holder input";
     var rangeAValue = 0;
-    var rangeBValue = 0;
+    var rangeBValue = 50;
     function maxSumChangeHandler(event){
          total_sum = Number(event.target.value);
          rangeAValue = Number(document.querySelector(selector_one).value);
@@ -23,10 +23,15 @@
          settingMaxvalues();
     }
     function rangeAChangeHandler(event){
+       rangeAValue = Number(event.target.value);
+       document.getElementById('range-a-value').innerHTML = total_sum - rangeBValue;
+       settingMaxvalues();
 
     }
     function rangeBChangeHandler(event){
-
+        rangeBValue = Number(event.target.value);
+       document.getElementById('range-b-value').innerHTML = total_sum - rangeAValue;
+       settingMaxvalues();
     }
 
     function settingMaxvalues(){
