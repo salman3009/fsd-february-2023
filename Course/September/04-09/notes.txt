@@ -4,3 +4,16 @@ Topics:
 2.function with parameter 
 3.onchange event with event object 
 4.attributes (value,max)
+Events in Javascript:
+//Events will get called whenever user actions happen
+//We have different kinds of events depends upon mouse and keyboard actions 
+//Whenever events will get trigger will call a function from javascript
+example;
+onchange: Mainly it is used inside the input tag. Whenever data is change and once we come out from the current text box. event will get trigger 
+<input type="text" onchange="myFunction()">
+<script>
+function myFunction(){
+
+}
+<script>
+=============================================
