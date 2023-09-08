@@ -126,6 +126,8 @@
                 }
             }
 
+            document.getElementById('progress-bar-new').style.width = (count *100)/6 + "%";
+            
             if (userName && email && server && password && college && switchDetails) {
                 document.getElementById('submit-button').disabled = false;
             }
