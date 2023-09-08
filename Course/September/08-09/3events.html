@@ -4,21 +4,26 @@
     </head>
     <body>
         <input type="text" id="fullName" name="fullNameDetails" onchange="onChangeHandler(event)">
-        <input type="checkbox" onchange="onSelectionHandler(event)">
+        <input type="checkbox" id="selection" onchange="onChangeHandler(event)">
         <button onclick="display()" id="button-submit" disabled>Click here</button>
         <div id="demo"></div>
     </body>
     <script>
+         var fullName = false;
+         var selection = false;
         function display(){
              document.getElementById('demo').style.width = "200px";
              document.getElementById('demo').style.height = "200px";
              document.getElementById('demo').style.border = "2px solid red";
         }
         function onChangeHandler(event){
-            var input = event.target.value;
-            console.log(event.target.id);
-            console.log(event.target.name);
-            if(input){
+            if(event.target.id == "fullName" && event.target.value){
+                fullName = true;
+            }
+            if(event.target.id == "selection" && event.target.checked){
+                selection = true;
+            }
+            if(fullName && selection){
                 document.getElementById('button-submit').disabled = false;
             }
             else{
@@ -33,8 +38,8 @@
         //input - onchange
         //onchange-event object - event.target.value
 
-        function onSelectionHandler(event){
-           console.log(event.target.checked);
-        }
+        // function onSelectionHandler(event){
+        //    console.log(event.target.checked);
+        // }
     </script>
 </html>
