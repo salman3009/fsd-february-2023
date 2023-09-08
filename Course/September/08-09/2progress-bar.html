@@ -18,6 +18,8 @@
     <script>
          var fullName = false;
          var selection = false;
+         var count = 0;
+         var progress = document.getElementById('progress-bar-new');
         function display(){
              document.getElementById('demo').style.width = "200px";
              document.getElementById('demo').style.height = "200px";
@@ -27,18 +29,26 @@
             if(event.target.id == "fullName"){
                 if(event.target.value){
                     fullName = true;
+                    count++;
+
                 }
                 else{
                    fullName = false;
+                   count--;
                 }     
             }
             if(event.target.id == "selection"){
                 if(event.target.checked){
                     selection = true;
+                    count++;
                 }else{
                     selection = false;
+                    count--;
                 }    
             }
+            progress.style.width = (count*100)/2 + "%";
+            //100 + % ==100%
+
             if(fullName && selection){
                 document.getElementById('button-submit').disabled = false;
             }

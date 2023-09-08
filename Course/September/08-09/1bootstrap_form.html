@@ -51,6 +51,25 @@
 
     </form>
     <script>
-        
+        var count = 0;
+        var userName = false;
+        var email = false;
+        var server = false;
+        var password = false;
+        var college = false;
+        var switchDetails = false;
+
+        function onChangeHandler(event){
+             if(event.target.id=="username-input"){
+                if(event.target.value){
+                    userName = true;
+                    count++;
+                }
+                else{
+                    userName = false;
+                    count--;
+                }
+             }
+        }
     </script>
 </div>
