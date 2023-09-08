@@ -17,11 +17,20 @@
              document.getElementById('demo').style.border = "2px solid red";
         }
         function onChangeHandler(event){
-            if(event.target.id == "fullName" && event.target.value){
-                fullName = true;
+            if(event.target.id == "fullName"){
+                if(event.target.value){
+                    fullName = true;
+                }
+                else{
+                   fullName = false;
+                }     
             }
-            if(event.target.id == "selection" && event.target.checked){
-                selection = true;
+            if(event.target.id == "selection"){
+                if(event.target.checked){
+                    selection = true;
+                }else{
+                    selection = false;
+                }    
             }
             if(fullName && selection){
                 document.getElementById('button-submit').disabled = false;
