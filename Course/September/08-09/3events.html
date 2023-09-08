@@ -3,7 +3,7 @@
 
     </head>
     <body>
-        <input type="text" onchange="onChangeHandler()">
+        <input type="text" onchange="onChangeHandler(event)">
         <button onclick="display()">Click here</button>
         <div id="demo"></div>
         <i class="font-fa" onclick="display()"></i>
@@ -15,8 +15,9 @@
              document.getElementById('demo').style.height = "200px";
              document.getElementById('demo').style.border = "2px solid red";
         }
-        function onChangeHandler(){
+        function onChangeHandler(event){
             alert("onchange");
+            console.log(event.target.value);
         }
         //we can use onclick inside the button,icon,image,label
         //only for input tag please use onchange event
