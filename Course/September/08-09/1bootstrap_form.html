@@ -28,10 +28,10 @@
         <div class="mb-3">
             <label for="password-input" class="mb-1">Password</label>
             <input type="password" onchange="onChangeHandler(event)" class="form-control" id="password-input"
-                placeholder="Password...">
+                placeholder="Password....">
         </div>
 
-        <label for="college-input" class="form-label">Select your college name</label>
+        <label for="college-input" class="form-label">Select your college name.</label>
         <input class="form-control" onchange="onChangeHandler(event)" list="collge-options" id="college-input"
             placeholder="Type to search...">
         <datalist id="collge-options">
@@ -127,7 +127,7 @@
             }
 
             document.getElementById('progress-bar-new').style.width = (count *100)/6 + "%";
-            
+
             if (userName && email && server && password && college && switchDetails) {
                 document.getElementById('submit-button').disabled = false;
             }
