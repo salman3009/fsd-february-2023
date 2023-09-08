@@ -14,7 +14,14 @@
              document.getElementById('demo').style.border = "2px solid red";
         }
         function onChangeHandler(event){
-            document.getElementById('button-submit').disabled = false;
+            var input = event.target.value;
+            if(input){
+                document.getElementById('button-submit').disabled = false;
+            }
+            else{
+                document.getElementById('button-submit').disabled = true;
+            }
+            
         }
         //we can use onclick inside the button,icon,image,label
         //only for input tag please use onchange event
