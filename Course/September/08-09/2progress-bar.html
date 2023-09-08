@@ -4,6 +4,10 @@
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
 
+    FullName:<input type="text" id="fullName" onchange="onChangeHandler()">
+    <br><br>
+    LastName:<input type="text" id="lastName">
+   <br><br>
     <div class="progress">
         <div class="progress-bar" id="progress-bar-new" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
@@ -11,6 +15,10 @@
  
     <script>
         var list = document.getElementById('progress-bar-new');
-        list.style.width ="50%";
+        
+
+        function onChangeHandler(){
+            list.style.width ="50%";
+        }
 
     </script>
