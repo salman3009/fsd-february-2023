@@ -70,6 +70,56 @@
                     count--;
                 }
              }
+             if(event.target.id=="email-handler-input"){
+                if(event.target.value){
+                    email = true;
+                    count++;
+                }
+                else{
+                    email = false;
+                    count--;
+                }
+             }
+             if(event.target.id=="server-input"){
+                if(event.target.value){
+                    server = true;
+                    count++;
+                }
+                else{
+                    server = false;
+                    count--;
+                }
+             }
+             if(event.target.id=="password-input"){
+                if(event.target.value){
+                    password = true;
+                    count++;
+                }
+                else{
+                    password = false;
+                    count--;
+                }
+             }
+             if(event.target.id=="college-input"){
+                if(event.target.value){
+                    college = true;
+                    count++;
+                }
+                else{
+                    college = false;
+                    count--;
+                }
+             }
+             if(event.target.id=="conditions-input"){
+                if(event.target.checked){
+                    switchDetails = true;
+                    count++;
+                }
+                else{
+                    switchDetails = false;
+                    count--;
+                }
+             }
         }
     </script>
 </div>
