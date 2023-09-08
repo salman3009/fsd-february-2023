@@ -7,28 +7,33 @@
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
 
-    <h1 class="mt-2" style="text-align: center;">Newton Forms</h1>
+<h1 class="mt-2" style="text-align: center;">Newton Forms</h1>
 <div class="d-flex justify-content-center mt-2" style="width:100%">
     <form style="width:60%">
 
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="username-input" placeholder="UserName">
+            <input type="text" onchange="onChangeHandler(event)" class="form-control" id="username-input"
+                placeholder="UserName">
             <label for="username-input">UserName</label>
         </div>
 
         <div class="input-group mb-3">
-            <input type="email" id="email-handler-input" class="form-control" placeholder="Email Handler">
+            <input type="email" onchange="onChangeHandler(event)" id="email-handler-input" class="form-control"
+                placeholder="Email Handler">
             <span class="input-group-text">@</span>
-            <input type="text" id="server-input" class="form-control" placeholder="Server">
+            <input type="text" onchange="onChangeHandler(event)" id="server-input" class="form-control"
+                placeholder="Server">
         </div>
 
         <div class="mb-3">
             <label for="password-input" class="mb-1">Password</label>
-            <input type="password" class="form-control" id="password-input" placeholder="Password...">
+            <input type="password" onchange="onChangeHandler(event)" class="form-control" id="password-input"
+                placeholder="Password...">
         </div>
 
         <label for="college-input" class="form-label">Select your college name</label>
-        <input class="form-control" list="collge-options" id="college-input" placeholder="Type to search...">
+        <input class="form-control" onchange="onChangeHandler(event)" list="collge-options" id="college-input"
+            placeholder="Type to search...">
         <datalist id="collge-options">
             <option value="NIT">
             <option value="BITS">
@@ -37,7 +42,7 @@
             <option value="other">
         </datalist>
         <div class="form-check form-switch m-3">
-            <input class="form-check-input" type="checkbox" id="conditions-input">
+            <input class="form-check-input" onchange="onChangeHandler(event)" type="checkbox" id="conditions-input">
             <label class="form-check-label" for="flexSwitchCheckDefault">Accept all terms and conditions</label>
         </div>
         <div class="progress m-2">
@@ -46,7 +51,7 @@
         </div>
 
         <div class="d-flex justify-content-center m-3">
-            <button type="button" class="btn btn-primary" disabled>Submit</button>
+            <button type="button" id="submit-button" class="btn btn-primary" disabled>Submit</button>
         </div>
 
     </form>
@@ -59,67 +64,75 @@
         var college = false;
         var switchDetails = false;
 
-        function onChangeHandler(event){
-             if(event.target.id=="username-input"){
-                if(event.target.value){
+        function onChangeHandler(event) {
+            if (event.target.id == "username-input") {
+                if (event.target.value) {
                     userName = true;
                     count++;
                 }
-                else{
+                else {
                     userName = false;
                     count--;
                 }
-             }
-             if(event.target.id=="email-handler-input"){
-                if(event.target.value){
+            }
+            if (event.target.id == "email-handler-input") {
+                if (event.target.value) {
                     email = true;
                     count++;
                 }
-                else{
+                else {
                     email = false;
                     count--;
                 }
-             }
-             if(event.target.id=="server-input"){
-                if(event.target.value){
+            }
+            if (event.target.id == "server-input") {
+                if (event.target.value) {
                     server = true;
                     count++;
                 }
-                else{
+                else {
                     server = false;
                     count--;
                 }
-             }
-             if(event.target.id=="password-input"){
-                if(event.target.value){
+            }
+            if (event.target.id == "password-input") {
+                if (event.target.value) {
                     password = true;
                     count++;
                 }
-                else{
+                else {
                     password = false;
                     count--;
                 }
-             }
-             if(event.target.id=="college-input"){
-                if(event.target.value){
+            }
+            if (event.target.id == "college-input") {
+                if (event.target.value) {
                     college = true;
                     count++;
                 }
-                else{
+                else {
                     college = false;
                     count--;
                 }
-             }
-             if(event.target.id=="conditions-input"){
-                if(event.target.checked){
+            }
+            if (event.target.id == "conditions-input") {
+                if (event.target.checked) {
                     switchDetails = true;
                     count++;
                 }
-                else{
+                else {
                     switchDetails = false;
                     count--;
                 }
-             }
+            }
+
+            if (userName && email && server && password && college && switchDetails) {
+                document.getElementById('submit-button').disabled = false;
+            }
+            else {
+                document.getElementById('submit-button').disabled = true;
+            }
         }
+
     </script>
 </div>
