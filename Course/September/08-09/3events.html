@@ -3,7 +3,7 @@
 
     </head>
     <body>
-        <input type="text" onchange="onChangeHandler(event)">
+        <input type="text" id="fullName" onchange="onChangeHandler(event)">
         <button onclick="display()" id="button-submit" disabled>Click here</button>
         <div id="demo"></div>
     </body>
@@ -15,6 +15,7 @@
         }
         function onChangeHandler(event){
             var input = event.target.value;
+            console.log(event.target.id);
             if(input){
                 document.getElementById('button-submit').disabled = false;
             }
