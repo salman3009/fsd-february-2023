@@ -20,3 +20,11 @@ Inside the javascript we can make button enable or disable by using boolean prop
 disabled = true --> button will be disabled
 disabled = false --> button will be enable
 ===========================================================
+Naming function for events.
+//Inside the javascript will have multiple function for different purpose.
+//Function which is written particular for events we can use handler keyword at the end of function name.
+============================================
+Getting checkbox value 
+event.target.checked --> true or false 
+//it will return true if checkbox is checked otherwise false
+====================================

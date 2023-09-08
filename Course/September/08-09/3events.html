@@ -4,6 +4,7 @@
     </head>
     <body>
         <input type="text" id="fullName" name="fullNameDetails" onchange="onChangeHandler(event)">
+        <input type="checkbox" onchange="onSelectionHandler(event)">
         <button onclick="display()" id="button-submit" disabled>Click here</button>
         <div id="demo"></div>
     </body>
@@ -31,5 +32,9 @@
         //button - onclick
         //input - onchange
         //onchange-event object - event.target.value
+
+        function onSelectionHandler(event){
+           console.log(event.target.checked);
+        }
     </script>
 </html>
