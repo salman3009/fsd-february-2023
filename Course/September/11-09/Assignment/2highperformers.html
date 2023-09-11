@@ -8,10 +8,14 @@ const students = [
 { name: "Hemang", scores: [95, 90, 94] },
 ];
 function highPerformers(students) {
-    
-
+     var result = students.map(function(obj){
+           return {name:obj.name,average:averageScore(obj.scores)}
+     })
+     console.log(result);
 
 }
+
+highPerformers(students);
 
 function averageScore(input){
     //total sum/total subject
@@ -20,5 +24,5 @@ function averageScore(input){
     });
     return sum/input.length;
 }
-averageScore([80, 95, 60]);
+
 </script>
