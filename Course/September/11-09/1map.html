@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     //You want final value should incremented by 5
     var temp=[10,20,30,40,50];
     var finalResult =temp.map(function(obj){
@@ -6,4 +6,20 @@
     });
     console.log("original array",temp);
     console.log("new array",finalResult);
+</script> -->
+
+<script>
+    //Find even number and odd number from the given array return final output in below format
+    //[{type:'even',value:38},{type:'odd',value:3}];
+    var list =[3,5,2,67,89,11];
+    var finalResult = list.map(function(obj){
+         if(obj%2==0){
+            return {type:'even',value:obj}
+         }
+         else{
+            return {type:'odd',value:obj}
+         }
+    });
+    console.log(finalResult);
+
 </script>
