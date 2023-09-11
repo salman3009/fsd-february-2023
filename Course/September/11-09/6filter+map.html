@@ -23,7 +23,7 @@
     console.log(finalResult);
 </script> -->
 
-<script>
+<!-- <script>
     //find data divisible by 5 and return following output in below format:
     //[{index:1,value:50},{index:2,value:60}];
     var list =[33,40,50,80,90,22];
@@ -31,6 +31,22 @@
           return obj%5==0;
     }).map(function(obj,index){
          return {index:index,value:obj}
+    });
+    console.log(result);
+
+</script> -->
+
+
+<script>
+    //find data divisible by 5 and return following output in below format:
+    //[{index:1,value:50},{index:2,value:60}];
+    var list =[33,40,50,80,90,22];
+    var result = list.map(function(obj,index){
+            return {index:index,value:obj};
+    }).filter(function(obj){
+          return obj.value%5==0;
+    }).map(function(obj){
+         return {index:obj.index,value:obj.value}
     });
     console.log(result);
 
