@@ -13,3 +13,12 @@ Filter
       (i)each iteration value 
       (ii)index value
 
+Comparing map and filter:
+map --> you can return new values
+filter --> it will return same value
+map --> 5 values --> 5 values
+filter -->5values --> 2values
+
+
+
+
