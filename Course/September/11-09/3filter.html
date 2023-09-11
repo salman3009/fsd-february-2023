@@ -9,14 +9,35 @@
     console.log(finalResult);
 </script> -->
 
-<script>
+<!-- <script>
     //filter the value which is divisible by 5
     var list =[22,44,55,20,10];
     var finalResult = list.filter(function(obj,index){
         console.log(index);
-        if(obj%5==0){
-            return true;
-        }
+         return obj%5==0;
     })
+    console.log(finalResult);
+</script> -->
+
+<script>
+    var list=[{
+        name:"lokesh",
+        city:'bangalore'
+    },{
+        name:'prakash',
+        city:'kochi'
+    },{
+        name:'salman',
+        city:'delhi'
+    },{
+        name:'durgesh',
+        city:'Delhi'
+    },{
+        name:'amol',
+        city:'deltion'
+    }];
+    var finalResult = list.filter(function(obj){
+        return obj.city=='delhi';
+    });
     console.log(finalResult);
 </script>
