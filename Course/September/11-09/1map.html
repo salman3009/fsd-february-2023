@@ -38,9 +38,21 @@ var finalResult = list.map(function(obj,index){
 console.log(finalResult);
 </script> -->
 
-<script>
+<!-- <script>
     var list =[34,44,55,66];
     list.map(function(obj){
        console.log(obj);
     })
+</script> -->
+
+<script>
+//Find the value which is divisble by 5 and return their index value in the below output:
+//[{index:0value:30},{index:1,value:28}]
+var list =[22,44,55,20,10];
+var finalResult = list.map(function(obj,index){
+    if(obj%5==0){
+        return {index:index,status:true,value:obj}
+    }
+})
+console.log(finalResult);
 </script>
