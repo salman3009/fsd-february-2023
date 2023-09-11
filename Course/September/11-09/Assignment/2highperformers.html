@@ -10,12 +10,14 @@ const students = [
 function highPerformers(students) {
      var result = students.map(function(obj){
            return {name:obj.name,average:averageScore(obj.scores)}
+     }).filter(function(obj){
+             return obj.average>90;
      })
-     console.log(result);
+         return result;
 
 }
 
-highPerformers(students);
+
 
 function averageScore(input){
     //total sum/total subject
@@ -24,5 +26,7 @@ function averageScore(input){
     });
     return sum/input.length;
 }
+
+// highPerformers(students);
 
 </script>
