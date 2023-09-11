@@ -19,6 +19,12 @@ filter --> it will return same value
 map --> 5 values --> 5 values
 filter -->5values --> 2values
 
-
+reduce 
+//It will not change the original array 
+//final result will return one single value 
+//it consists of two paraemters 
+       a --> return result 
+       b --> new iteration value 
+       
 
 

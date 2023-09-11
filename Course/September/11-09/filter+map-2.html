@@ -1,0 +1,15 @@
+<script>
+    //find data divisible by 5 and return following output in below format:
+    //[{index:1,value:50},{index:2,value:60}];
+    var list =[33,40,50,80,90,22];
+    var resultOne = list.map(function(obj,index){
+            return {index:index,value:obj};
+    });
+    console.log(resultOne);
+    var resultTwo = resultOne.filter(function(obj){
+          return obj.value%5 == 0;
+    });
+    console.log(resultTwo);
+    
+
+</script>
