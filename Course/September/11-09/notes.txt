@@ -6,5 +6,10 @@ map:
 //It will consists of two parameters 
       (i)each iteration value 
       (ii)index value
-
+Filter 
+//Filter function will not change original array.
+//It will return final result once it get boolean value true 
+//It will consists of two parameters 
+      (i)each iteration value 
+      (ii)index value
 
