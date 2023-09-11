@@ -1,0 +1,10 @@
+Array methods:
+//map,filter,reduce
+map:
+//Map function will not change original array.
+//It will add/remove or check some condition and it will return new set of data
+//It will consists of two parameters 
+      (i)each iteration value 
+      (ii)index value
+
+
