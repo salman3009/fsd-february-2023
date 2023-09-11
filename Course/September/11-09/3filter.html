@@ -61,7 +61,7 @@
         city:'deltion'
     }];
     var finalResult = list.filter(function(obj){
-        return obj.city.toLowerCase()=='delhi';
+        return obj.city.toLowerCase().includes('del');
     });
     console.log(finalResult);
 </script>

@@ -1,0 +1,24 @@
+<script>
+    var list=[{
+        name:"lokesh",
+        city:'bangalore'
+    },{
+        name:'prakash',
+        city:'kochi'
+    },{
+        name:'salman',
+        city:'delhi'
+    },{
+        name:'durgesh',
+        city:'Delhi'
+    },{
+        name:'amol',
+        city:'deltion'
+    }];
+    var finalResult = list.filter(function(obj){
+        return obj.city.toLowerCase().includes('del');
+    }).map(function(obj){
+         return obj.name;
+    })
+    console.log(finalResult);
+</script>
