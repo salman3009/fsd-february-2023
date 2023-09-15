@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            .outer{
+                width: 400px;
+                height: 400px;
+                background-color: red;
+            }
+            .inner{
+                width:200px;
+                height: 200px;
+                background-color: blue;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div>Separate Div</div>
+        <div class="outer" onclick="outerHandler()">
+            Welcome to html
+         <div class="inner" onclick="innerHandler(event)">
+              welcome to css
+         </div>
+        </div>
+    </body>
+    <script>
+        function outerHandler(){
+             alert("outer handler");
+        }
+        function innerHandler(event){
+            alert("inner handler");
+              event.stopPropagation();
+             
+        }
+    </script>
+</html>
