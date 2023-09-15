@@ -1,0 +1,41 @@
+https://my.newtonschool.co/playground/markup/zq9w25oi2x06?lecture_hash=bbz17o7khunr
+<html>
+
+<body>
+    <a id="myAnchor" href="https://www.newtonschool.co/">Go to Website</a>
+    <br>
+    <p>Click the DIV </p>
+    <div id="div2" onclick="func2()">DIV 2
+        <div id="div1" onclick="func1(event)">DIV 1</div>
+    </div>
+    Stop propagation:
+    <input type="checkbox" id="check">
+</body>
+
+</html>
+
+<style>
+    div {
+        padding: 50px;
+        background-color: rgba(49, 35, 197, 0.2);
+        text-align: left;
+        cursor: pointer;
+    }
+</style>
+<script>
+    function func1(event) {
+        console.log("DIV 1 is clicked.");
+    }
+
+
+    function func2() {
+        console.log("DIV 2 is clicked.");
+    }
+
+    document.getElementById("myAnchor").addEventListener('click',function(event){
+        event.preventDefault();
+    })
+
+
+
+</script>
