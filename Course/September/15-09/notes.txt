@@ -1,0 +1,37 @@
+1Event Propagation
+//Proble statement:
+  //Whenever you have multiple events attached to both child and parent 
+  //once you trigger child events parent events is get trigger this concept is called event bubbling
+//Solution:  
+   //To avoid event bubbling we need to use event.Propagation()
+  //event.Propagation() it will stop further events.
+Example:
+   <div onclick=functionOne()>
+      <div onclick=functionTwo(event)></div>
+   </div>
+   function functionTwo(event){
+     event.stopPropagation();
+   }
+2addEventListener
+//Instead of adding events directly to html tags we can add dynamically from javascript as well.
+//onclick will change to click similar for all other events we need to remove on keyword 
+//Event addEventListener will consists of callback function.
+//This function can be written separately or we can attached directly also.
+Example:
+<div id="demo"></div>
+Appoach 1:
+document.getElementById("demo").addEventListener(click,funtionOne);
+function functionOne(){
+
+}
+Approach:2
+document.getElementById("demo").addEventListener(click,function(){
+
+});
+3preventDefault
+//This will deactivate the functionality of href and form submit
+//Mainly it is used in form submission. 
+<a href="" id="demo"></a>
+document.getElementById("demo").addEventListener(click,function(event){
+  event.preventDefault();
+});
