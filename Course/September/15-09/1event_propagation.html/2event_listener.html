@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+            .box{
+                background-color: blue;
+                width: 300px;
+                height: 300px;
+                margin-bottom:50px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="box" id="header">
+            Welcome to Javascript
+        </div>
+        <button id="header-button">Remove Events</button>
+        <script>
+            var colors =['red','green','orange','blue','grey'];
+            var count = 0;
+            var list = document.getElementById("header");
+            list.addEventListener('click',boxHandler)
+            function boxHandler(){
+                  if(count>=5){
+                    count=0;
+                  }
+                  list.style.backgroundColor = colors[count];
+                  count++;
+            }
+        </script>
+    </body>
+</html>
