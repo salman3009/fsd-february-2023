@@ -52,5 +52,10 @@ let and const:
 //It is alternative to var keyword 
 //Please start avoid using var keyword 
 Reason:
+//var with same name we can able to declare multiple times 
+//Inside the for loop var keyword is leaked outside the loop as well 
+//var keyword is function scope 
+//let keyword is block scope 
+
 
 
