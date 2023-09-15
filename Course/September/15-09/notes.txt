@@ -35,3 +35,14 @@ document.getElementById("demo").addEventListener(click,function(){
 document.getElementById("demo").addEventListener(click,function(event){
   event.preventDefault();
 });
+======================================================
+String method:
+//String store the data continuously inside the memory similar to array 
+Example:
+var fullName = "welcome";
+fullName[0];
+//Converting String to Array 
+"newton".split("");
+//To find the length of string 
+"newton".length;
+========================================
