@@ -46,3 +46,11 @@ fullName[0];
 //To find the length of string 
 "newton".length;
 ========================================
+let and const:
+//This is new syntax came on es6
+//It is used to declare variables in javascript
+//It is alternative to var keyword 
+//Please start avoid using var keyword 
+Reason:
+
+
