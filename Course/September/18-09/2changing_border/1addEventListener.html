@@ -15,8 +15,10 @@
             }
             obj.getDetails();
             const fullNameTag = document.getElementById("fullName");
+            const headerTag = document.getElementById("demo");
             fullNameTag.addEventListener('keyup',function(){
                 console.log(this.value);
+                headerTag.textContent = this.value;
             })
 
         </script>
