@@ -50,7 +50,8 @@ https://my.newtonschool.co/playground/markup/5regb8dgqzsk
     const profileImg = document.getElementById('profileImg');
 
     profileImg.addEventListener('click',function(){
-        this.style.borderColor = "blue";
+        let random = Math.floor(Math.random() * colors.length);
+        this.style.borderColor = colors[random];
     })
 
 </script>
