@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            div{
+                width:200px;
+                height: 200px;
+                margin:15px;
+                border:1px solid black;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="demo" data-test="red"></div>
+        <div class="demo" data-test="blue"></div>
+        <div class="demo" data-test="orange"></div>
+        <div class="demo" data-test="grey"></div>
+
+        <script>
+            const list = document.querySelectorAll(".demo");
+             list.forEach(function(inp){
+                    inp.addEventListener('click',function(){
+                        console.log(this.getAttribute("data-test"));
+                        this.style.backgroundColor = this.getAttribute("data-test");
+                    })
+             })
+        </script>
+    </body>
+</html>
