@@ -32,6 +32,7 @@ https://my.newtonschool.co/playground/markup/5regb8dgqzsk
 </style>
 <script>
     const colors = ['red', 'blue', 'green', 'yellow', 'purple'];
+
     const inputName = document.getElementById("nameInput");
     const profileName = document.getElementById("profileName");
 
@@ -44,6 +45,12 @@ https://my.newtonschool.co/playground/markup/5regb8dgqzsk
 
     descriptionInput.addEventListener("keyup",function(){
         profileDescription.textContent = this.value;
+    });
+
+    const profileImg = document.getElementById('profileImg');
+
+    profileImg.addEventListener('click',function(){
+        this.style.borderColor = "blue";
     })
 
 </script>
