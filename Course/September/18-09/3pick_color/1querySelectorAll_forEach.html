@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+            div{
+                width:200px;
+                height: 200px;
+                margin:15px;
+                border:1px solid black;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+
+        <script>
+            const list = document.querySelectorAll(".demo");
+             list.forEach(function(obj){
+               obj.style.backgroundColor = "red";
+             })
+        </script>
+    </body>
+</html>
