@@ -1,0 +1,40 @@
+https://my.newtonschool.co/playground/markup/5regb8dgqzsk
+<div class="editor">
+    <label>Name: <input type="text" id="nameInput"></label><br>
+    <label>Description: <input type="text" id="descriptionInput"></label>
+</div>
+
+<div class="profileCard">
+    <img src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/6dae13b243af401fa53706113251b895.png" alt="Profile Picture" id="profileImg">
+    <h2 id="profileName">Default Name</h2>
+    <p id="profileDescription">This is a default description.</p>
+</div>
+
+<style>
+    .editor {
+    margin-bottom: 20px;
+}
+
+.profileCard {
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+#profileImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid gray;
+    cursor: pointer;
+}
+</style>
+<script>
+    const colors = ['red', 'blue', 'green', 'yellow', 'purple'];
+    const inputName = document.getElementById("nameInput");
+    const profileName = document.getElementById("profileName");
+    inputName.addEventListener("keyup",function(){
+        profileName.textContent = this.value;
+    })
+</script>
