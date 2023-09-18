@@ -34,7 +34,16 @@ https://my.newtonschool.co/playground/markup/5regb8dgqzsk
     const colors = ['red', 'blue', 'green', 'yellow', 'purple'];
     const inputName = document.getElementById("nameInput");
     const profileName = document.getElementById("profileName");
+
+    const descriptionInput = document.getElementById("descriptionInput");
+    const profileDescription = document.getElementById("profileDescription");
+
     inputName.addEventListener("keyup",function(){
         profileName.textContent = this.value;
+    });
+
+    descriptionInput.addEventListener("keyup",function(){
+        profileDescription.textContent = this.value;
     })
+
 </script>
