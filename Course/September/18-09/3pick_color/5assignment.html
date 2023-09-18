@@ -1,0 +1,67 @@
+https://my.newtonschool.co/playground/markup/4a4m56fy91l8
+<body>
+    <div class="palette">
+        <div class="color" data-hex="#FF5733"></div>
+        <div class="color" data-hex="#33FF57"></div>
+        <div class="color" data-hex="#5733FF"></div>
+    </div>
+    <div id="displayArea">
+        <p id="hexValue">Select a color to see its hex value!</p>
+    </div>
+</body>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.palette {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.color[data-hex="#FF5733"] {
+    background-color: #FF5733;
+}
+
+.color[data-hex="#33FF57"] {
+    background-color: #33FF57;
+}
+
+.color[data-hex="#5733FF"] {
+    background-color: #5733FF;
+}
+
+#displayArea {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+#hexValue {
+    font-size: 20px;
+}
+
+</style>
+
+<script>
+    const colors = document.querySelectorAll('.color');
+    const displayArea = document.getElementById('displayArea');
+
+    colors.forEach(function(obj){
+          obj.addEventListener('click',function(){
+                  let hex = this.getAttribute('data-hex');
+                  displayArea.style.backgroundColor = hex;
+          })
+    })
+
+</script>
