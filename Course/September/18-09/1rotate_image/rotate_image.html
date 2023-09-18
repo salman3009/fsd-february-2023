@@ -86,11 +86,11 @@ let pathArray=[
 let count = 0;
 
 function rotateImages(){
-    count = (count+1)%4;
-    imageOne.src = pathArray[(count+0)%4];
+    imageOne.src = pathArray[(count)%4];
     imageTwo.src = pathArray[(count+1)%4];
     imageThree.src = pathArray[(count+2)%4];
     imageFour.src = pathArray[(count+3)%4];
+    count++;
 }
 rotateImages();
 </script>
