@@ -56,10 +56,11 @@ https://my.newtonschool.co/playground/markup/4a4m56fy91l8
 <script>
     const colors = document.querySelectorAll('.color');
     const displayArea = document.getElementById('displayArea');
-
+    const hexValue = document.getElementById('hexValue');
     colors.forEach(function(obj){
           obj.addEventListener('click',function(){
                   let hex = this.getAttribute('data-hex');
+                  hexValue.textContent = `Hex Value: ${hex}`;
                   displayArea.style.backgroundColor = hex;
           })
     })
