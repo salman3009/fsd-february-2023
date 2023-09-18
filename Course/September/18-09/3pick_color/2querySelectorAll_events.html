@@ -19,7 +19,9 @@
         <script>
             const list = document.querySelectorAll(".demo");
              list.forEach(function(inp){
-                inp.style.backgroundColor = "red";
+                    inp.addEventListener('click',function(){
+                        this.style.backgroundColor = "red";
+                    })
              })
         </script>
     </body>
