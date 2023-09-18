@@ -1,0 +1,96 @@
+https://my.newtonschool.co/playground/markup/22xlccft4b1e
+
+<div id="plus">
+    <img id="i1"  class="image" alt="Image 1">
+    <img id="i2"  class="image" alt="Image 2">
+    <img id="i3"  class="image" alt="Image 3">
+    <img id="i4"  class="image" alt="Image 4">
+  </div>
+  <button onclick="rotateImages()">Rotate</button>
+
+<style>
+    body{
+  display: flex;
+  justify-content: center;
+  flex-direction:  column;
+
+}
+#plus {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  .image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    border-style: solid;
+    border-width: 1px;
+  }
+  
+ #i1{
+    top: 100px;
+    left: 0px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+  
+ #i2 {
+    top: 0;
+    left: 100px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+  
+  #i3 {
+    top: 100px;
+    left: 200px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+
+  
+  #i4 {
+    top: 200px;
+    left: 100px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+  button{
+    margin-top: 50px;
+    align-self: center;
+
+  }
+</style>
+<script>
+    //Write your code here
+let imageOne = document.getElementById('i1');
+let imageTwo = document.getElementById('i2');
+let imageThree = document.getElementById('i3');
+let imageFour = document.getElementById('i4');
+
+let pathArray=[
+    "https://d3dyfaf3iutrxo.cloudfront.net/general/upload/020e4610fbee4e8abe525bd6482fb865.jpg",
+    "https://d3dyfaf3iutrxo.cloudfront.net/general/upload/b59a7c2973b44b2cb3a6d78634146d41.jpg",
+    "https://d3dyfaf3iutrxo.cloudfront.net/general/upload/60171f69a20443b3ab5972df422661bc.jpg",
+    "https://d3dyfaf3iutrxo.cloudfront.net/general/upload/6160f7789c5048aaaefaff0210895201.jpg"
+];
+let count = 0;
+
+function rotateImages(){
+    count = (count+1)%4;
+    imageOne.src = pathArray[(count+0)%4];
+    imageTwo.src = pathArray[(count+1)%4];
+    imageThree.src = pathArray[(count+2)%4];
+    imageFour.src = pathArray[(count+3)%4];
+}
+rotateImages();
+</script>

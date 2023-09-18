@@ -1,0 +1,9 @@
+const:
+const keyword can be use to declare array and object.
+<script>
+    const details = [33,44,55];
+    details.push(56);
+    details.pop();
+</script>
+//Inside array or object you can change the value
+================================================

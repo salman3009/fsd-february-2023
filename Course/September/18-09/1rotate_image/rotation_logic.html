@@ -1,0 +1,22 @@
+<!-- <script>
+    const details = [33,44,55];
+    details.push(56);
+    details.pop();
+</script> -->
+
+<!-- <script>
+    const fullName = "akash";
+    fullName = "suresh";
+</script> -->
+
+<button id="buttonSubmit">Click here</button>
+<div id="demo"></div>
+<script>
+    const colors =['red','blue','green','orange'];
+    let count =0;
+    document.getElementById("buttonSubmit").addEventListener('click',function(){
+       document.getElementById('demo').innerText=colors[count%4];
+       count++;
+    })
+
+</script>
