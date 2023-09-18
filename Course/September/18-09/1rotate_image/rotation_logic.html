@@ -12,10 +12,10 @@
 <button id="buttonSubmit">Click here</button>
 <div id="demo"></div>
 <script>
-    const colors =['red','blue','green','orange'];
+    const colors =['red','blue','green','orange','grey'];
     let count =0;
     document.getElementById("buttonSubmit").addEventListener('click',function(){
-       document.getElementById('demo').innerText=colors[count%4];
+       document.getElementById('demo').innerText=colors[count%5];
        count++;
     })
 
