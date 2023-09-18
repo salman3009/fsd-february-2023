@@ -10,3 +10,7 @@ const keyword can be use to declare array and object.
 Event Listener:
 //For each key stroke you need to call means we can use "keyup/keydown"
 //After typing once you leave input tag then we can use "change"
+==========================================
+this keyword:
+//It will refer to curren object 
+//If you write object globally it will refer window

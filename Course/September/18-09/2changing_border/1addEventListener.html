@@ -6,9 +6,17 @@
             <h1 id="demo"></h1>
         </form>
         <script>
+            console.log(this);
+            const obj={
+                fullName:"akash",
+                getDetails:function(){
+                    console.log(this)
+                }
+            }
+            obj.getDetails();
             const fullNameTag = document.getElementById("fullName");
             fullNameTag.addEventListener('keyup',function(){
-               console.log("trigering");  
+                console.log(this.value);
             })
 
         </script>
