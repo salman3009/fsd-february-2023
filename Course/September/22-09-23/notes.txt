@@ -27,4 +27,9 @@ callback:
 =================================================
 class concept in Javascript 
 //ES6 have introduced the class concept inside the javascript.
-
+Inheritance in javascript
+//Along with class Inheritance is introduced on es6 
+//It helps to reuse the functionality of parent class.
+super keyword:
+to call parent class constructor
+===================================================
