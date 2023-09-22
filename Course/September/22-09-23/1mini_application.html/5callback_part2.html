@@ -1,5 +1,5 @@
-<script>
-    function simulateTask(callback, duration) {
+<!-- <script>
+    function simulateTask(duration, callback) {
     setTimeout(callback, duration);
 }
 
@@ -7,5 +7,17 @@
         console.log("display function");
      }
 
-     simulateTask(display,3000);
+     simulateTask(2000,display);
+</script> -->
+
+
+<script>
+    function simulateTask(duration, callback) {
+    setTimeout(callback, duration);
+}
+
+
+     simulateTask(2000,function(){
+           console.log("display function");
+     });
 </script>
