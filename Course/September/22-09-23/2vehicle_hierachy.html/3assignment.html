@@ -1,1 +1,60 @@
 https://my.newtonschool.co/playground/markup/ac2n3c4hzqga
+
+<div class="vehicle">
+    <h2>Car</h2>
+    <button id="carAction">Honk</button>
+    <p id="carStatus"></p>
+</div>
+<div class="vehicle">
+    <h2>Airplane</h2>
+    <button id="airplaneAction">Fly</button>
+    <p id="airplaneStatus"></p>
+</div>
+
+<style>
+    .vehicle {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    width: 150px;
+    text-align: center;
+}
+
+</style>
+
+<script>
+    class Vehicle {
+    constructor(speed) {
+        this.speed = speed;
+    }
+}
+
+    class Car extends Vehicle{
+       constructor(speed){
+        super(speed);
+       }
+        honk(){
+            document.getElementById('carStatus').textContent = "Car honking!";
+        }
+    }
+
+    class Airplane extends Vehicle{
+        constructor(speed){
+        super(speed);
+       }
+       fly(){
+        document.getElementById("airplaneStatus").textContent = "Airplane flying!";
+       }
+    }
+
+    const car = new Car(100);
+    const airplane = new Airplane(100);
+
+    document.getElementById('carAction').addEventListener('click',function(){
+        car.honk();
+    });
+
+    document.getElementById('airplaneAction').addEventListener('click',function(){
+        airplane.fly();
+    });
+</script>
