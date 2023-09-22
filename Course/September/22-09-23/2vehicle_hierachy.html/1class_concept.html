@@ -1,0 +1,15 @@
+<script>
+    class Student{
+        constructor(fullName,age){
+            this.fullName = fullName;
+            this.age = age;
+        }
+
+        getAgeDetails(){
+            console.log("My current age is",this.age);
+        }
+    }
+    const akashObj = new Student("akash",33);
+    console.log(akashObj);
+    akashObj.getAgeDetails();
+</script>
