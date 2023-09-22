@@ -1,0 +1,21 @@
+Sync and Async 
+//Javascript function can be written in two ways.
+1.sync function -- It will executed immediately
+2.async function -- it will take sometime to execute the code
+example:
+1.setTimeout - keyword
+2.setInterval - keyword
+3.callback
+4.promise - keyword
+5.async await  - keyword
+
+
+setTimeout:
+//It is inbuilt function available inside the javascript.
+//It is async code.
+//After completing all sync code then only async code will execute.
+1000millisecond = 1second
+example:
+setTimeout(function(){
+
+},2000)

@@ -54,7 +54,7 @@ https://my.newtonschool.co/playground/markup/4a4m56fy91l8
 </style>
 
 <script>
-    const colors = document.querySelectorAll('.color');
+    const colors = document.getElementsByClassName('color');
     const displayArea = document.getElementById('displayArea');
     const hexValue = document.getElementById('hexValue');
     colors.forEach(function(obj){
@@ -64,5 +64,4 @@ https://my.newtonschool.co/playground/markup/4a4m56fy91l8
                   displayArea.style.backgroundColor = hex;
           })
     })
-
 </script>
