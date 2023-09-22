@@ -31,6 +31,13 @@ button[disabled] {
 document.getElementById('task1Btn').addEventListener('click',function(){
      simulateTask(2000,function(){
         document.getElementById("task1Status").textContent = "Task 1 completed!";
+        document.getElementById("task2Btn").disabled = false;
      })
+});
+
+document.getElementById('task2Btn').addEventListener('click',function(){
+      simulateTask(3000,function(){
+        document.getElementById("task2Status").textContent = "Task 2 completed!";
+      })
 })
 </script>
