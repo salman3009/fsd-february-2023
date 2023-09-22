@@ -19,3 +19,8 @@ example:
 setTimeout(function(){
 
 },2000)
+
+callback:
+//We are going to call function after sometime.
+//callback function is registered in parameters.
+
