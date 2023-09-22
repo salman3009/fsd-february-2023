@@ -1,0 +1,36 @@
+https://my.newtonschool.co/playground/markup/xpconv29bcpi
+
+<div class="task">
+    <button id="task1Btn">Task 1</button>
+    <p id="task1Status"></p>
+</div>
+<div class="task">
+    <button id="task2Btn" disabled>Task 2</button>
+    <p id="task2Status"></p>
+</div>
+<div class="task">
+    <button id="task3Btn" disabled>Task 3</button>
+    <p id="task3Status"></p>
+</div>
+<style>
+    .task {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+button[disabled] {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+</style>
+<script>
+    function simulateTask(duration, callback) {
+    setTimeout(callback, duration);
+}
+
+document.getElementById('task1Btn').addEventListener('click',function(){
+     simulateTask(2000,function(){
+        document.getElementById("task1Status").textContent = "Task 1 completed!";
+     })
+})
+</script>
