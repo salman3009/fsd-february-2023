@@ -14,30 +14,38 @@ https://my.newtonschool.co/playground/markup/xpconv29bcpi
 </div>
 <style>
     .task {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid gray;
-}
-button[disabled] {
-    background-color: #e0e0e0;
-    cursor: not-allowed;
-}
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid gray;
+    }
+
+    button[disabled] {
+        background-color: #e0e0e0;
+        cursor: not-allowed;
+    }
 </style>
 <script>
     function simulateTask(duration, callback) {
-    setTimeout(callback, duration);
-}
+        setTimeout(callback, duration);
+    }
 
-document.getElementById('task1Btn').addEventListener('click',function(){
-     simulateTask(2000,function(){
-        document.getElementById("task1Status").textContent = "Task 1 completed!";
-        document.getElementById("task2Btn").disabled = false;
-     })
-});
+    document.getElementById('task1Btn').addEventListener('click', function () {
+        simulateTask(2000, function () {
+            document.getElementById("task1Status").textContent = "Task 1 completed!";
+            document.getElementById("task2Btn").disabled = false;
+        })
+    });
 
-document.getElementById('task2Btn').addEventListener('click',function(){
-      simulateTask(3000,function(){
-        document.getElementById("task2Status").textContent = "Task 2 completed!";
-      })
-})
+    document.getElementById('task2Btn').addEventListener('click', function () {
+        simulateTask(3000, function () {
+            document.getElementById("task2Status").textContent = "Task 2 completed!";
+            document.getElementById("task3Btn").disabled = false;
+        })
+    });
+
+    document.getElementById('task3Btn').addEventListener('click', function () {
+        simulateTask(2000, function () {
+            document.getElementById("task3Status").textContent = "Task 3 completed!";
+        })
+    })
 </script>
