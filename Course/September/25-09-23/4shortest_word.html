@@ -1,0 +1,18 @@
+https://my.newtonschool.co/playground/code/oqxzptyp7497
+<script>
+    function findShortestWordLength(str) {
+    let words = str.split(' ');
+    let short = words[0];
+    for(let obj of words){
+        if(obj.length<short.length){
+            short = obj;
+        }
+    }
+      return short.length;
+
+  // Write your code here
+}
+
+const result = findShortestWordLength("The quick brown fox jumps over the lazy dog");
+console.log(result) // prints 3
+</script>
