@@ -1,0 +1,12 @@
+<script>
+    //function is returning another function
+    function display(){
+        let fullName = "suresh";
+        return function(){
+            return fullName;
+        }
+          
+    }
+    let result = display();
+    console.log(result());
+</script>
