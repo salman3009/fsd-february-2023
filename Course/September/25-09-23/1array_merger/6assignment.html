@@ -47,6 +47,16 @@ btn1.addEventListener('click', () => {
 })
 
 btn2.addEventListener('click', () => {
+
+    let strList = arr2.value.split(',');
+    //"22,33,44"  --> ["22","33","44"];
+
+   for(let obj of strList){
+    secondArray.push(Number(obj));
+   }
+   //["22","33","44"] -->[22,33,44]
+
+   document.getElementById("disp-2").innerHTML = JSON.stringify(secondArray);
 })
 
 document.getElementById('merge').addEventListener('click', () => {
