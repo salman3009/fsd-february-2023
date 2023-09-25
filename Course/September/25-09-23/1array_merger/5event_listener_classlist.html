@@ -1,4 +1,4 @@
-<button id="add">Add</button>
+<!-- <button id="add">Add</button>
 <div id="demo" class="rectangle"></div>
 <style>
     .rectangle{
@@ -16,5 +16,18 @@
    document.getElementById("add").addEventListener('click',function(){
        document.getElementById("demo").classList.remove("rectangle");
        document.getElementById("demo").classList.add("circle");
+   });
+</script> -->
+
+<button id="add">Add</button>
+<div id="demo" class="rectangle">welcome to javascript</div>
+<style>
+    .rectangle{
+       display: none;
+    }
+</style>
+<script>
+   document.getElementById("add").addEventListener('click',function(){
+      document.getElementById("demo").classList.remove("rectangle");
    });
 </script>
