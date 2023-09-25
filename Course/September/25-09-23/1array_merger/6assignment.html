@@ -33,8 +33,15 @@ const firstArray = [];
 const secondArray = [];
 
 btn1.addEventListener('click', () => {
+  
    let strList = arr1.value.split(',');
-   
+    //"22,33,44"  --> ["22","33","44"];
+
+   for(let obj of strList){
+    firstArray.push(Number(obj));
+   }
+   //["22","33","44"] -->[22,33,44]
+
 })
 
 btn2.addEventListener('click', () => {
