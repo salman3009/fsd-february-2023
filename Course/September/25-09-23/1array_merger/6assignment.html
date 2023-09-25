@@ -36,13 +36,22 @@ btn1.addEventListener('click', () => {
   
    let strList = arr1.value.split(',');
     //"22,33,44"  --> ["22","33","44"];
-
+   let checkStatus = false;
    for(let obj of strList){
+     if(isNaN(obj)){
+        checkStatus = true;
+        break;
+     }
     firstArray.push(Number(obj));
    }
    //["22","33","44"] -->[22,33,44]
 
-   document.getElementById("disp-1").innerHTML = JSON.stringify(firstArray);
+  if(checkStatus){
+    document.getElementById("error").classList.remove('d-none');
+  }else{
+    document.getElementById("disp-1").innerHTML = JSON.stringify(firstArray);
+  }
+  
 
 })
 
@@ -50,13 +59,21 @@ btn2.addEventListener('click', () => {
 
     let strList = arr2.value.split(',');
     //"22,33,44"  --> ["22","33","44"];
-
+    let checkStatus = false;
    for(let obj of strList){
+    if(isNaN(obj)){
+        checkStatus = true;
+        break;
+     }
     secondArray.push(Number(obj));
    }
    //["22","33","44"] -->[22,33,44]
-
-   document.getElementById("disp-2").innerHTML = JSON.stringify(secondArray);
+   if(checkStatus){
+    document.getElementById("error").classList.remove('d-none');
+  }else{
+    document.getElementById("disp-2").innerHTML = JSON.stringify(secondArray);
+  }
+  
 })
 
 document.getElementById('merge').addEventListener('click', () => {
