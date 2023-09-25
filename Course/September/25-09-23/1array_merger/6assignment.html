@@ -1,0 +1,44 @@
+https://my.newtonschool.co/playground/markup/tvhh8npow2gc
+
+<style>
+    .d-none {
+        display: none;
+    }
+</style>
+<h3>Merge arrays using spread operator</h3>
+<p>Give input numbers in text field separated by comas</p>
+<div>
+    <label for="1">Array 1</label>
+    <input type="text" id="1">
+    <button id="add-1">Add to array 1</button>
+    <p id="disp-1"></p>
+</div>
+<div>
+    <label for="2">Array 2</label>
+    <input type="text" id="2">
+    <button id="add-2">Add to array 2</button>
+    <p id="disp-2"></p>
+</div>
+<button id="merge">Merge both</button>
+<p id="result"></p>
+<p class="d-none" id="error">Wrong Input!</p>
+
+<script>
+    const arr1 = document.getElementById('1');
+const arr2 = document.getElementById('2');
+const btn1 = document.getElementById('add-1');
+const btn2 = document.getElementById('add-2');
+
+const firstArray = [];
+const secondArray = [];
+
+btn1.addEventListener('click', () => {
+   console.log(arr1.value);
+})
+
+btn2.addEventListener('click', () => {
+})
+
+document.getElementById('merge').addEventListener('click', () => {
+})
+</script>
