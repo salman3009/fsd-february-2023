@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     //function is returning another function
     function display(){
         let fullName = "suresh";
@@ -10,4 +10,23 @@
     let result = display();
     console.log(result());
     console.log(display()());
+    // console.log(display());
+</script> -->
+
+
+<script>
+    //function is returning another function
+    function display(){
+        let count = 0;
+        return function(){
+            count++;
+            return count;
+        }
+          
+    }
+    let result = display();
+    console.log(result());
+    console.log(result());
 </script>
+closure:
+//A closure is a feature in javascript that allows inner functions to access outer scope of a function.

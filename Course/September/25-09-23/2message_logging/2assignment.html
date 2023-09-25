@@ -1,0 +1,27 @@
+https://my.newtonschool.co/playground/code/52satj2tzau7
+<script>
+    function createClosureFunc() {
+  let count = 0;
+  return function() {
+     count++;
+    if(count == 3){
+        setTimeout(function(){
+            count = 0;
+        },2000)
+      
+    }
+    if(count>3){
+        console.log("This function can no longer be called");
+        return;
+    }
+    console.log(`This function has been called ${count} times`)
+    }
+}
+
+let result = createClosureFunc();
+result();
+result();
+result();
+result();
+
+</script>
