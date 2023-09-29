@@ -1,0 +1,7 @@
+<script>
+    localStorage.setItem("fullName",JSON.stringify([33,44,55]));
+    console.log(localStorage.getItem("fullName"));
+    let fullName = JSON.parse(localStorage.getItem('fullName'));
+    console.log(fullName[1]);
+    // console.log(fullName[0],typeof fullName);
+</script>

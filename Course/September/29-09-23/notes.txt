@@ -8,6 +8,14 @@ How to see localStorage data in your browser
 example syntax:
 localStorage.setItem("fullName","akash");
 localStorage.getItem("fullName");
+===========================================
+JSON
+//JAVASCRIPT OBJECT NOTATION 
+//It will convert object into string 
+JSON.stringify()
+//It will convert object into string 
+JSON.parse()
+//It will convert string into object 
 
 
 
