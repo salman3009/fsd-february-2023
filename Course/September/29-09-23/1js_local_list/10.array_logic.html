@@ -1,0 +1,43 @@
+<!-- https://my.newtonschool.co/playground/markup/obx0cv7bhygi -->
+
+<!-- Input values:
+1.button 
+2.input 
+
+output values:
+1.javascript output 
+2.ul tag 
+3.li tag inside the ul tag 
+
+concept:
+1.local storage
+
+
+logic:
+1.after page represh we need to show the item - local storage -->
+
+
+
+
+<button id="add-todo" >Add todo</button>
+<ul id="todo-holder">
+ </ul>
+
+ <script>
+   
+    let arrayList = JSON.parse(localStorage.getItem("list"));
+
+    function add(){
+        //22,33]-->44
+        //it will take new data --> inside the array
+        arrayList.push(element);
+        //list - [22,33,44]
+        localStorage.setItem("list",JSON.stringify(arrayList));
+    }
+
+    function initialLoad(){
+      
+       //displaying in html
+    }
+    initialLoad();
+ </script>

@@ -1,0 +1,45 @@
+<!-- https://my.newtonschool.co/playground/markup/obx0cv7bhygi -->
+
+<!-- Input values:
+1.button 
+2.input 
+
+output values:
+1.javascript output 
+2.ul tag 
+3.li tag inside the ul tag 
+
+concept:
+1.local storage
+
+
+logic:
+1.after page represh we need to show the item - local storage -->
+
+
+
+<input id="todo-input">
+<button id="add-todo" >Add todo</button>
+<ul id="todo-holder">
+ </ul>
+
+ <script>
+    document.getElementById("add-todo").addEventListener('click',add);
+    let arrayList = JSON.parse(localStorage.getItem("list")) ? JSON.parse(localStorage.getItem("list")) : [];
+    function add(){
+        const element = document.getElementById("todo-input").value;
+        const main = document.getElementById("todo-holder");
+        main.innerHTML+=`<li>${element}</li>`;
+        arrayList.push(element);
+        localStorage.setItem("list",JSON.stringify(arrayList));
+    }
+
+    function initialLoad(){
+      
+        const main = document.getElementById("todo-holder");
+        for(let obj of arrayList){
+            main.innerHTML+=`<li>${obj}</li>`;
+        }
+    }
+    initialLoad();
+ </script>
