@@ -3,14 +3,17 @@
 
     </head>
     <body>
+        <input type="text" id="input-details">
         <ul id="demo">
           
         </ul>
         <button onclick="add()">Add</button>
         <script>
             function add(){
+             const element = document.getElementById("input-details").value;
+             console.log(element);
              const main = document.getElementById("demo");
-              main.innerHTML+='<li>pen</li>';
+              main.innerHTML+=`<li>${element}</li>`;
             }
         </script>
     </body>
