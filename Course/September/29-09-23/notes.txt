@@ -1,0 +1,13 @@
+What is localStorage?
+//It is permenanet store in client side 
+//Only limited set of data we can store it here.
+//it will store in string format 
+//If you give other type in will convert into string.
+How to see localStorage data in your browser 
+-->inspect -- application -- local storage 
+example syntax:
+localStorage.setItem("fullName","akash");
+localStorage.getItem("fullName");
+
+
+
