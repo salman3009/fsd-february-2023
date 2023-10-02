@@ -27,3 +27,6 @@ Math in javascript:
 example:
 let result = Math.round(4.6);
 ============================================
+Private variable inside the javascript 
+//we can declare constructor function 
+//Inside the constructor function we can declare the variable inside it.
