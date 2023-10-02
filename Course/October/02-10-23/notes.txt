@@ -2,3 +2,7 @@ Constructor Function:
 //Constructor function is use to create unique object.
 //Constructor is used to initialize the data.
 //function,array,object everthing is object in javascript.
+
+Writing Method inside the object?
+
+
