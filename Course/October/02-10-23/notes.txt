@@ -26,3 +26,4 @@ Math in javascript:
 //we have math object that consists lot of inbuilt method for maths.
 example:
 let result = Math.round(4.6);
+============================================
