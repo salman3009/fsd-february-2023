@@ -4,5 +4,7 @@ Constructor Function:
 //function,array,object everthing is object in javascript.
 
 Writing Method inside the object?
-
+//method is also function in javascript.
+//If you write the function outside the object that is called function.
+//If you write the function inside the object that is called method.
 
