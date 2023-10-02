@@ -4,13 +4,21 @@ https://my.newtonschool.co/playground/code/brk1q62wrpof?lecture_hash=ymgn4t4bdfp
        this.date = new Date(aptDate);
        this.location = "";
        
-       this.setLocation = function(input){
-        this.location = input;
+       this.setLocation = function(a){
+        this.location = a;
        }
 
        this.getLocation = function(){
         return this.location;
        }
-       
+
+       this.toString = function(){
+        return `Appointment on ${this.date} at ${this.location}`;
+       }
+
    }
+
+   let obj = new Appointment("2022-12-25");
+   obj.setLocation("chennai");
+   console.log(obj.toString());
 </script>
