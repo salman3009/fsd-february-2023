@@ -1,8 +1,8 @@
 <script>
     //older_version_code
-    function Person(fullName,age){
+    function Person(fullName){
        this.fullName = fullName;
-       this.age = age;
+       this.age = 0;
 
        this.setAge = function(newAge){
         this.age = newAge;
@@ -11,7 +11,7 @@
         return this.age;
        }
     }
-    let akashPerson = new Person("akash",33);
+    let akashPerson = new Person("akash");
     console.log(akashPerson);
     akashPerson.setAge(55);
     console.log(akashPerson.getAge());
