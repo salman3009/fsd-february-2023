@@ -13,7 +13,7 @@ https://my.newtonschool.co/playground/code/brk1q62wrpof?lecture_hash=ymgn4t4bdfp
        }
 
        this.toString = function(){
-        return `Appointment on ${this.date} at ${this.location}`;
+        return `Appointment on ${this.date.toDateString()} at ${this.location}`;
        }
 
    }
@@ -21,4 +21,5 @@ https://my.newtonschool.co/playground/code/brk1q62wrpof?lecture_hash=ymgn4t4bdfp
    let obj = new Appointment("2022-12-25");
    obj.setLocation("chennai");
    console.log(obj.toString());
+   console.log(typeof obj.date.toDateString());
 </script>
