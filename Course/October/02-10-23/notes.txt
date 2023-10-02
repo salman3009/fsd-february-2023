@@ -9,3 +9,15 @@ Writing Method inside the object?
 //If you write the function outside the object that is called function.
 //If you write the function inside the object that is called method.
 
+Date in Javascript:
+//To display date inside the javascript we have inbuild Date Object 
+example:
+let date = new Date();
+console.log(date)//date object 
+//We need to convert date object to string we need use inbuild method called toDateString();
+example:
+let date = new Date();
+console.log(date.toDateString())//date string 
+//If we need to pass your own date 
+example:
+let date = new Date("2022-08-34");
