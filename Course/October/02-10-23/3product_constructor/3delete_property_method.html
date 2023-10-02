@@ -1,0 +1,22 @@
+<script>
+    let obj={
+        fullName:"akash",
+        age:22,
+        getFullName:function(){
+            return this.fullName;
+        },
+        getDisplay:function(){
+            console.log("display function")
+        },
+        getFlag:function(){
+            console.log("flag function")
+        },
+        deleteMethod:function(input){
+             delete this[input];
+        }
+    }
+   
+     console.log(obj);
+     obj.deleteMethod("getDisplay");
+     console.log(obj);
+</script>
