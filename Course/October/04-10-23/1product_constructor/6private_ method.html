@@ -1,0 +1,28 @@
+<script>
+    //older_version_code
+    function Person(fullName){
+
+       //private variable
+       let age = 0;
+       this.fullName = fullName;
+
+       this.setAge = function(newAge){
+           age = newAge;
+       }
+       
+       this.getAge = function(){
+        return age;
+       }
+
+       //private method
+       const display = function(){
+        console.log("display function",this.fullName,age);
+       }
+
+     
+    }
+
+    let akashPerson = new Person("akash");
+    akashPerson.setAge(55);
+    akashPerson.display();
+</script>
