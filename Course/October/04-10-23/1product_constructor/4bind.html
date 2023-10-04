@@ -1,0 +1,16 @@
+<script>
+     let employee={
+        firstName:"akash",
+        age:45,
+        getFullName:function(lastName){
+            console.log(this.firstName,this.age,lastName);
+        }
+     }
+     employee.getFullName("ramesh");
+
+     let person={
+        firstName:"suresh",
+        age:33
+     }
+     employee.getFullName.bind(person,"rahul")();
+</script>

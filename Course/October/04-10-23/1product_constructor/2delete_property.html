@@ -1,0 +1,15 @@
+<script>
+    let obj={
+        fullName:"akash",
+        age:22,
+        getFullName:function(){
+            return this.fullName;
+        }
+    }
+    // delete obj.age;
+    // delete obj.getFullName;
+    let input = 'age';
+    delete obj[input];
+    delete obj['getFullName'];
+    console.log(obj);
+</script>
