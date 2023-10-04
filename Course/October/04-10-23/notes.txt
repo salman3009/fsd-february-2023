@@ -14,3 +14,21 @@ Encapsulation:
 //Before updating data we can check the correct data is available then only we can update it.
 //we can proper data in our application.
 ================================
+Bind:
+//An object can borrow a method from another object.
+example:
+let employee={
+        firstName:"akash",
+        age:45,
+        getFullName:function(lastName){
+            console.log(this.firstName,this.age,lastName);
+        }
+     }
+     employee.getFullName("ramesh");
+
+     let person={
+        firstName:"suresh",
+        age:33
+     }
+     employee.getFullName.bind(person,"rahul")();
+=======================================================
