@@ -1,0 +1,19 @@
+<script>
+    //older_version_code
+    function Person(fullName){
+       this.fullName = fullName;
+       //private method
+       const display = function(){
+        // console.log(this);
+        console.log("display function",this.fullName);
+       }  
+       
+       this.publicDetails = function(){
+        //   console.log(this);
+         return display.bind(this)();
+       }
+    }
+
+    let akashPerson = new Person("akash");
+    akashPerson.publicDetails();
+</script>
