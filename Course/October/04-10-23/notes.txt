@@ -32,3 +32,10 @@ let employee={
      }
      employee.getFullName.bind(person,"rahul")();
 =======================================================
+Private Variable inside Javascript?
+//We can create private variable inside the Constructor function. 
+//Anything is attached with this keyword inside the Constructor function  will become public.
+//If we declare local variable with let or const or var inside the Constructor function it will become Private
+//local variable we cannot access outside the Constructor function.
+//To access local variable or private variable outside we need to use get method to return private variable.
+==========================================================================
