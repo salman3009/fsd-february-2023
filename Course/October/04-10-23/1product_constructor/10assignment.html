@@ -24,7 +24,7 @@ https://my.newtonschool.co/playground/code/eyhxscokyv5j?lecture_hash=ymgn4t4bdfp
       }
 
       this.getTotalPrice = function(){
-         return calculateTotalPrice();
+         return calculateTotalPrice.bind(this)();
       }
 
       this.deleteMethod = function(methodName){
