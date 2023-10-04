@@ -5,8 +5,18 @@ https://my.newtonschool.co/playground/code/eyhxscokyv5j?lecture_hash=ymgn4t4bdfp
       this.price = price;
       this.manufacturer = manufacturer;
 
+      let tax;
+
       this.getProductDetails = function(){
         return `Name: ${this.name}, Price: ${this.price}, Manufacturer: ${this.manufacturer}`;
+      }
+
+      this.setTax = function(amount){
+          tax = amount; 
+      }
+
+      this.getTax = function(){
+          return tax;
       }
     }
 </script>
