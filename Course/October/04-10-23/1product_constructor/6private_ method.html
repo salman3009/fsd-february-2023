@@ -1,37 +1,13 @@
 <script>
     //older_version_code
     function Person(fullName){
-
-       //private variable
-       let age = 0;
        this.fullName = fullName;
-
-       this.setAge = function(newAge){
-        console.log(this);
-           age = newAge;
-       }
-       
-       this.getAge = function(){
-        return age;
-       }
-
        //private method
-       const display = function(lastName){
-        console.log("display function",this.fullName,lastName);
-       }
-
-       this.getTotalDisplay = function(){
-         console.log(this);
-         let person={
-            fullName:"lokesh"
-         }
-        return display.bind(person,'rahul')();
-       }
-
-     
+       const display = function(){
+        console.log("display function",this.fullName);
+       }   
     }
 
     let akashPerson = new Person("akash");
-    akashPerson.setAge(55);
-    akashPerson.getTotalDisplay();
+    akashPerson.display();
 </script>
