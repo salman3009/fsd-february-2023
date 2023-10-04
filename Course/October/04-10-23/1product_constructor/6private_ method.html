@@ -19,10 +19,14 @@
         console.log("display function",this.fullName,age);
        }
 
+       this.getTotalDisplay = function(){
+        return display();
+       }
+
      
     }
 
     let akashPerson = new Person("akash");
     akashPerson.setAge(55);
-    akashPerson.display();
+    akashPerson.getTotalDisplay();
 </script>
