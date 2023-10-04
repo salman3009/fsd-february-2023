@@ -39,3 +39,7 @@ Private Variable inside Javascript?
 //local variable we cannot access outside the Constructor function.
 //To access local variable or private variable outside we need to use get method to return private variable.
 ==========================================================================
+this keyword:
+1.normal function - window object 
+2.method inside the object - current object 
+=================================================
