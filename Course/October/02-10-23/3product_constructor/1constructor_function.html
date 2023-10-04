@@ -5,8 +5,11 @@
        this.age = age;
 
        this.setAge = function(newAge){
-        this.age = newAge;
+        if(newAge > 0){
+            this.age = newAge;
+        }
        }
+
        this.getAge = function(){
         return this.age;
        }

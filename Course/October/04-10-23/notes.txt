@@ -1,0 +1,16 @@
+this:
+This refer to object
+It will refer to current object
+Outside the function it will refer to window object
+If inside the object or inside the function it will refer to current object
+========================================================
+Constructor Function 
+//It is similar to class concept 
+//It will create blueprint of object 
+//we can able to create multiple objects of similar types.
+=======================================
+Encapsulation:
+//It helps to protect data from outside world.
+//Before updating data we can check the correct data is available then only we can update it.
+//we can proper data in our application.
+================================
