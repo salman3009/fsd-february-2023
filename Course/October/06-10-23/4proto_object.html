@@ -1,0 +1,19 @@
+<script>
+    const display={
+        one:2,
+        two:4,
+        sum:function(){
+            return this.one + this.two;
+        }
+    }
+
+    const calculator={
+        __proto__:display,
+        product:function(){
+            return this.one * this.two;
+        }
+
+    }
+    console.log(calculator.product());
+    console.log(calculator.sum());
+</script>
