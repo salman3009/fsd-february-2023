@@ -1,0 +1,25 @@
+Division of Javascript 
+
+1. old version of javascript 
+    (i)constructor function 
+    (ii)prototypes 
+    (iii)object - bind,call,apply 
+2. New version with functional programming 
+    (i)Array methods - map,filter,reduce
+    (ii)Object methods - for in,Object.keys,Object.values 
+    (iii)string methods - startswith,endswith,length
+3.New version with OOPS 
+    (i)Class 
+     (ii)inheritance 
+     (iii)getter and setter 
+      (iv)static class 
+      (v)polymorphism
+======================================================
+Difference between array and object:
+1.In array we have numeric key that will start from 0 and it will continue in sequence.
+2.In object we can have non-numeric key and we can provide anything randomly.
+==============================================
+Prototype:
+//single copy
+//shared by all objects
+//inheritance
