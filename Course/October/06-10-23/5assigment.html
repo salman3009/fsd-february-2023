@@ -13,11 +13,12 @@ const addAndSubtract = {
 }
 
 const calculator={
+    __proto__:addAndSubtract,
     product:function(){
-
+      return this.num1 * this.num2;
     },
     divide:function(){
-        
+     return this.num1 / this.num2;
     }
 }
 </script>
