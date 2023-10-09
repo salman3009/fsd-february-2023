@@ -8,7 +8,7 @@
    console.log(lastName);
 </script> -->
 
-<script>
+<!-- <script>
     let objectOne ={
         fullName:"akash",
         age:56
@@ -20,5 +20,20 @@
     console.log(objectOne);
     console.log(objectTwo);
 
-</script>
+</script> -->
 
+
+
+<script>
+    let objectOne ={
+        fullName:"akash",
+        age:56
+    }
+    let objectTwo = Object.assign({},objectOne);
+    console.log(objectOne);
+    console.log(objectTwo);
+    objectTwo.fullName = "suresh";
+    console.log(objectOne);
+    console.log(objectTwo);
+
+</script>
