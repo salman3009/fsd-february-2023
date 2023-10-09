@@ -6,5 +6,8 @@ What is __proto__?
 //If you take array inside all array methods is attached to __proto__
 //So all array methods we can able to reuse from the __proto__
 //if we want to add new methods inside the __proto__ we need to use prototype.
-
+======================================
+__proto__ is use to reuse and share the code implementation.
+prototype is to add methods inside the __proto__.
+=======================================
 
