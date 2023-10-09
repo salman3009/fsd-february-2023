@@ -1,18 +1,33 @@
 <script>
-    let person={
-        a: 4,
-        b:67,
-        calculateAverage:function (){
-          return  this.a + this.b;
+    let canteen={
+        lays:5,
+        food:7,
+        totalAmount:function (a){
+          this.lays -= a;
         }
     }
-    let display={
+    let personA={
        age:67,
        fullName:"akash"
     }
-    display.__proto__ = person;
-    console.log(display.calculateAverage());
-    console.log(display.__proto__);
+
+    personA.__proto__ = canteen;
+    personA.totalAmount(1);
+    console.log(personA.lays);
+
+    console.log(canteen);
+
+
+    let personB={
+        age:22,
+        fullName:"potter"
+    }
+   
+    personB.__proto__ = canteen;
+    console.log(personB.food);
+    personB.food = 2;
+    console.log(personB.food);
+    console.log(canteen.food);
 
 
 
