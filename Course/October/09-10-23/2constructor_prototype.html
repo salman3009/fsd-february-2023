@@ -1,0 +1,16 @@
+<script>
+     function Canteen(lays,food){
+        this.lays = lays,
+        this.food = food
+     };
+
+     Canteen.prototype.totalAmount= function(a){
+          this.lays-=a;
+     }
+
+     let personA = new Canteen(3,4);
+     console.log(personA.__proto__);
+
+
+
+</script>

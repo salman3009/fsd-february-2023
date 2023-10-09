@@ -1,7 +1,10 @@
 What is __proto__?
-//Every object has the special property called __proto__
+//Every object has the special property called __proto__.
 //Inside __proto__ we have methods and properties.
-//__proto__ it will be created only one time. So we can share this resource with collection of objects.
-example:array 
+//Array,function,object everything is object inside the javascript.
+//__proto__ is one of the common sharing space for all the objects 
+//If you take array inside all array methods is attached to __proto__
+//So all array methods we can able to reuse from the __proto__
+//if we want to add new methods inside the __proto__ we need to use prototype.
 
 
