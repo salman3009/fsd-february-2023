@@ -1,0 +1,20 @@
+<script>
+    let person={
+        a: 4,
+        b:67,
+        calculateAverage:function (){
+          return  this.a + this.b;
+        }
+    }
+    let display={
+       age:67,
+       fullName:"akash"
+    }
+    display.__proto__ = person;
+    console.log(display.calculateAverage());
+    console.log(display.__proto__);
+
+
+
+    
+</script>

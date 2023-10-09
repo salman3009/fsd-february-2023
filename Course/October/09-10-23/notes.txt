@@ -1,0 +1,7 @@
+What is __proto__?
+//Every object has the special property called __proto__
+//Inside __proto__ we have methods and properties.
+//__proto__ it will be created only one time. So we can share this resource with collection of objects.
+example:array 
+
+
