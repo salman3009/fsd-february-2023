@@ -1,0 +1,22 @@
+<script>
+    const display={
+        one:2,
+        two:4,
+        sum:function(){
+            return this.one + this.two;
+        }
+    }
+
+    const calculator={
+        __proto__:display,
+        product:function(){
+            return this.one * this.two;
+        }
+
+    }
+    const zenPhone ={
+        __proto__:display
+    }
+    console.log(calculator.product());
+    console.log(calculator.sum());
+</script>
