@@ -1,10 +1,18 @@
 <script>
     Array.prototype.sum=function(){
-        console.log(this);
-        console.log(this.length);
-        return 0;
+        // console.log(this);
+        // console.log(this.length);
+        let total = 0;
+        for(let i=0;i<this.length;i++){
+          total+=this[i];
+        }
+        return total;
     }
     let arrayList = [33,44,55,66];
     let sumOfArray = arrayList.sum();
     console.log(sumOfArray);
+
+    let arrayTwo =[56,77,88,90];
+    let sumOfTwo = arrayTwo.sum();
+    console.log(sumOfTwo);
 </script>
