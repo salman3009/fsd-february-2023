@@ -10,4 +10,6 @@ What is __proto__?
 __proto__ is use to reuse and share the code implementation.
 prototype is to add methods inside the __proto__.
 =======================================
-
+Object.assign()
+//It will create deep copy of the object 
+========================================
