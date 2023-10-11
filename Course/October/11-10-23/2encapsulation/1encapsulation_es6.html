@@ -7,15 +7,21 @@
 
         setName(input){
           this.#name = input;
+          this.#getDetails();
         }
 
         getName(){
           return this.#name
+        }
+
+        //private method
+        #getDetails(){
+            console.log(`The fullname is ${this.#name}`); 
         }
        
     }
     let akashPerson = new Person("");
     akashPerson.setName("akash");
     console.log(akashPerson.getName());
-    console.log(akashPerson.name);
+   // console.log(akashPerson.getDetails());
 </script>
