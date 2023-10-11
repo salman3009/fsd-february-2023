@@ -1,0 +1,5 @@
+1.class - Template
+2.Encapsulation 
+3.Abstraction 
+4.Polymorphism
+5.Static method 
