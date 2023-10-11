@@ -1,0 +1,14 @@
+<script>
+    class Person{
+        constructor(name,age,address){
+          this.name = name;
+          this.age = age;
+          this.address = address;
+        }
+        getDetails(){
+            return `${this.name}-${this.age}-${this.address}`;
+        }
+    }
+    let akashPerson = new Person("akash",33,"Bangalore");
+    console.log(akashPerson.getDetails());
+</script>
