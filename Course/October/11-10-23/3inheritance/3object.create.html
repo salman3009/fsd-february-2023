@@ -1,0 +1,9 @@
+<script>
+     const a ={a:1};
+    // console.log(a.__proto__.__proto__);
+    //default prototype --> null
+    const b = Object.create(a);
+    console.log(b.fullName);
+    console.log(b.__proto__.__proto__.__proto__);
+        //a prototype --> default prototype --> null
+</script>

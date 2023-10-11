@@ -1,0 +1,15 @@
+<script>
+    function Employee(name,age){
+        this.name = name;
+        this.age = age;
+    }
+    Employee.prototype.getDetails = function(){
+         return `${this.name}-${this.age}`
+    }
+   
+    let employeePerson = new Employee("akash",44);
+    let FoodTokenPerson = Object.create(employeePerson);
+    FoodTokenPerson.amount = 500;
+    console.log(FoodTokenPerson);
+
+</script>
