@@ -5,16 +5,18 @@
           this.#name = name;
         }
 
-        setName(input){
+        //encapsulation
+        setName(input){ //Hiding data
           this.#name = input;
-          this.#getDetails();
         }
 
-        getName(){
-          return this.#name
+        //encapsulation
+        getName(){ //Hiding data
+          return  this.#getDetails();
         }
 
         //private method
+        //abstraction - Hiding implementation
         #getDetails(){
             console.log(`The fullname is ${this.#name}`); 
         }
