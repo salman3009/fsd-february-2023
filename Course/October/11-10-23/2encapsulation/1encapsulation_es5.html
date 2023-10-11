@@ -1,18 +1,30 @@
 <script>
-    function Person(name){
+    function Person(name) {
         let fullName = name;  //private variable 
+
+        this.setName = function (name) {
+            fullName = name
+        }
+
+        this.getName = function () {
+            return fullName
+        }
+        
+        const getDetails = function () {
+            console.log(`The fullname is ${fullName}`);
+        }
+
+        this.getDisplay = function () {
+            getDetails();
+        }
+
+
     }
 
-    Person.prototype.setName= function(name){
-         fullName = name
-    }
 
-    Person.prototype.getName= function(){
-        return fullName
-    }
-   
+
     let akashPerson = new Person("");
-    console.log(akashPerson.fullName);
     akashPerson.setName("rakesh");
-    console.log(akashPerson.getName());
+    // console.log(akashPerson.getName());
+    akashPerson.getDisplay();
 </script>

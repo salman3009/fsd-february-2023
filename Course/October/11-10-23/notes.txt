@@ -3,6 +3,43 @@
 2.Encapsulation 
 //We are hidding data from user 
 //we need to use getter and setter method 
+Declaring private variable inside the class 
+#name
+example:
+class Person{
+        #name;       
+}
+Declaring private variable inside the constructor function 
+let or const 
+example: 
+function Person(name){
+    let fullName = name;
+}
+Accessing private variable inside the class 
+example:
+class Person{
+        #name;
+        setName(input){ //Hiding data
+          this.#name = input;
+        }
+
+        //encapsulation
+        getName(){ //Hiding data
+          return  this.#name;
+        }
+}
+Accessing private variable inside the constructor function 
+example:
+ function Person(name) {
+        let fullName = name;  //private variable 
+        this.setName = function (name) {
+            fullName = name
+        }
+        this.getName = function () {
+            return fullName
+        }
+}
+//We cannot use prototype to access private members of constructor function 
 3.Abstraction 
 //We are hidding implementation details 
 //We don't have proper code for abstraction inside the javascript 
