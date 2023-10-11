@@ -1,0 +1,22 @@
+<script>
+    class Person{
+        #name  //private variable
+        #age //private variable
+        constructor(name){
+          this.#name = name;
+        }
+
+        setName(input){
+          this.#name = input;
+        }
+
+        getName(){
+          return this.#name
+        }
+       
+    }
+    let akashPerson = new Person("");
+    akashPerson.setName("akash");
+    console.log(akashPerson.getName());
+    console.log(akashPerson.name);
+</script>
