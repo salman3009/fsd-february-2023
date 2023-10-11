@@ -2,14 +2,17 @@
     function Person(name) {
         let fullName = name;  //private variable 
 
+        //encapsulation
         this.setName = function (name) {
             fullName = name
         }
 
+        //encapsulation
         this.getName = function () {
             return fullName
         }
         
+        //private method //abstraction
         const getDetails = function () {
             console.log(`The fullname is ${fullName}`);
         }
