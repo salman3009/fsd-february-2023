@@ -1,0 +1,12 @@
+<script>
+    function Person(name,age,address){
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+    Person.prototype.getDetails= function(){
+        return `${this.name}-${this.age}-${this.address}`;
+    }
+    let akashPerson = new Person("akash",33,"Bangalore");
+    console.log(akashPerson.getDetails());
+</script>
