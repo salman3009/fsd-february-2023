@@ -1,0 +1,12 @@
+<script>
+    //new keyword will create object
+    function person(name,age,address){
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+    let akashPerson = new person("akash",33,"Bangalore");
+    console.log(akashPerson);
+    console.log(akashPerson.__proto__);
+    //proto have helpers object inside that we have constructor key that will helpt o initialize the data
+</script>
