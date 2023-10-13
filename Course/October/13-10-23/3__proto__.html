@@ -29,11 +29,13 @@
     }
     let objectTwo = Object.create(objectOne);
     objectTwo.address = "bangaore";
-    objectTwo.__proto__.age = 56;
-    console.log(objectTwo);
-    console.log(objectTwo.__proto__);
-    console.log(objectTwo.__proto__.__proto__);
-    console.log(objectTwo.__proto__.__proto__.__proto__);
-    console.log(objectOne);
+    console.log(objectTwo.age);
+    objectTwo.age = 67;
+    // objectTwo.__proto__.age = 56;
+     console.log(objectTwo);
+    // console.log(objectTwo.__proto__);
+    // console.log(objectTwo.__proto__.__proto__);
+    // console.log(objectTwo.__proto__.__proto__.__proto__);
+     console.log(objectOne);
 
 </script>
