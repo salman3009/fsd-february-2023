@@ -16,8 +16,24 @@
     //proto have helpers object inside that we have constructor key that will helpt o initialize the data
 </script> -->
 
-<script>
+<!-- <script>
    let object ={fullName:"akash"};
    console.log(object.__proto__);
    console.log(object.__proto__.__proto__);
+</script> -->
+
+<script>
+    let objectOne={
+        fullName:"akash",
+        age:33
+    }
+    let objectTwo = Object.create(objectOne);
+    objectTwo.address = "bangaore";
+    objectTwo.__proto__.age = 56;
+    console.log(objectTwo);
+    console.log(objectTwo.__proto__);
+    console.log(objectTwo.__proto__.__proto__);
+    console.log(objectTwo.__proto__.__proto__.__proto__);
+    console.log(objectOne);
+
 </script>
