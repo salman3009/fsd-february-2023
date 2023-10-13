@@ -1,0 +1,35 @@
+<script>
+    function person(name,age,address){
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+    person("akash",33,"location"); 
+    console.log(this); 
+    window.details = "noted";
+</script>
+
+<!-- <script>
+    //this means object
+    console.log(this);
+    //it will refer to window object
+    //window object is there to support dom interaction with html
+</script> -->
+
+<!-- <script>
+    let obj={
+        name:"akash",
+        age:33
+    }
+</script> -->
+
+<!-- <script>
+    //array,object,function  object 
+</script> -->
+
+<!-- <script>
+    function naming(){
+        console.log(this); //window object
+    }
+    naming();
+</script> -->
