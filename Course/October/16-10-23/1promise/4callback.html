@@ -27,17 +27,23 @@
 </script> -->
 
 <script>
-    function GpayScan(input,callback){
+    function GpayScan(amount,callback){
         setTimeout(function(){
-            console.log("Gpay Scan",input);
-            callback();
+            console.log("Gpay Scan",amount);
+            callback(amount);
         },3000)
        
     }
 
-    function checkingMyBankBalance(){
+    function checkingMyBankBalance(amount){
         setTimeout(function(){
-            console.log("Existing Balance");
+            let balance = 3000;
+            if(balance-amount>0){
+                console.log("Existing Balance is available to proceed");
+            }
+            else{
+                console.log("amount is not available");
+            }    
         },1000)
          
     }
@@ -49,8 +55,8 @@
     }
 
    
-    GpayScan(300,()=>{
-        checkingMyBankBalance();
+    GpayScan(300,(amount)=>{
+        checkingMyBankBalance(amount);
     });
     
     // sendingAmountToSenderBank(300);
