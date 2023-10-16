@@ -22,7 +22,7 @@
 </script> -->
 
 
-<script>
+<!-- <script>
     //this function is returning promise
     //we need to add callback in both place
     function addition(){
@@ -33,5 +33,41 @@
     //calling function returning promise
     addition().then(()=>{
         
+    })
+</script> -->
+
+<!-- <script>
+    //this function is returning promise
+    //we need to add callback in both place
+    function addition(){
+         return new Promise((resolve)=>{
+             resolve("akash")
+         }
+         )
+
+         
+    }
+
+    //calling function returning promise
+    addition().then(()=>{
+        
+    })
+</script> -->
+
+<script>
+    //this function is returning promise
+    //we need to add callback in both place
+    function addition(){
+         return new Promise((resolve)=>{
+             resolve("akash")
+         }
+         )
+
+         
+    }
+
+    //calling function returning promise
+    addition().then((result)=>{
+         console.log(result);
     })
 </script>
