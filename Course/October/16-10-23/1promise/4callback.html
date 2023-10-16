@@ -1,5 +1,5 @@
-<script>
-    function GpayScan(input,callback){
+<!-- <script>
+    function GpayScan(input){
         setTimeout(function(){
             console.log("you are paying this ",input);
         },3000)
@@ -23,5 +23,36 @@
     GpayScan(300);
     checkingMyBankBalance();
     sendingAmountToSenderBank(300);
+
+</script> -->
+
+<script>
+    function GpayScan(input,callback){
+        setTimeout(function(){
+            console.log("Gpay Scan",input);
+            callback();
+        },3000)
+       
+    }
+
+    function checkingMyBankBalance(){
+        setTimeout(function(){
+            console.log("Existing Balance");
+        },1000)
+         
+    }
+
+    function sendingAmountToSenderBank(input){
+        setTimeout(function(){
+            console.log("Final amount",input);
+        },2000)   
+    }
+
+   
+    GpayScan(300,()=>{
+        checkingMyBankBalance();
+    });
+    
+    // sendingAmountToSenderBank(300);
 
 </script>
