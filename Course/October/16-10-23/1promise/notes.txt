@@ -10,6 +10,10 @@ example:
          alert("alarm is ringing");
     },3000)
 setInterval
+//every 3seconds it will get executed.
+ setInterval(function(){
+         alert("alarm is ringing");
+    },3000)
 callback functions - sync and async 
 promise 
 ajax - fetch 
