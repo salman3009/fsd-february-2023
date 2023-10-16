@@ -11,7 +11,7 @@
     }
 </script> -->
 
-<script>
+<!-- <script>
     //this function is returning promise
     function addition(){
          return new Promise()
@@ -19,4 +19,19 @@
 
     //calling function returning promise
     addition().then()
+</script> -->
+
+
+<script>
+    //this function is returning promise
+    //we need to add callback in both place
+    function addition(){
+         return new Promise(()=>{}
+         )
+    }
+
+    //calling function returning promise
+    addition().then(()=>{
+        
+    })
 </script>
