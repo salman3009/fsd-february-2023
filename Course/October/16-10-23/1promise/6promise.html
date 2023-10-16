@@ -25,10 +25,10 @@
 
     }
 
-    GpayScan(300).then((input) => {
-        console.log("Gpay is successfull", input);
-       return checkingMyBankBalance(input);
-    }).then((input)=>{
-        console.log("existing balance is completed",input);
+    GpayScan(300).then((res) => {
+        console.log("Gpay is successfull", res);
+       return checkingMyBankBalance(res);
+    }).then((output)=>{
+        console.log("existing balance is completed",output);
     })
 </script>
