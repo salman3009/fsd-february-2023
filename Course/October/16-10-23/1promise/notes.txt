@@ -1,0 +1,17 @@
+Difference between Synchronous and asynchronous.
+Synchronous : line by line execution 
+asynchronous : First come first serve 
+example:
+setTimeout 
+//It will get trigger in particular set of time.
+//1000 milliseconds is equal to 1 seconds
+example:
+ setTimeout(function(){
+         alert("alarm is ringing");
+    },3000)
+setInterval
+callback functions - sync and async 
+promise 
+ajax - fetch 
+async-await 
+===================================
