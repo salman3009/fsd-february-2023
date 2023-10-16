@@ -16,6 +16,30 @@ setInterval
     },3000)
 callback functions - sync and async 
 promise 
+//it is a async code 
+//it consists of two stages resolve and reject 
+example:
+step1:
+    function details(){
+
+    }
+step 2:
+     function details(){
+        return new Promise()
+     }
+step 3: 
+      function details(){
+          return new Promise(()=>{
+
+          })
+      }
+step 4: 
+      function details(){
+           return new Promise((resolve,reject)=>{
+
+           })
+      }
+//we can access data using then block
 ajax - fetch 
 async-await 
 ===================================

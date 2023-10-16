@@ -1,0 +1,13 @@
+<script>
+    function GpayScan(amount) {
+        return new Promise((resolve) => {
+            setTimeout(function () {
+                console.log("Gpay Scan", amount);
+                resolve(amount);
+            }, 3000)
+        })
+    }
+    GpayScan(300).then((result)=>{
+         console.log("Gpay is successfull",result);
+    })
+</script>
