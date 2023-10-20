@@ -22,6 +22,16 @@ https://my.newtonschool.co/playground/markup/bqq4b7p8ii6a
         let userOneAnswer = parseInt(document.querySelector('#answerInput1').value);
         let userTwoAnswer = parseInt(document.querySelector('#answerInput2').value);
         let userThreeAnswer = parseInt(document.querySelector('#answerInput3').value);
+        if(userOneAnswer == answerOne && userTwoAnswer == answerTwo && userThreeAnswer == answerThree){
+         let input = document.querySelector("#feedback");
+         input.textContent = "All answers are correct!";
+         input.style.color = "green";
+        }
+        else{
+        let input = document.querySelector("#feedback");
+         input.textContent = "Some answers are incorrect. Try again!";
+         input.style.color = "red";
+        }
     })
    
 
