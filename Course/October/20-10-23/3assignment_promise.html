@@ -8,29 +8,33 @@ https://my.newtonschool.co/playground/markup/n6nm8dahm52g
 
 <style>
     body {
-  font-family: Arial, sans-serif;
-}
+        font-family: Arial, sans-serif;
+    }
 
-button {
-  margin: 10px;
-  padding: 5px 15px;
-}
+    button {
+        margin: 10px;
+        padding: 5px 15px;
+    }
 
-#output {
-  margin-top: 20px;
-  font-size: 20px;
-}
+    #output {
+        margin-top: 20px;
+        font-size: 20px;
+    }
 </style>
 
 <script>
     function getData() {
-  return new Promise();
-}
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve('Data received!');
+            }, 2000)
+        });
+    }
 
-document.getElementById('getDataButton').addEventListener('click', () => {
-  getData().then(data => {
-    document.getElementById('output').textContent = data;
-  });
-});
+    document.getElementById('getDataButton').addEventListener('click', () => {
+        getData().then(data => {
+            document.getElementById('output').textContent = data;
+        });
+    });
 
 </script>
