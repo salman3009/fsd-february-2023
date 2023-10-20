@@ -1,0 +1,28 @@
+https://my.newtonschool.co/playground/markup/bqq4b7p8ii6a
+
+<div class="quiz-container">
+    <h2>Math Operator Quiz</h2>
+    <p id="question">Question 1: 7 + 3 * 2 - 4</p>
+    <input type="number" id="answerInput1" placeholder="Answer for Q1">
+    
+    <p id="question2">Question 2: (6 / 2) * (8 - 3)</p>
+    <input type="number" id="answerInput2" placeholder="Answer for Q2">
+    
+    <p id="question3">Question 3: 5 % 3 + 4</p>
+    <input type="number" id="answerInput3" placeholder="Answer for Q3">
+
+    <button id="submitAnswers">Submit Answers</button>
+    <p id="feedback"></p>
+</div>
+<script>
+    let answerOne =  7 + 3 * 2 - 4;
+    let answerTwo = (6 / 2) * (8 - 3);
+    let answerThree = 5 % 3 + 4;
+    document.querySelector("#submitAnswers").addEventListener('click',()=>{
+        let userOneAnswer = parseInt(document.querySelector('#answerInput1').value);
+        let userTwoAnswer = parseInt(document.querySelector('#answerInput2').value);
+        let userThreeAnswer = parseInt(document.querySelector('#answerInput3').value);
+    })
+   
+
+</script>

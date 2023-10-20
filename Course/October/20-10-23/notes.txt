@@ -29,3 +29,12 @@ example:
          //333
      })
 ====================================
+Event listener is synchronous or asynchronous?
+//Some events are synchronous 
+//some events are asynchronous.
+example for synchronous event 
+1.click 
+2.change 
+example for asynchronous event 
+1.load 
+=====================================
