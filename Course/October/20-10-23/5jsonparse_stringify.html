@@ -1,0 +1,20 @@
+<script>
+    //frontend
+    let object ={
+        fullName:"akash",
+        age:33
+    };
+    //backend 
+    let backend = JSON.stringify(object);
+    console.log(typeof backend);
+    console.log(backend.age);
+
+
+    //backend 
+    //json 
+    //frontend 
+    let frontend = JSON.parse(backend);
+    console.log(typeof frontend);
+    console.log(frontend.age);
+
+</script>
