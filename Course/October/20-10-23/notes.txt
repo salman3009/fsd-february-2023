@@ -2,3 +2,10 @@ Asynchronous:
 //non-blocking operation is supported in javascript.
 //async code will take some time to execute once it is ready then it will be executed.
 //Always synchronous code will be given more priority.
+==================================
+callback:
+Definition:
+passing function as parameter to another function.
+Real Time Usage:
+//To call second async code once first async code is completed.
+==================================================================
