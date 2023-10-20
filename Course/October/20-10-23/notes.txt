@@ -17,11 +17,15 @@ example:
 3.callback function  in new Promise() and inside the then block 
 example:
      function display(){
-         return new Promise(()=>{
+         return new Promise((success)=>{
+ 
+         //async code
+         success(333)
 
          });
      }
-     display().then(()=>{
-
+     display().then((input)=>{
+         console.log(input);
+         //333
      })
 ====================================
