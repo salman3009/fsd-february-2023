@@ -1,0 +1,14 @@
+<script>
+    function display(){
+        return new Promise((success)=>{
+            setTimeout(()=>{
+                success(400);
+            },3000)
+
+        })
+    }
+
+    display().then((input)=>{
+           console.log(input);
+    })
+</script>
