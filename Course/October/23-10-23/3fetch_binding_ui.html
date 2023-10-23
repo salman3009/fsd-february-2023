@@ -21,8 +21,10 @@
     initial();
 
     function bindingData(input){
+        let parent = document.querySelector("#demo");
          for(let obj of input){
             console.log(obj.title);
+            parent.innerHTML+=`<li>${obj.title}</li>`;
          }
     }
 </script>
