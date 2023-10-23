@@ -17,7 +17,13 @@ https://my.newtonschool.co/playground/markup/1epbynec45h3
     function bindingData(input){
        let parent = document.querySelector("#recipeList");
        for(let obj of input){
-        parent.innerHTML+=`<li>${obj.title}</li>`;
+        // parent.innerHTML+=`<li>${obj.title}</li>`;
+        let child = document.createElement('li');
+        child.innerHTML = obj.title;
+        child.addEventListener('click',()=>{
+            document.querySelector("#recipeReadyInMinutes").textContent = `Ready in minutes: ${obj.readyInMinutes}`;
+        })
+        parent.appendChild(child);
        }
     }
 </script>
