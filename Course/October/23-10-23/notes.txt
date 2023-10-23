@@ -20,7 +20,8 @@ example:DOM methods,setTimeout,setInterval,fetch
 //Manager --> 24 * 7 
 //To process the data 
 //It will bring back data from callback queue to stack 
-//It will push data from stack to callback queue.
+//any async code is there in call stack first it will push inside the callback queue. 
+first it will complete all synchronous code and again it will bring back async code inside the call stack.
 5.callback queue 
 //all async code will get store here.
 example:
