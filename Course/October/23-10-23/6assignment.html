@@ -5,6 +5,23 @@ https://my.newtonschool.co/playground/markup/1epbynec45h3
     <p id="recipeReadyInMinutes"></p>
 </body>
 
+<script>
+    function initial(){
+      fetch("https://content.newtonschool.co/v1/pr/64996337e889f331d43f70ba/recipes").then((result)=>{
+         return result.json();
+      }).then((data)=>{
+        bindingData(data);
+      })
+    }
+    initial();
+    function bindingData(input){
+       let parent = document.querySelector("#recipeList");
+       for(let obj of input){
+        parent.innerHTML+=`<li>${obj.title}</li>`;
+       }
+    }
+</script>
+
 <style>
     body {
         font-family: Arial, sans-serif;
