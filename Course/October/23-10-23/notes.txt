@@ -6,5 +6,16 @@ Fetch Method:
 //RESTAPI - Representation state Transfer. (json)
 example:
 fetch(url).then()
-=========================================
+============================================
+Javascript runtime Engine:
+//compiler name for javascript in chrome is v8 engine.
+1.heap 
+//it will store object and array
+2.call stack 
+//code execution will happen inside the call stack
+3.web api 
+//
+4.event loop 
+5.callback queue 
+
 
