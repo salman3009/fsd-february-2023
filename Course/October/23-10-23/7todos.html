@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <ul id="demo">
+
+        </ul>
+        <script>
+            function initial(){
+              fetch('https://jsonplaceholder.typicode.com/todos').then((result)=>{
+                     return result.json();
+              }).then((data)=>{
+                     let parent = document.querySelector("#demo");
+                     for(let obj of data){
+                        parent.innerHTML+=`<li>${obj.title}</li>`;
+                     }
+              })
+            }
+            initial();
+        </script>
+    </body>
+</html>
