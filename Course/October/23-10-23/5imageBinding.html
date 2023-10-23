@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="demo">
+
+        </div>
+    </body>
+</html>
+<script>
+    function initial(){
+      fetch('https://content.newtonschool.co/v1/pr/64996337e889f331d43f70ba/recipes').then((result)=>{
+          console.log(result);
+          return result.json();
+      }).then((data)=>{
+          console.log(data);
+          bindingData(data);
+      })
+    }
+    initial();
+
+    function bindingData(input){
+        let parent = document.querySelector("#demo");
+         for(let obj of input){
+            console.log(obj.title);
+            parent.innerHTML+=`<div><img width="200" height="200" src=${obj.image}></div>`;
+         }
+    }
+</script>
