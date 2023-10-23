@@ -14,8 +14,17 @@ Javascript runtime Engine:
 2.call stack 
 //code execution will happen inside the call stack
 3.web api 
-//
+//Inbuilt methods are store here 
+example:DOM methods,setTimeout,setInterval,fetch
 4.event loop 
+//Manager --> 24 * 7 
+//To process the data 
+//It will bring back data from callback queue to stack 
+//It will push data from stack to callback queue.
 5.callback queue 
+//all async code will get store here.
+example:
+async callback,promise,setimeout,setinterval,fetch code
+===================================================
 
 
