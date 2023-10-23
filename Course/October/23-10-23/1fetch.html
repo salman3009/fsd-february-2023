@@ -2,11 +2,6 @@
     function initial(){
       fetch('https://content.newtonschool.co/v1/pr/64996337e889f331d43f70ba/recipes').then((result)=>{
           console.log(result);
-          //it will return json data
-          return result.json();
-      }).then((data)=>{
-        //javascript object
-           console.log(data);
       })
     }
     initial();
