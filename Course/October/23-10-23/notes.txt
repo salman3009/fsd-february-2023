@@ -1,0 +1,10 @@
+Fetch Method:
+//It is use to access data from the network call
+//It is written in form of promise 
+//By using then block we can access the data.
+//API - Application programming interface
+//RESTAPI - Representation state Transfer. (json)
+example:
+fetch(url).then()
+=========================================
+
