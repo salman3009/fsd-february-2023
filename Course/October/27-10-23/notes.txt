@@ -1,0 +1,2 @@
+call stack:
+1.first preference to synchronouse code.

@@ -1,0 +1,17 @@
+<script>
+    function addition(){
+        return new Promise((resolve)=>{
+              setTimeout(()=>{
+                resolve(true)
+              },0)
+        })
+    }
+    function subtraction(){
+        console.log("subtraction");
+    }
+
+    addition().then(()=>{
+        console.log("addition")
+    })
+    subtraction();
+</script>
