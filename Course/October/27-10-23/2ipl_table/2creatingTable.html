@@ -1,0 +1,37 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Location</th>
+            </tr>
+        </table>
+        <script>
+            let table = document.querySelector('table');
+            //<tr></tr>
+            let tr = document.createElement('tr');
+            //<td>akash</td>
+            let tdOne = document.createElement('td');
+            tdOne.textContent = "akash";
+            //<td>22</td>
+            let tdTwo = document.createElement('td');
+            tdTwo.textContent = 22;
+            //<td>Bangalore</td>
+            let tdThree = document.createElement('td');
+            tdThree.textContent = "Bangalore";
+            
+            //<tr><td>akash</td></tr>
+            tr.appendChild(tdOne);
+            //<tr><td>akash</td><td>22</td></tr>
+            tr.appendChild(tdTwo);
+            //<tr><td>akash</td><td>22</td><td>Bangalore</td></tr>
+            tr.appendChild(tdThree);
+
+            table.appendChild(tr);
+        </script>
+    </body>
+</html>
