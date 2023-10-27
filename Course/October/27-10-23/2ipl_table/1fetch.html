@@ -28,27 +28,7 @@
         fetch('https://my-json-server.typicode.com/FreSauce/json-ipl/data').then((response)=>{
             return response.json();
         }).then((data)=>{
-            console.log(data);
-            let table = document.querySelector("table");
-            data.forEach((input)=>{
-               let tr = document.createElement('tr');
-
-                let tdOne = document.createElement('td');
-                tdOne.textContent = input['Team'];
-                tr.appendChild(tdOne);
-
-                let tdTwo = document.createElement('td');
-                tdTwo.textContent = input['Matches'];
-                tr.appendChild(tdTwo);
-
-                let tdThree = document.createElement('td');
-                tdThree.textContent = input['Points'];
-                tr.appendChild(tdThree);
-
-                table.appendChild(tr);
-              
-            })
-
+           console.log(data);
 
         })
     }
