@@ -32,8 +32,14 @@ https://my.newtonschool.co/playground/markup/pmipgdoga2d3?lecture_hash=kg4pdmrc5
         background-color: #00008b;
         color:#ffffff;
     }
+    td{
+        border:1px solid #dddddd;
+    }
     td:nth-child(1){
      background-color: #f2f2f2;
+    }
+    td:nth-child(8){
+     background-color: #d1d1d1;
     }
   </style>
 </html>
@@ -46,7 +52,16 @@ https://my.newtonschool.co/playground/markup/pmipgdoga2d3?lecture_hash=kg4pdmrc5
          let data = result.sort((a,b)=>{
            return a.NRR - b.NRR;
          });
-         console.log(data);
+         let table = document.querySelector("tbody");
+         data.forEach((obj)=>{
+           let tr = document.createElement('tr');
+           Object.keys(obj).forEach((input)=>{
+             let td = document.createElement('td');
+             td.textContent = obj[input];
+             tr.appendChild(td);
+           });
+           table.appendChild(tr);
+         })
        })
     }
     initial();
