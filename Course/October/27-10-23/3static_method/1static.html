@@ -1,0 +1,22 @@
+<script>
+    class Account{
+        static totalBalance = 0;
+        constructor(name,age){
+            this.name = name;
+            this.age = age;
+        }
+        deposit(amount){
+            console.log(amount);
+        }
+        static balance(){
+            console.log("this is balance");
+        }
+    }
+    let akashObject = new Account("akash",33);
+    console.log(akashObject);
+    akashObject.deposit(100);
+    Account.balance();
+    Account.totalBalance;
+    //static keyword will not make you to create instance of object
+    //static method or variable with classname only we can access it.
+</script>
