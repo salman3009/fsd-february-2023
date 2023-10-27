@@ -20,3 +20,14 @@ sorting:
 //sort().reverse()
 //it will sort alphabet in descending order 
 ===================================================
+IPL Table:
+1.array
+2.object 
+3.array method 
+4.iteration 
+5.sync code 
+6.async code 
+7.fetch method 
+8.DOM creation 
+9.rest api call
+===============================================
