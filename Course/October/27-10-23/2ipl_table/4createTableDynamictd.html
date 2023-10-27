@@ -29,7 +29,12 @@
                 }
             ]
             let table = document.querySelector('table');
-            for(let obj of list){
+
+            let result = list.sort((a,b)=>{
+                return a.age-b.age;
+            });
+            
+            for(let obj of result){
                 //1
                 // {
                 // fullName:"akash",
