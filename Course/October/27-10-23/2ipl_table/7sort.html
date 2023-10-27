@@ -1,7 +1,23 @@
-<script>
+<!-- <script>
     let list=[44,2,11];
     let result = list.sort((a,b)=>{
         return a-b;
+    });
+    console.log(result);
+</script> -->
+
+
+<script>
+    let list=[{
+        name:"akash",
+        age:33
+    },
+    {
+        name:"suresh",
+        age:11
+    }];
+    let result = list.sort((a,b)=>{
+        return a.age-b.age;
     });
     console.log(result);
 </script>
