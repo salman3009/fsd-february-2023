@@ -7,7 +7,7 @@
 </script> -->
 
 
-<script>
+<!-- <script>
     let list=[{
         name:"akash",
         age:33
@@ -19,5 +19,25 @@
     let result = list.sort((a,b)=>{
         return a.age-b.age;
     });
+    console.log(result);
+</script> -->
+
+
+<script>
+    let list=[{
+        name:"suresh",
+        age:33
+    },
+    {
+        name:"akash",
+        age:11
+    }];
+    
+    let result = list.map((obj)=>{
+       return obj.name
+    }).sort().map((obj)=>{
+           let result = list.find((input)=>input.name ===obj);
+           return result;
+    })
     console.log(result);
 </script>
