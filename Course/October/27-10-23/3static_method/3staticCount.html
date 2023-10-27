@@ -1,0 +1,14 @@
+<script>
+    class Account{
+        static count = 0;
+        constructor(name){
+            this.name = name;
+            Account.count+=1;
+        }
+    }
+    let akashObject = new Account("akash");
+    let sureshObject = new Account("suresh");
+    console.log(Account.count);
+
+    
+</script>
