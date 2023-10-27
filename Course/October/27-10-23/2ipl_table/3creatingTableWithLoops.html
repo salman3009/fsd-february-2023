@@ -1,0 +1,56 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Location</th>
+            </tr>
+        </table>
+        <script>
+            let list=[
+                {
+                    name:"akash",
+                    age:33,
+                    locations:"bangalore"
+                },
+                {
+                    name:"suresh",
+                    age:22,
+                    locations:"delhi"
+                },
+                {
+                    name:"harry",
+                    age:55,
+                    locations:"mumbao"
+                }
+            ]
+            let table = document.querySelector('table');
+            for(let obj of list){
+            let tr = document.createElement('tr');
+
+            let tdOne = document.createElement('td');
+            tdOne.textContent = obj['name'];
+
+            let tdTwo = document.createElement('td');
+            tdTwo.textContent = obj['age'];
+
+            let tdThree = document.createElement('td');
+            tdThree.textContent = obj['locations'];
+            
+         
+            tr.appendChild(tdOne);
+         
+            tr.appendChild(tdTwo);
+           
+            tr.appendChild(tdThree);
+
+            table.appendChild(tr);
+            }
+           
+        </script>
+    </body>
+</html>
