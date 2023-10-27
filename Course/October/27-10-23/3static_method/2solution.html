@@ -1,0 +1,20 @@
+https://my.newtonschool.co/playground/code/n77hztrdql4v?lecture_hash=kg4pdmrc5egx
+
+<script>
+    class Account {
+        static account = 0;
+        static totalBalance = 0;
+        constructor(accountNum, balance) {
+            this.accountNum = accountNum;
+            this.balance = balance;
+            Account.account += 1;
+            Account.totalBalance += balance;
+        }
+        static returnTotalAccounts() {
+            return Account.account;
+        }
+        static returnTotalBalance() {
+            return Account.totalBalance;
+        }
+    }
+</script>
