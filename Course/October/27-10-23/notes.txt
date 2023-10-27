@@ -1,4 +1,4 @@
 call stack:
 1.first preference to synchronouse code.
 2.all codes first will enter to call stack then only to go to callback queue.
-
+========================================================

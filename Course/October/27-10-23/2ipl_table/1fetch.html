@@ -1,0 +1,10 @@
+<script>
+    function initial(){
+        fetch('https://my-json-server.typicode.com/FreSauce/json-ipl/data').then((response)=>{
+            return response.json();
+        }).then((data)=>{
+            console.log(data);
+        })
+    }
+    initial();
+</script>
