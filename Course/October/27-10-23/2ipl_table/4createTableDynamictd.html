@@ -40,13 +40,12 @@
             //2
             //Object.keys(obj)
             //["fullName","age","locations"]
-            
+
             //3
            //["fullName","age","locations"].forEach(input)
            //obj["fullName"] --> "akash"
-
+           let tr = document.createElement('tr');
             Object.keys(obj).forEach((input)=>{
-            let tr = document.createElement('tr');
             let td = document.createElement('td');
             td.textContent = obj[input];
             tr.appendChild(td);
