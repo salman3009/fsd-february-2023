@@ -53,15 +53,17 @@ https://my.newtonschool.co/playground/markup/pmipgdoga2d3?lecture_hash=kg4pdmrc5
            return a.NRR - b.NRR;
          });
          let table = document.querySelector("tbody");
-         data.forEach((obj)=>{
-           let tr = document.createElement('tr');
-           Object.keys(obj).forEach((input)=>{
+           for(let obj of data){
+            let tr = document.createElement('tr');
+             Object.keys(obj).forEach((input)=>{
              let td = document.createElement('td');
              td.textContent = obj[input];
              tr.appendChild(td);
            });
            table.appendChild(tr);
-         })
+           }
+           
+        
        })
     }
     initial();
