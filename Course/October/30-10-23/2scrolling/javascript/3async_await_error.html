@@ -1,0 +1,49 @@
+<script>
+    function addition(a,b){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+             if(a+b<0){
+                resolve(a+b);
+             }
+             else{
+                reject("failing");
+             }
+              
+            },3000)
+        })
+    }
+    
+    function display(input){
+       return new Promise((resolve,reject)=>{
+        if(input>20){
+            resolve(`the final addition value is ${input}`)
+        }
+        else{
+            reject("value is less then 20");
+        }
+         
+       })
+    }
+    
+    // addition(3,4).then((result)=>{
+    //     return display(result);
+    // },(error)=>{
+    //     console.log(error);
+    // }).then((result)=>{
+    //     console.log(result);
+    // },(error)=>{
+    //     console.log(error);
+    // })
+
+    async function result(){
+        try{
+        let inputOne = await addition(3,4);
+        let inputTwo = await display(inputOne);
+        console.log(inputTwo);
+        }catch(err){
+            console.log("something is failing");
+        }    
+    }
+
+    result();
+</script>
