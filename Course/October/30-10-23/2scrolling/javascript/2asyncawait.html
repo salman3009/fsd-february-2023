@@ -1,0 +1,28 @@
+<script>
+    function addition(a,b){
+        return new Promise((resolve)=>{
+            resolve(a+b);
+        })
+    }
+    
+    function display(input){
+       return new Promise((resolve)=>{
+         resolve(`the final addition value is ${input}`)
+       })
+    }
+    
+    // addition(3,4).then((result)=>{
+    //     return display(result);
+    // }).then((result)=>{
+    //     console.log(result);
+    // })
+
+    async function result(){
+        console.log("before addition");
+        let inputOne = await addition(3,4);
+        console.log("addition value",inputOne);
+
+    }
+
+    result();
+</script>
