@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            .box{
+                width: 300px;
+                height: 1000px;
+                background-color: red;
+            }
+        </style>
+      
+    </head>
+    <body>
+     <div class="box">
+
+     </div>
+    </body>
+    <script>
+        const url = "https://fakestoreapi.com/products";
+        async function initial(){
+            try{
+             let response = await fetch(url);
+             let data = await response.json();
+             console.log(data);
+            }catch(err){
+                console.log(err);
+            }   
+        }
+       
+         window.addEventListener('scroll',()=>{
+            if((window.innerHeight+window.scrollY)>=document.documentElement.scrollHeight){
+                initial();
+            }
+            
+         })
+    </script>
+</html>
