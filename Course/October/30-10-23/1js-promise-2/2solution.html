@@ -1,14 +1,23 @@
 https://my.newtonschool.co/playground/code/q7cgg67f6ecn
 <script>
-    function checkCanIVote(time,age) {
-      return new Promise((resolve,reject)=>{
-         if(age>=18){
-            setTimeout(()=>{
-                resolve("You can vote");
-            },time)
-         }
-      })
+  function checkCanIVote(time, age) {
+    return new Promise((resolve, reject) => {
+      if (age >= 18) {
+        setTimeout(() => {
+          resolve("You can vote");
+        }, time)
+      }else{
+        setTimeout(() => {
+          reject("You can not vote");
+        }, time)
+      }
+    })
 
-    }
+  }
 
+  checkCanIVote(2000, 70).then(data => {
+    console.log(data) // prints 'You can vote'
+  }).catch((err) => {
+    console.log(err) // does not do anything
+  })
 </script>
