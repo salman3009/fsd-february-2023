@@ -1,10 +1,18 @@
 <script>
     function display(n){
-        return new Promise((resolve)=>{
-            resolve(true)
+        return new Promise((resolve,reject)=>{
+            if(n>0){
+                resolve(true);
+            }
+            else{
+                reject("number is below zero");
+            }
+           
         })
     }
-    display().then((result)=>{
+    display(-3).then((result)=>{
         console.log("positive result",result);
+    },(err)=>{
+          console.log(err);
     })
 </script>
