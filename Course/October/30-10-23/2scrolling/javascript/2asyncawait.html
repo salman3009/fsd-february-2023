@@ -19,16 +19,8 @@
     //     console.log(result);
     // })
 
-    function subtraction(a,b){
-        return a-b;
-    }
-
     async function result(){
-        console.log("before addition");
         let inputOne = await addition(3,4);
-        console.log("addition value",inputOne);
-        let sub = subtraction(3,4);
-        console.log("subtraction value",sub);
         let inputTwo = await display(inputOne);
         console.log(inputTwo);
     }
