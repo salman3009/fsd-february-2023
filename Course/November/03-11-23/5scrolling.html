@@ -4,11 +4,46 @@ https://my.newtonschool.co/playground/markup/7vk0fs8vcu8x
 <div class="container" id="imageContainer"></div>
 <script>
     const url = "https://fakestoreapi.com/products";
+    const imageContainer = document.querySelector("#imageContainer");
+    async function initial(){
+      try{
+       const response = await fetch(url);
+       const data = await response.json();
+       data.forEach(element => {
+        const image = document.createElement('img');
+        image.setAttribute("class","images");
+        image.src = element.image;
+        imageContainer.appendChild(image);
+       });
+
+      }catch(err){
+
+      }
+    }
+    initial();
 </script>
 
 <style>
     body {
   margin: 0;
   padding: 0;
+  background-color: #f5f5f5;
+  font-family: sans-serif;
+}
+
+.container{
+    padding: 20px;
+    gap:20px;
+    background-color: #fff;
+}
+.images{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius:5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.image:hover{
+    transform: scale(1.05);
 }
 </style>
