@@ -44,4 +44,11 @@ Contest:
 1.boiler plate - html-javascript 
 2.input -- output 
 3.read question 
+=========================================
+Events 
+//Mostly used events are 
+//onclick - div,image,video,icons
+//onchange - input
+//onsubmit - form
+========================================
 

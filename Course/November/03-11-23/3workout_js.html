@@ -1,0 +1,55 @@
+https://my.newtonschool.co/playground/markup/zl061l8b6s1j
+
+
+<body>
+    <input type="text" id="input-workout" placeholder="Enter workout...">
+    <button id="btn-start">Start Workout</button>
+    <div id="output"></div>
+</body>
+
+<script>
+    let personalTrainer = {
+    name: 'John',
+    workouts: ['Pushups', 'Situps', 'Squats'],
+    startWorkout:function(input){
+     let result = this.workouts.includes(input);
+     if(result){
+        document.querySelector("#output").innerHTML = "";
+     }
+     else{
+        document.querySelector("#output").innerHTML = "";
+     }
+    }
+
+}
+
+document.getElementById('btn-start').addEventListener('click', () => {
+    let workout = document.getElementById('input-workout').value;
+    personalTrainer.startWorkout(workout);
+});
+
+</script>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#input-workout, #btn-start {
+    margin: 10px;
+    padding: 5px;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+</style>
