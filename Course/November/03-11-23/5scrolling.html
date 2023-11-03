@@ -1,7 +1,9 @@
 https://my.newtonschool.co/playground/markup/7vk0fs8vcu8x
 
 
-<div class="container" id="imageContainer"></div>
+<div class="container" id="imageContainer">
+
+</div>
 <script>
     const url = "https://fakestoreapi.com/products";
     const imageContainer = document.querySelector("#imageContainer");
@@ -10,8 +12,11 @@ https://my.newtonschool.co/playground/markup/7vk0fs8vcu8x
             const response = await fetch(url);
             const data = await response.json();
             data.forEach(element => {
+                //<img>
                 const image = document.createElement('img');
+                //<img class="images">
                 image.setAttribute("class", "images");
+                //<img src="url">
                 image.src = element.image;
                 imageContainer.appendChild(image);
             });
@@ -21,6 +26,13 @@ https://my.newtonschool.co/playground/markup/7vk0fs8vcu8x
         }
     }
     initial();
+
+    window.addEventListener('scroll',()=>{
+            if((window.innerHeight+window.scrollY)>=document.documentElement.scrollHeight){
+                initial();
+            }
+            
+         })
 </script>
 
 <style>
