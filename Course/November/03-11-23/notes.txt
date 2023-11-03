@@ -40,3 +40,8 @@ example:
 ==================================================
 stack - synchronous code --> job queue(promise code) --> callback queue (setimeout)
 ================================================================
+Contest:
+1.boiler plate - html-javascript 
+2.input -- output 
+3.read question 
+

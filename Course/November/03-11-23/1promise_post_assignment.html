@@ -1,8 +1,11 @@
 https://my.newtonschool.co/playground/code/stz8st8xl0hd
 <script>
-    function promiseMe() {
-    // return the output using return keyword
-    // do not console.log it
+    function promiseMe(time,data) {
+      return new Promise((resolve)=>{
+           setTimeout(()=>{
+                resolve(data);
+           },time)
+      })
 
 }
 </script>
