@@ -16,7 +16,7 @@ Internal Execution of Javascript
 6.async/await 
 3.webapi - settimeout,setinterval,fetch,event listener
 4.calback queue - async code after completion it will come here. (FIFO) 
-5.job queue - all promise will get store here.
+5.job queue or microtasks queue - all promise will get store here.
 //First job queue will get executed then callback queue.
 example:
 <script>
@@ -38,3 +38,5 @@ example:
     
 </script>
 ==================================================
+stack - synchronous code --> job queue(promise code) --> callback queue (setimeout)
+================================================================

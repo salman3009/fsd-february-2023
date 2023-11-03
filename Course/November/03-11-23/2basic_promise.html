@@ -7,12 +7,12 @@
     function addition(){
         console.log("addition")
     }
-    setTimeout(()=>{
-     console.log("setTimeout");
-    },0)
+    addition();
     subtraction().then(()=>{
         console.log("subtraction")
     });
-    addition();
-    
+    setTimeout(()=>{
+     console.log("setTimeout");
+    },0)
+   
 </script>
