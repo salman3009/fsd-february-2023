@@ -1,0 +1,40 @@
+What is promise?
+//It is asynchronous operation 
+//Instead of callback we can you promise 
+//It consists two state resolve and reject 
+//To access promise we can use then block
+=======================================
+Internal Execution of Javascript 
+1.Heap - object/array 
+2.stack - FILO - synchronous given more priority 
+3.Asynchronous code
+1.setTimeout 
+2.setInterval 
+3.fetch 
+4.promise 
+5.async callback 
+6.async/await 
+3.webapi - settimeout,setinterval,fetch,event listener
+4.calback queue - async code after completion it will come here. (FIFO) 
+5.job queue - all promise will get store here.
+//First job queue will get executed then callback queue.
+example:
+<script>
+    function subtraction(){
+        return new Promise((resolve)=>{
+           resolve("subtraction");
+        })
+    }
+    function addition(){
+        console.log("addition")
+    }
+    setTimeout(()=>{
+     console.log("setTimeout");
+    },0)
+    subtraction().then(()=>{
+        console.log("subtraction")
+    });
+    addition();
+    
+</script>
+==================================================
