@@ -53,8 +53,12 @@
          let inputText="";
          totalKeys.forEach((input)=>{
             input.addEventListener('click',()=>{
-                console.log(input.textContent);
-                inputText += input.textContent.toLowerCase();
+                if(input.textContent == "space"){
+                    inputText += " ";
+                }
+                else{
+                    inputText += input.textContent.toLowerCase();
+                } 
                 preview.textContent=inputText;
             })
          })
