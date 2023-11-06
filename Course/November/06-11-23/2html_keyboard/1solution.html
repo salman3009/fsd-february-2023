@@ -54,7 +54,7 @@
          totalKeys.forEach((input)=>{
             input.addEventListener('click',()=>{
                 console.log(input.textContent);
-                inputText += input.textContent;
+                inputText += input.textContent.toLowerCase();
                 preview.textContent=inputText;
             })
          })
