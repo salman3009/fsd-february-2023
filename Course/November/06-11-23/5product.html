@@ -1,0 +1,72 @@
+https://my.newtonschool.co/playground/markup/ltci0pym681p
+
+<div class="page">
+
+    <h1>Products Available</h1>
+    <!-- <h3>Titles:-</h3> -->
+    <div id="title-container"></div>
+</div>
+
+<script>
+    async function initial(){
+     let titleContainer = document.querySelector("#title-container");
+     let ul = document.createElement('ul');
+     let response = await fetch("https://content.newtonschool.co/v1/pr/63b6c911af4f30335b4b3b89/products");
+     let data = await response.json();
+
+     data.forEach((input)=>{
+      let li = document.createElement('li');
+      li.textContent = input.title;
+      ul.appendChild(li);
+     });
+
+     titleContainer.appendChild(ul);
+
+    }
+    initial();
+</script>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        background-color: #ACBCFF;
+        /* height: 3rem; */
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+
+    #title-container {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+
+
+    li {
+        padding: 5px;
+        margin: 0px;
+    }
+
+    li:nth-child(even) {
+        /* margin-bottom: 10px; */
+        background-color: #AEE2FF;
+    }
+
+    li:nth-child(odd) {
+        /* margin-bottom: 10px; */
+        background-color: #E6FFFD;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            padding: 10px;
+        }
+    }
+</style>
