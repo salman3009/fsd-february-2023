@@ -1,6 +1,0 @@
-//To access any element from html to javascript 
-//document.querySelector --> To access single data 
-//document.querySelectorAll --> To access bulk data 
-
-//To iteration for DOM elements or to add event listeners in iteration 
-//always use forEach loop

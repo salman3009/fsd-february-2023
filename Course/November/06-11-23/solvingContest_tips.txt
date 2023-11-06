@@ -1,0 +1,41 @@
+//To access any element from html to javascript 
+//document.querySelector --> To access single data 
+//document.querySelectorAll --> To access bulk data 
+
+//To iteration for DOM elements or to add event listeners in iteration 
+//always use forEach loop
+
+//Creating element and adding class 
+let element = document.createElement('div');
+element.classList.add("description");
+
+
+//append with parent 
+parent.appendChild(childelement)
+
+
+//api fetch
+async function(){
+let response = await fetch("https://content.newtonschool.co/v1/pr/63b70222af4f30335b4b3b9a/buses");
+let data = await response.json();
+}
+
+//sort data in ascending order
+data=[{
+    name:"akash",
+    ticektPrice:240
+},
+{
+    name:"akash",
+    ticektPrice:140
+}]
+let resultSort = data.sort((a,b)=>{
+       return a.ticketPrice - b.ticketPrice;
+})
+
+//Adding string together 
+let input = "a";
+input+=b;
+
+//removing element from dom 
+remove()
