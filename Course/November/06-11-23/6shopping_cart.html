@@ -1,5 +1,3 @@
-
-
 <body>
     <div class="product">
         <p class="productName">Laptop - $1000</p>
@@ -23,32 +21,40 @@
 
 <script>
     // https://my.newtonschool.co/playground/markup/5k77dyqyegxl
-     let buttonList = document.querySelectorAll('button');
-     buttonList.forEach((input)=>{
-         input.addEventListener('click',()=>{
-            console.log(input);
-         })
-     })
+    let buttonList = document.querySelectorAll('button');
+    let cart = [];
+    let totalPrice = document.querySelector("#totalPrice");
+    buttonList.forEach((input) => {
+        input.addEventListener('click', () => {
+            let price = Number(input.getAttribute('data-price'));
+            cart.push(price);
+            let result = cart.reduce((a, b) => {
+                return a + b;
+            })
+            totalPrice.textContent = `$${result}`;
+        })
+    });
+
+
 </script>
 <style>
     body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
 
-.product {
-    border: 1px solid black;
-    padding: 20px;
-    margin: 10px;
-    display: inline-block;
-}
+    .product {
+        border: 1px solid black;
+        padding: 20px;
+        margin: 10px;
+        display: inline-block;
+    }
 
-#cart {
-    margin-top: 50px;
-}
+    #cart {
+        margin-top: 50px;
+    }
 
-.addToCart {
-    margin-top: 10px;
-}
-
+    .addToCart {
+        margin-top: 10px;
+    }
 </style>
