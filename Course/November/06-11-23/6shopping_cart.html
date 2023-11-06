@@ -1,0 +1,54 @@
+
+
+<body>
+    <div class="product">
+        <p class="productName">Laptop - $1000</p>
+        <button class="addToCart" data-price="1000">Add to Cart</button>
+    </div>
+    <div class="product">
+        <p class="productName">Phone - $500</p>
+        <button class="addToCart" data-price="500">Add to Cart</button>
+    </div>
+    <div class="product">
+        <p class="productName">Headphones - $100</p>
+        <button class="addToCart" data-price="100">Add to Cart</button>
+    </div>
+
+    <div id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cartList"></ul>
+        <p>Total Price: <span id="totalPrice">$0</span></p>
+    </div>
+</body>
+
+<script>
+    // https://my.newtonschool.co/playground/markup/5k77dyqyegxl
+     let buttonList = document.querySelectorAll('button');
+     buttonList.forEach((input)=>{
+         input.addEventListener('click',()=>{
+            console.log(input);
+         })
+     })
+</script>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.product {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+}
+
+#cart {
+    margin-top: 50px;
+}
+
+.addToCart {
+    margin-top: 10px;
+}
+
+</style>
