@@ -39,3 +39,10 @@ input+=b;
 
 //removing element from dom 
 remove()
+
+//Inserting content inside the element 
+example:
+<div>hello world</div>
+let input = document.querySelector("div");
+input.textContent = "hello world"
+
