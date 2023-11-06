@@ -50,6 +50,7 @@
       // https://my.newtonschool.co/playground/markup/os8fj0uj99r8
          let totalKeys = document.querySelectorAll("button");
          let preview = document.querySelector(".preview");
+         let body = document.querySelector("body");
          let inputText="";
          totalKeys.forEach((input)=>{
             input.addEventListener('click',()=>{
@@ -70,7 +71,7 @@
              let element = document.createElement('div');
              element.classList.add('quote');
              element.textContent = data.content;
-             document.body.appendChild(element);
+             body.appendChild(element);
          }
            
          initial();
