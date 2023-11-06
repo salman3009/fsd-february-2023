@@ -14,11 +14,18 @@ https://my.newtonschool.co/playground/markup/5be0tzx7murr
     async function intial(){
     let response = await fetch("https://content.newtonschool.co/v1/pr/63b70222af4f30335b4b3b9a/buses");
     let data = await response.json();
-    console.log(data);
+   
     let resultSort = data.sort((a,b)=>{
        return a.ticketPrice - b.ticketPrice;
     })
-    console.log(resultSort);
+
+    let parent = document.querySelector("#data-container");
+    resultSort.forEach((input)=>{
+     let element = document.createElement('div');
+     element.classList.add("description");
+     element.textContent = JSON.stringify(input);
+     parent.appendChild(element);
+    })
     }
     intial();
 </script>
