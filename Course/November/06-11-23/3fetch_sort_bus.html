@@ -1,0 +1,35 @@
+https://my.newtonschool.co/playground/markup/5be0tzx7murr
+
+<html>
+	<head>
+		<title>Json Data</title>
+	</head>
+	<body>
+		<h1>Json Data</h1>
+		<div id="data-container"></div>
+	</body>
+</html>
+
+<script>
+    async function intial(){
+    let response = await fetch("https://content.newtonschool.co/v1/pr/63b70222af4f30335b4b3b9a/buses");
+    let data = await response.json();
+    console.log(data);
+    }
+    intial();
+</script>
+<style>
+    h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#data-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description {
+    margin-top: 5px;
+}
+</style>
