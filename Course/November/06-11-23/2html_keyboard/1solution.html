@@ -1,4 +1,4 @@
-https://my.newtonschool.co/playground/markup/os8fj0uj99r8
+
 
 
 <html>
@@ -46,5 +46,16 @@ https://my.newtonschool.co/playground/markup/os8fj0uj99r8
            <button id="key-9">9</button>
            <button id="key-space">space</button>
         </div>
+        <script>
+      // https://my.newtonschool.co/playground/markup/os8fj0uj99r8
+         let totalKeys = document.querySelectorAll("button");
+         totalKeys.forEach((input)=>{
+            input.addEventListener('click',()=>{
+                console.log(input.textContent);
+            })
+         })
+           
+         
+        </script>
     </body>
 </html>
