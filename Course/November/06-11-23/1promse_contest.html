@@ -1,0 +1,17 @@
+<script>
+    //Do no change the function name
+function func(data) {
+    return new Promise((resolve,reject)=>{
+        if(data%2 !=0){
+            setTimeout(()=>{
+              resolve("odd")
+            },1000)
+        }
+        else{
+            setTimeout(()=>{
+              reject("even")
+            },2000) 
+        }
+    })
+}
+</script>
