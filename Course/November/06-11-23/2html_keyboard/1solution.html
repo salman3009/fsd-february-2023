@@ -62,8 +62,14 @@
                 preview.textContent=inputText;
             })
          })
+
+         async function initial(){
+             let response = await fetch("https://api.quotable.io/random");
+             let data = await response.json();
+             console.log(data.content);
+         }
            
-         
+         initial();
         </script>
     </body>
 </html>
