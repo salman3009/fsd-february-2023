@@ -50,10 +50,12 @@
       // https://my.newtonschool.co/playground/markup/os8fj0uj99r8
          let totalKeys = document.querySelectorAll("button");
          let preview = document.querySelector(".preview");
+         let inputText="";
          totalKeys.forEach((input)=>{
             input.addEventListener('click',()=>{
                 console.log(input.textContent);
-                preview.textContent = input.textContent;
+                inputText += input.textContent;
+                preview.textContent=inputText;
             })
          })
            
