@@ -1,0 +1,20 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button id="sum">ADD</button>
+        <button id="delete">Delete</button>
+        <button id="update">Update</button>
+        <script>
+            let buttonList = document.querySelectorAll("button");
+            buttonList.forEach(function(btn){
+              btn.addEventListener('click',function(){
+                let data = btn.getAttribute('id');
+                console.log(data);
+              })
+            })
+
+        </script>
+    </body>
+</html>
