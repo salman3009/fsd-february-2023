@@ -1,0 +1,8 @@
+<script>
+    async function initial(){
+     let response = await fetch("https://randomuser.me/api/");
+     let data = await response.json();
+     console.log(data.results[0]);
+    }
+    initial();
+</script>
