@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 id="demo"></h1>
+        <button onclick="stopEvent()">Stop</button>
+        <script>
+            let timerId;
+            let count =0;
+            let heading = document.querySelector("#demo");
+            timerId = setInterval(()=>{
+                heading.innerHTML = getTimer();
+            },1000)
+
+            function getTimer(){
+               count++;
+               return count;
+            }
+            function stopEvent(){
+                clearInterval(timerId);
+            }
+        </script>
+    </body>
+</html>
