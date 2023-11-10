@@ -6,6 +6,15 @@
      let age = data.results[0] && data.results[0].dob && data.results[0].dob.age;
      let picture = data.results[0] && data.results[0].picture && data.results[0].picture.large;
      console.log(age,picture);
+     return {
+        age,picture
+     }
     }
-    initial();
+
+
+    async function display(){
+        let data = await initial();
+        console.log(data);
+    }
+    display();
 </script>
