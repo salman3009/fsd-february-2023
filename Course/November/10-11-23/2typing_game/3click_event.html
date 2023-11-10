@@ -1,0 +1,16 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 id="demo">Welcome to javascript</h1>
+        <script>
+            console.log(document.querySelector("#demo"));
+            window.addEventListener('click',function(event){
+                console.log(event.target);
+             let result = document.querySelector("#demo").contains(event.target);
+             console.log(result);
+            })
+        </script>
+    </body>
+</html>
