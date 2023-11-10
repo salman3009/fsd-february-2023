@@ -7,6 +7,8 @@
     <button data-attr="age">Age</button>
     <button data-attr="email">Email</button>
     <button data-attr="phone">Phone</button>
+
+    <button onclick="display()" id="getUser">getUser</button>
 </body>
 
 </html>
@@ -16,15 +18,18 @@
         let data = await response.json();
         let firstName = data.results[0].name.first;
         let lastName = data.results[0].name.last;
+        let fullName = `${firstName} ${lastName}`;
+        let picture = data.results[0].picture.large;
+
         let email = data.results[0].email;
         let phone = data.results[0].phone;
         let age = data.results[0].dob.age;
-        let fullName = `${firstName} ${lastName}`;
-        let picture = data.results[0].picture.large;
+      
         let heading = document.querySelector('h1');
         heading.innerHTML = fullName
         let image = document.querySelector('img');
         image.setAttribute('src', picture);
+
         let buttonList = document.querySelectorAll('button');
         let subHeading = document.querySelector('h2');
         buttonList.forEach(function(btn){
