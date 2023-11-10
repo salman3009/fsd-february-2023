@@ -1,5 +1,12 @@
 https://my.newtonschool.co/playground/markup/rcco95nsinfe?lecture_hash=2thmar2hdhm9
 
+<html>
+    <body>
+        <button data-attr="age">Age</button>
+        <button data-attr="email">Email</button>
+        <button data-attr="phone">Phone</button>
+    </body>
+</html>
 <script>
     async function getRandomUser(){
     let response = await fetch("https://randomuser.me/api/");
@@ -7,7 +14,8 @@ https://my.newtonschool.co/playground/markup/rcco95nsinfe?lecture_hash=2thmar2hd
     let firstName = data.results[0] && data.results[0].name && data.results[0].name.first;
     let lastName = data.results[0] && data.results[0].name && data.results[0].name.last;
     let fullName = `${firstName} ${lastName}`;
-    console.log(fullName);
+    let picture = data.results[0] && data.results[0].picture && data.results[0].picture.large;
+    console.log(fullName,picture);
     }
     getRandomUser();
 </script>
