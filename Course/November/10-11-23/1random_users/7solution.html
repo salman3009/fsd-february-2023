@@ -1,7 +1,10 @@
-https://my.newtonschool.co/playground/markup/rcco95nsinfe?lecture_hash=2thmar2hdhm9
+
 
 <html>
     <body>
+        <img>
+        <h1></h1>
+        <h2></h2>
         <button data-attr="age">Age</button>
         <button data-attr="email">Email</button>
         <button data-attr="phone">Phone</button>
@@ -15,7 +18,20 @@ https://my.newtonschool.co/playground/markup/rcco95nsinfe?lecture_hash=2thmar2hd
     let lastName = data.results[0] && data.results[0].name && data.results[0].name.last;
     let fullName = `${firstName} ${lastName}`;
     let picture = data.results[0] && data.results[0].picture && data.results[0].picture.large;
-    console.log(fullName,picture);
+     return {
+        fullName,picture
+     }
     }
-    getRandomUser();
+
+    async function display(){
+     let data = await getRandomUser();
+     let heading = document.querySelector('h1');
+     heading.innerHTML = data['fullName'];
+     let image = document.querySelector('img');
+     image.setAttribute('src',data['picture']);
+
+    }
+    display();
 </script>
+
+<!-- https://my.newtonschool.co/playground/markup/rcco95nsinfe?lecture_hash=2thmar2hdhm9 -->
