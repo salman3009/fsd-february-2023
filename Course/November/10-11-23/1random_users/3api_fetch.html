@@ -3,6 +3,8 @@
      let response = await fetch("https://randomuser.me/api/");
      let data = await response.json();
      console.log(data.results[0]);
+     let age = data.results[0] && data.results[0].dob && data.results[0].dob.age;
+     console.log(age);
     }
     initial();
 </script>
