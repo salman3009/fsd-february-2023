@@ -1,0 +1,18 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <img>
+        <div data-attr="phone"></div>
+        <script>
+            let image = document.querySelector('img');
+            image.setAttribute('src','http://google.com');
+
+            let heading = document.querySelector('div');
+            let attribute = heading.getAttribute('data-attr');
+            console.log(attribute);
+
+        </script>
+    </body>
+</html>
