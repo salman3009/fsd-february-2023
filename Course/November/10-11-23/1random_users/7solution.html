@@ -1,0 +1,13 @@
+https://my.newtonschool.co/playground/markup/rcco95nsinfe?lecture_hash=2thmar2hdhm9
+
+<script>
+    async function getRandomUser(){
+    let response = await fetch("https://randomuser.me/api/");
+    let data = await response.json();
+    let firstName = data.results[0] && data.results[0].name && data.results[0].name.first;
+    let lastName = data.results[0] && data.results[0].name && data.results[0].name.last;
+    let fullName = `${firstName} ${lastName}`;
+    console.log(fullName);
+    }
+    getRandomUser();
+</script>
