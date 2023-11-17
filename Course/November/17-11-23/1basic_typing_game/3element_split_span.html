@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <!-- <div><span>j</span><span>a</span><span>v</span><span>a</span></div> -->
+        <div id="quoteDisplayElement">
+
+        </div>
+        <script>
+            let quoteDisplayElement = document.querySelector("#quoteDisplayElement");
+            let quote ="welcome to javascript";
+            quote.split("").forEach(function(char){
+                 console.log(char);
+                 let charSpan = document.createElement("span");
+                 charSpan.innerText = char;
+                 quoteDisplayElement.appendChild(charSpan);
+            })
+
+        </script>
+    </body>
+</html>
