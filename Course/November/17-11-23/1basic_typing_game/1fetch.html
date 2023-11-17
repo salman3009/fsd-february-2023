@@ -1,0 +1,9 @@
+<script>
+    async function random_quote(){
+        let response = await fetch ("http://api.quotable.io/random");
+        response = await response.json();
+        let quote = response.content;
+        console.log(quote);
+    }
+    random_quote();
+</script>
