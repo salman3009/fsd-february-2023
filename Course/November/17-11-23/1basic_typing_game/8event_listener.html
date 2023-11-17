@@ -1,0 +1,16 @@
+<div id="container">
+   welcome to javascript
+</div>
+
+<div id="sub">
+    welcome to html
+</div>
+
+<script>
+    window.addEventListener("click",function(event){
+        console.log(event.target);
+       if(document.querySelector("#container").contains(event.target)){
+         console.log("yes");
+       }
+    })
+</script>
