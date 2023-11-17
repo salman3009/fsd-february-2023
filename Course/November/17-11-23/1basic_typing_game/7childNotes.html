@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            .correct{
+                color:green;
+            }
+            .incorrect{
+                color:red;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="quoteDisplayElement"></div>
+        <script>
+            let quoteDisplayElement = document.querySelector("#quoteDisplayElement");
+            let quote ="welcome to javascript";
+            quote.split("").forEach(function(char){
+                 let charSpan = document.createElement("span");
+                 charSpan.innerText = char;
+                 quoteDisplayElement.appendChild(charSpan);
+            });
+
+                quoteDisplayElement.childNodes[4].classList.add("correct");
+            
+
+        </script>
+    </body>
+</html>

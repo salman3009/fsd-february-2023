@@ -1,6 +1,11 @@
 <script>
-    window.addEventListener('keydown',function(event){
-         console.log(event.key);
-         console.log(event.keyCode);
-    })
+    window.addEventListener('keydown', function (event) {
+          let charCode = event.keyCode;
+        if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123)
+            || charCode == 32 || charCode == 188 || charCode == 186 || charCode == 222 || charCode == 190
+            || charCode == 191 || charCode == 49 || charCode == 189) {
+            console.log(event.key);
+            console.log(event.keyCode);
+        }
+    });
 </script>
