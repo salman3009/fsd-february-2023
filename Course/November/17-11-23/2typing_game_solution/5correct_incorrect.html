@@ -80,11 +80,9 @@ WPM:<div id="wpm"></div>
 
                 if (quote[currentIndex] == e.key) {
                     container.childNodes[currentIndex].classList.add('correct');
-                    container.childNodes[currentIndex].classList.remove('incorrect');
                 }
                 else {
                     container.childNodes[currentIndex].classList.add('incorrect');
-                    container.childNodes[currentIndex].classList.remove('correct');
                 }
                 currentIndex++;
 
