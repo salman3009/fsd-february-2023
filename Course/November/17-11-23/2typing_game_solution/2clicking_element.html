@@ -25,7 +25,9 @@ WPM:<div id="wpm"></div>
             startTimer();
         }
         else{
-            
+            stopTimer(); 
+            timerElement.innerText=0;
+
         }
     })
 
@@ -40,5 +42,9 @@ WPM:<div id="wpm"></div>
     function getTimer(){
         //it will return in seconds
         return Math.floor((new Date() - startTime) / 1000)
+    }
+    
+    function stopTimer(){
+      clearInterval(timerID);
     }
 </script>
