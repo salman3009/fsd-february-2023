@@ -1,0 +1,15 @@
+<button id="start">Start Game</button>
+<button id="end">End Game</button>
+<div id="seconds"></div>
+<script>
+let dateStart;
+let dateEnd;
+document.querySelector("#start").addEventListener("click",function(){
+    dateStart = new Date();
+});
+document.querySelector("#end").addEventListener("click",function(){
+    dateEnd = new Date();
+    let secondsDifference = Math.floor((dateEnd-dateStart)/1000);
+    document.querySelector("#seconds").innerHTML = secondsDifference;
+})
+</script>
