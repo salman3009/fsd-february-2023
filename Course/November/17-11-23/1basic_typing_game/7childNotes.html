@@ -21,9 +21,11 @@
                  quoteDisplayElement.appendChild(charSpan);
             });
 
-                quoteDisplayElement.childNodes[4].classList.add("correct");
+               
             
-
+               for(let i=0;i<quote.length;i++){
+                quoteDisplayElement.childNodes[i].classList.add("incorrect");
+               }
         </script>
     </body>
 </html>
