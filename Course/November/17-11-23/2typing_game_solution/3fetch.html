@@ -1,0 +1,65 @@
+Timer:<div id="timer"></div>
+WPM:<div id="wpm"></div>
+<div id="container"></div>
+
+<style>
+    .correct {
+        color: green;
+    }
+
+    .incorrect {
+        color: red;
+        text-decoration: underline;
+    }
+</style>
+
+<script>
+    const container = document.querySelector("#container");
+    const timerElement = document.querySelector("#timer");
+    const wpmElement = document.querySelector("#wpm");
+
+    let timerID;
+    let startTime;
+    let quote;
+    window.addEventListener('click',function(event){
+        if(document.querySelector("#container").contains(event.target)){
+            startTimer();
+        }
+        else{
+            stopTimer(); 
+            timerElement.innerText=0;
+
+        }
+    })
+
+    function startTimer(){
+        startTime = new Date();
+        timerElement.innerText = 0;
+        timerID = setInterval(function(){
+            timerElement.innerText = getTimer();
+        },1000);
+    }
+
+    function getTimer(){
+        //it will return in seconds
+        return Math.floor((new Date() - startTime) / 1000)
+    }
+    
+    function stopTimer(){
+      clearInterval(timerID);
+    }
+
+    async function renderNewQuote(){
+        let response = await fetch("http://api.quotable.io/random");
+        response = await response.json();
+        quote = response.content;
+        console.log(quote);
+        container.innerHTML = '';
+        quote.split('').forEach(function(char){
+          let span = document.createElement('span');
+          span.innerText = char;
+          container.appendChild(span);
+        })
+    }
+    renderNewQuote();
+</script>
