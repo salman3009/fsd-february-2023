@@ -1,0 +1,1 @@
+1.call stack,execution context,scope chain 
