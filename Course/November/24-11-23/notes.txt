@@ -1,1 +1,21 @@
 1.call stack,execution context,scope chain 
+scope
+types:
+1.global
+2.function 
+3.block 
+==============================================
+To Declare variable inside the javascript:
+1.var 
+//global - yes 
+//function - yes 
+//block - no (automatically it will become function scope or global scope)
+2.let 
+//global - yes 
+//function - yes 
+//block - yes
+3.const 
+//global - yes 
+//function - yes 
+//block - yes
+======================================================

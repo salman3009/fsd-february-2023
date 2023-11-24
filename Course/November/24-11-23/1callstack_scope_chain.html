@@ -1,14 +1,30 @@
 <script>
+    //global scope
     const city = "Banglore";
 
+    //hoisting
+    first();
+    second();
+
     function first(){
+        //function scope
+        console.log(this);
+        console.log(city);
         let firstName = "suresh";
+        if(true){
+            //block scope
+           // let age = 33;
+           var age = 33;
+        }
+        console.log(age);
     }
 
     function second(){
+        console.log(this);
+        console.log(city);
         let lastName = "rakesh";
     }
 
-    first();
-    second();
+   //this keyword
+   console.log(this);
 </script>
