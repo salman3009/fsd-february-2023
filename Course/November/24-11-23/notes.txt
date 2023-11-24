@@ -6,6 +6,7 @@ types:
 3.block 
 ==============================================
 To Declare variable inside the javascript:
+block scope  - {}
 1.var 
 //global - yes 
 //function - yes 
