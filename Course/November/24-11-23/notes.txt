@@ -20,3 +20,15 @@ block scope  - {}
 //function - yes 
 //block - yes
 ======================================================
+List of interview question:
+1.call stack 
+2.call stack with global function 
+3.call stack with FILO 
+4.hoisting 
+5.Each function will be created inside the call stack 
+6.types of scope - global,function,block 
+7.difference between var,let and const 
+8.window object 
+9.this keyword 
+10.each function inside call stack is called execution context 
+=====================================================
