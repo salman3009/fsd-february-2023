@@ -1,0 +1,24 @@
+Nodejs:
+//runtime environment for javascript 
+//With the help of nodejs you can run javascript outside the browser
+//https://nodejs.org/download/release/v18.18.2/
+//install x64-msi 
+cmd:
+
+
+=================================
+Nodejs you can use as backend language 
+=============================================
+Reactjs 
+//Nodejs will help to run high complexity code in our local system then we can give to browser.
+=========================================
+NPM - Node package manager 
+//It helps to manage the package in our project 
+//once you install nodejs default npm will come to you.
+//https://www.npmjs.com/
+//package.json file 
+    //it is configuration file 
+    //It consists of information about the project and set of packaegs installed and how to run the project.
+============================================================= 
+
+
