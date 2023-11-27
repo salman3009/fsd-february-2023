@@ -52,4 +52,27 @@ index.html --> index.js ---> APP.js
 ==================================================
 import and export 
 import React from 'react'; --> inbuilt package
-import App from './App';
+import App from './App'; --> import file from path
+
+//export code
+function App(){
+     
+  return 'hello world';
+}
+
+export default App;
+===============================================
+Component in reactjs 
+//component is nothing but a function javascript 
+//But component function name should start with capital letter.
+//file name and component name make it same 
+//Both name start with capital letter 
+//return statement is mandatory
+//it will return jsx 
+JSX 
+Javascript extension 
+//It is available only in reactjs library 
+//It helps to return html from javascript 
+
+
+===========================================================
