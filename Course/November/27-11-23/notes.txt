@@ -5,7 +5,6 @@ Nodejs:
 //install x64-msi 
 cmd:node -v 
 cmd:npm -v
-
 =================================
 Nodejs you can use as backend language 
 =============================================
@@ -77,4 +76,6 @@ Javascript extension
 Running react project 
 package.json --> right click open in terminal --> npm start 
 browser: http://localhost:3000
+//any changes in js file just save it automatically compiler will recompile.
+Stopping application - ctrl+c
 =============================================================
