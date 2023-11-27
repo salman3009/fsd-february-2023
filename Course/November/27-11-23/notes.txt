@@ -83,4 +83,5 @@ Stopping application - ctrl+c
 cmd:npm install 
 =============================================================
 JSX Rules:
-1.
+1.All the html code we need to wrapper in single html tag.
+2.Every tag in html should have closing tag.
