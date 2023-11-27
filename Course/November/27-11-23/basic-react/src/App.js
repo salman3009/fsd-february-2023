@@ -2,7 +2,7 @@
 
 function Employee(){
      
-    return <div id="heading">
+    return <div id="heading" className="headingDetails">
          <input type="text"/>
          <img/>
          <br/>
