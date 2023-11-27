@@ -10,6 +10,7 @@ Nodejs you can use as backend language
 =============================================
 Reactjs 
 //Nodejs will help to run high complexity code in our local system then we can give to browser.
+//we need npm to main our project packages 
 =========================================
 NPM - Node package manager 
 //It helps to manage the package in our project 
@@ -78,4 +79,8 @@ package.json --> right click open in terminal --> npm start
 browser: http://localhost:3000
 //any changes in js file just save it automatically compiler will recompile.
 Stopping application - ctrl+c
+//Everything you take pull please run below command 
+cmd:npm install 
 =============================================================
+JSX Rules:
+1.
