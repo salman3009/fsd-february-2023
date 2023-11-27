@@ -47,3 +47,9 @@ node_modules --> all the packages code is present inside that.
 package-lock.json --> Detailed version of package.json is present here.
 src - source 
 ==========================================================
+src 
+index.html --> index.js ---> APP.js 
+==================================================
+import and export 
+import React from 'react'; --> inbuilt package
+import App from './App';
