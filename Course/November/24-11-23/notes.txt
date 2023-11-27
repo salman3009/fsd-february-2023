@@ -30,5 +30,4 @@ List of interview question:
 7.difference between var,let and const 
 8.window object 
 9.this keyword 
-10.each function inside call stack is called execution context 
 =====================================================

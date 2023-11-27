@@ -24,3 +24,26 @@ To run javacript using Nodejs
 1.write the code and save in .js extension 
 2.open the terminal and node filename.js 
 ========================================
+Reactjs 
+//It is user-interface library 
+//It is faster 
+//Don't use any DOM relateds methods inside the reactjs because it will again make application very much slow.
+cmd:npm install -g npm
+cmd:npx create-react-app basic-react
+After installing the react project 
+1.node_modules
+2.src 
+3.package.json
+========================================================
+README - documentation file 
+gitignore - it will help to avoid to push some set of code in github 
+public - html files will be present here 
+//currently in react we have single html file. 
+//It is single page application 
+package.json --> configuration file
+"react": "^18.2.0",
+"react-dom": "^18.2.0",
+node_modules --> all the packages code is present inside that.
+package-lock.json --> Detailed version of package.json is present here.
+src - source 
+==========================================================
