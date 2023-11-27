@@ -3,8 +3,8 @@ Nodejs:
 //With the help of nodejs you can run javascript outside the browser
 //https://nodejs.org/download/release/v18.18.2/
 //install x64-msi 
-cmd:
-
+cmd:node -v 
+cmd:npm -v
 
 =================================
 Nodejs you can use as backend language 
@@ -20,5 +20,7 @@ NPM - Node package manager
     //it is configuration file 
     //It consists of information about the project and set of packaegs installed and how to run the project.
 ============================================================= 
-
-
+To run javacript using Nodejs 
+1.write the code and save in .js extension 
+2.open the terminal and node filename.js 
+========================================
