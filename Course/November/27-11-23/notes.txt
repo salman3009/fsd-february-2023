@@ -73,6 +73,8 @@ JSX
 Javascript extension 
 //It is available only in reactjs library 
 //It helps to return html from javascript 
-
-
 ===========================================================
+Running react project 
+package.json --> right click open in terminal --> npm start 
+browser: http://localhost:3000
+=============================================================
