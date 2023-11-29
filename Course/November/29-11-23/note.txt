@@ -1,0 +1,8 @@
+Applying css in reactjs 
+//create a file with extension.css 
+example:
+filename.css 
+//import this css in that particular js file 
+example:
+import './App.css';
+=========================================
