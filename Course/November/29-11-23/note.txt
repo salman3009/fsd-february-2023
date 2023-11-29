@@ -6,3 +6,7 @@ filename.css
 example:
 import './App.css';
 =========================================
+Writing javascript inside the JSX:
+syntax:
+{expression}
+
