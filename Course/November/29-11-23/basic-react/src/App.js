@@ -1,16 +1,18 @@
 import './App.css';
+import {useState} from 'react';
 
 function Employee(){
      
-    let age = 56;
+  
+
+    const[getAge,setAge] = useState(76);
 
     const updateAgeDetails = ()=>{
-        age = 20;
-        console.log(age);
+        
     }
 
     return <div id="heading" className="headingDetails">
-           <div>{age}</div>
+           <div>{getAge}</div>
            <button onClick={updateAgeDetails}>Submit</button>
           </div>
   

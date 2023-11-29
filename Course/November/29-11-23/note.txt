@@ -9,4 +9,13 @@ import './App.css';
 Writing javascript inside the JSX:
 syntax:
 {expression}
+======================================
+State in React 
+//To update the dynamic data in jsx we need state 
+//useState from react 
+example:
+import {useState} from 'react';
+const[getAge,setAge]=useState(56);
+============================================
+
 
