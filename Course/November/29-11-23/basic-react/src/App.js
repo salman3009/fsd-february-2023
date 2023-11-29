@@ -3,17 +3,15 @@ import {useState} from 'react';
 
 function Employee(){
      
-  
-
-    const[getAge,setAge] = useState(76);
-
-    const updateAgeDetails = ()=>{
-        
+    const[getFlag,setFlag]= useState(false);
+    const updateChangeHandler=()=>{
+        setFlag(true)
     }
 
     return <div id="heading" className="headingDetails">
-           <div>{getAge}</div>
-           <button onClick={updateAgeDetails}>Submit</button>
+           
+           <button onClick={updateChangeHandler}>click here</button>
+
           </div>
   
 }
