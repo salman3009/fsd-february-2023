@@ -13,7 +13,8 @@ function Employee(){
            <div>{2+2}</div>
            <div>{age}</div>
            <div>{age>=56?<h1>Yes</h1>:<h1>No</h1>}</div>
-           <div>{displayMessage()}</div>
+           {/* <div>{displayMessage()}</div> */}
+           <button onClick={displayMessage}>Submit</button>
           </div>
   
 }
