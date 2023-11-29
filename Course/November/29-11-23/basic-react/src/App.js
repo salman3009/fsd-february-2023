@@ -4,17 +4,14 @@ function Employee(){
      
     let age = 56;
 
-    const displayMessage = ()=>{
-        alert("display");
+    const updateAgeDetails = ()=>{
+        age = 20;
+        console.log(age);
     }
 
     return <div id="heading" className="headingDetails">
-         <h1>hello world - salman</h1>
-           <div>{2+2}</div>
            <div>{age}</div>
-           <div>{age>=56?<h1>Yes</h1>:<h1>No</h1>}</div>
-           {/* <div>{displayMessage()}</div> */}
-           <button onClick={displayMessage}>Submit</button>
+           <button onClick={updateAgeDetails}>Submit</button>
           </div>
   
 }
