@@ -19,5 +19,37 @@ To check the version of react
 package.json 
 "react": "^18.2.0",
 "react-dom": "^18.2.0"
-
 =================================
+What is component?
+//Component is nothing but a function 
+//function name should be in capital letter 
+//function should return JSX 
+//JSX - javascript extension 
+//JSX is nothing we are written html inside the javascript
+function App(){
+     return <div>Hello</div>
+}
+=========================================
+import/export 
+//we are dividing our code into multiple files 
+example:
+//export statement
+function App(){
+     return <div>Hello</div>
+}
+export default App;
+
+//import statement 
+import App from './filelocation';
+===========================================
+JSX Rules:
+//Always you need to wrapped entire html in "<div></div>" tag 
+//please change css class to "className"
+//To write javascript inside the JSX "{}"
+//To write html inside the javascript "()"
+Things we can write inside the "{}"
+{getAge}
+{condition?true:false}
+{getAge && (<div>hello</div>)}
+==========================================
+
