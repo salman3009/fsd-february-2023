@@ -21,8 +21,8 @@ const App = () => {
       <button id = "btnB" onClick={counterTwoHandler}>
         Increment B
       </button>
-      <div id="countA">{getCounterOne}</div>
-      <div id = "countB">{getCounterTwo}</div>
+      <div id="countA">counterA: {getCounterOne}</div>
+      <div id = "countB">counterB: {getCounterTwo}</div>
     </div>
   )
 }
