@@ -1,0 +1,30 @@
+<script>
+    const employee=[
+        {
+            id:"1",
+            name:"rajesh",
+            email:"rajesh@gmail.com",
+            status:true
+        },
+        {
+            id:"1",
+            name:"kumar",
+            email:"rak@gmail.com",
+            status:false
+        },
+        {
+            id:"1",
+            name:"suresh",
+            email:"sur@gmail.com",
+            status:true
+        }
+    ];
+    
+    let result = employee.map((input)=>{
+           return {
+            fullName:input['name'],
+            email:input['email']
+           }
+    })
+    console.log(result);
+</script>
