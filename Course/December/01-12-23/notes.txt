@@ -1,0 +1,23 @@
+npx --> It will always install the latest version.
+Main files:
+1.package.json 
+2.node_modules 
+3.public 
+4.src 
+Any code Taken from github we need to install all the packages:
+cmd:npm install 
+SPA - Single page application 
+//You will have only one html file in entire application 
+public/index.html 
+Flow of the Code 
+index.html-->index.js--->app.js 
+Starting the application 
+cmd:npm start 
+Stopping the application 
+cmd:ctrl+c 
+To check the version of react 
+package.json 
+"react": "^18.2.0",
+"react-dom": "^18.2.0"
+
+=================================

@@ -9,6 +9,8 @@ import './App.css';
 Writing javascript inside the JSX:
 syntax:
 {expression}
+==================================
+How to use Events in Reactjs 
 ======================================
 State in React 
 //To update the dynamic data in jsx we need state 
