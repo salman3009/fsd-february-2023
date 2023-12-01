@@ -69,4 +69,15 @@ function App(){
     </div>)
 }
 ==============================================
+How to use Events in reactjs 
+function App(){
 
+    const getDisplay=()=>{
+        setName("suresh");
+    }
+
+    return (<div>
+      <button onClick={getDisplay}>click</button>
+    </div>)
+}
+============================================
