@@ -88,3 +88,6 @@ How apply css class
 example:
 import './app.css';
 ===========================================
+Below expression will not display anything in jsx:
+{undefined}{false}{null}{''}
+==========================================
