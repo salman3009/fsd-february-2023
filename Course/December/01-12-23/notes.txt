@@ -52,4 +52,21 @@ Things we can write inside the "{}"
 {condition?true:false}
 {getAge && (<div>hello</div>)}
 ==========================================
+useState:
+//To maintain any data dyanmically we need to use state
+example:
+import {useState} from 'react';
+
+function App(){
+    const[getName,setName]=useState('akash');
+
+    const getDisplay=()=>{
+        setName("suresh");
+    }
+
+    return (<div>
+      {getName}
+    </div>)
+}
+==============================================
 
