@@ -2,27 +2,28 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 
+const employee = [
+  {
+    id: "1",
+    name: "rajesh",
+    email: "rajesh@gmail.com",
+    status: true
+  },
+  {
+    id: "1",
+    name: "kumar",
+    email: "rak@gmail.com",
+    status: false
+  },
+  {
+    id: "1",
+    name: "suresh",
+    email: "sur@gmail.com",
+    status: true
+  }
+];
+
 function App() {
-  const employee = [
-    {
-      id: "1",
-      name: "rajesh",
-      email: "rajesh@gmail.com",
-      status: true
-    },
-    {
-      id: "1",
-      name: "kumar",
-      email: "rak@gmail.com",
-      status: false
-    },
-    {
-      id: "1",
-      name: "suresh",
-      email: "sur@gmail.com",
-      status: true
-    }
-  ];
 
   return (
     <div className="App">
