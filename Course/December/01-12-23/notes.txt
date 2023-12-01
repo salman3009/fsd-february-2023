@@ -41,6 +41,7 @@ export default App;
 
 //import statement 
 import App from './filelocation';
+<App/>
 ===========================================
 JSX Rules:
 //Always you need to wrapped entire html in "<div></div>" tag 
@@ -81,3 +82,9 @@ function App(){
     </div>)
 }
 ============================================
+How apply css class 
+//we need to create file with filename.css 
+//we need to import in js file 
+example:
+import './app.css';
+===========================================
