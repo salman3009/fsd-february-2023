@@ -15,9 +15,8 @@ function App() {
   }
 
   const previousPageHandler=()=>{
-    //4<=4
     if(getIndex<=0){
-      setIndex(0);
+      setIndex(image.length-1);
     }else{
       setIndex(getIndex-1);
     }  
