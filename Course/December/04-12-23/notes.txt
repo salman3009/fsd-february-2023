@@ -26,4 +26,12 @@ props:
 //props is nothing passing properties to custom component 
 //It helps to make component dynamic.
 //props will take only one argument that is called object
+//You can pass multiple properties
+example:
+function Product(props){
+    return <div>{props.name}</div>
+}
+function App(){
+    <Product name="samsung"/>
+}
 ===============================
