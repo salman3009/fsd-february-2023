@@ -1,9 +1,12 @@
 import './App.css';
-import Header from './Header';
+import Product from './Product';
 function App() {
   return (
     <div className="App">
-     <Header/>
+      <Product name="samsung" price="200"/>
+      <Product name="sony" price="400"/>
+      <Product name="lg" price="260"/>
+      <Product name="nokia" price="800"/>
     </div>
   );
 }
