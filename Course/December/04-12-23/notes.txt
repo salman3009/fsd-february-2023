@@ -42,3 +42,8 @@ filename.css
 //import css file inside the custom component 
 import './Product.css'
 ==================================
+What is the use of splitting the component?
+easier to manage
+improve performance
+improve reusability
+=============================================
