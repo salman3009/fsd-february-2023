@@ -34,8 +34,8 @@ function Product(){
     return (<div className="box">
          <h1>{getPage}</h1>
          <button onClick={onChangeHandler}>Click</button>
-         {getData.map((data)=>{
-              return(<div>
+         {getData.map((data,index)=>{
+              return(<div key={index}>
                 <img src={data.image}/>
               </div>)
          })}
