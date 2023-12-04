@@ -47,3 +47,13 @@ easier to manage
 improve performance
 improve reusability
 =============================================
+Inline style inside the JSX:
+//inline style we need to write inside the object 
+//each style shoulbe in key and value pair 
+//any style with hyphen in between should change to capital letter 
+example:
+style={}
+style={{color:"red"}}
+style={{color:"red",backgroundColor:"blue"}};
+<div style={{color:"red",backgroundColor:"blue"}}></div>
+======================================================
