@@ -35,3 +35,10 @@ function App(){
     <Product name="samsung"/>
 }
 ===============================
+custom component providing css:
+//create one new file with same as component file with capital extension.css 
+example:
+filename.css 
+//import css file inside the custom component 
+import './Product.css'
+==================================
