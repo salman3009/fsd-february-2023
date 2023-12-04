@@ -60,3 +60,17 @@ style={{color:"red",backgroundColor:"blue"}};
 Writing conditional operator inside the jsx 
 {condition?true:false}
 =====================================================
+useEffect:
+//life cycle hooks
+//every time any state in the depenency array is change it will call the callback function.
+//after the state change it will call callback function 
+//useState is asynchronous. so any change after state you want to make we can use UseEffect().
+//useEffect will get trigger automatically for first render.
+Types of useEffect:
+useEffect(()=>{
+        alert("callback");
+},[getPage]) -->state changes happen
+
+useEffect(()=>{
+        alert("callback");
+},[]) --> it will get trigger only one time during intial rendering
