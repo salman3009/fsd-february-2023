@@ -75,3 +75,10 @@ useEffect(()=>{
         alert("callback");
 },[]) --> it will get trigger only one time during intial rendering
 ===============================================================
+api call in reactjs
+//we need to use either fetch method or axios third party package.
+//for api call we can use async await code.
+//api call we should make in useeffect() 
+//api data we need inside the state. 
+
+
