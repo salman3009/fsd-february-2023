@@ -1,0 +1,24 @@
+Custom components 
+//Creating your own components 
+steps:
+1.Any custom components we can create only inside the src folder.
+2.create one new file with extension filename.js 
+3.filename should be in capital letter. 
+4.function name should be same as filename.
+example:
+function Header(){
+    return (<div>
+     <h1>Header component</h1>
+     </div>)
+}
+export default Header;
+5.our main component that is going to render in app.js. Inside the app.js we need to import custom component.
+example:
+import Header from './Header';
+6.
+function App(){
+    return <div>
+     <Header/>
+    </div>
+}
+================================
