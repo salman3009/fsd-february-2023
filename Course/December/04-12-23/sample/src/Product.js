@@ -6,12 +6,12 @@ function Product(){
      const[getPage,setPage] = useState(1);
 
      useEffect(()=>{
-        alert("callback");
+        intial();
      },[getPage])
 
-     useEffect(()=>{
-        intial();
-     },[])
+    //  useEffect(()=>{
+    //     intial();
+    //  },[])
 
      const onChangeHandler=()=>{
         setPage(getPage+1);//asynchronous
