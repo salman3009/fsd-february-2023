@@ -74,3 +74,4 @@ useEffect(()=>{
 useEffect(()=>{
         alert("callback");
 },[]) --> it will get trigger only one time during intial rendering
+===============================================================
