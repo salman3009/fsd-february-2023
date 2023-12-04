@@ -1,15 +1,10 @@
 import './Product.css';
 
-function Product(props){
-    //destructuring of object
-    const {name,price} = props;
-
-    let styleObject = {color:"red",marginTop:"40px"};
+function Product(){
+   
 
     return (<div className="box">
-        <h1 id={name} style={styleObject}>Product Name:{name}</h1>
-        <h1 style={name==="sony"?{color:"blue",backgroundColor:"grey"}:{color:"red",backgroundColor:"orange"}}>Product Price:{price}</h1>
-        <h3>{name ==="sony"?"40% discount":"20% discount"}</h3>
+         <h1>hello</h1>
     </div>)
 }
 
