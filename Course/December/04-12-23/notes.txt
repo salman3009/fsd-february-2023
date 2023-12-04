@@ -57,3 +57,5 @@ style={{color:"red"}}
 style={{color:"red",backgroundColor:"blue"}};
 <div style={{color:"red",backgroundColor:"blue"}}></div>
 ======================================================
+Writing conditional operator inside the jsx 
+{condition?true:false}
