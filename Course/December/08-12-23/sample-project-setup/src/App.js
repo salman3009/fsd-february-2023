@@ -15,6 +15,14 @@ function App() {
         setMessage("All fields must be filled");
         setColor('red');
       }
+      else if(getpassword.length<4){
+        setMessage("password length must be greater then 4");
+        setColor('red');
+      }
+      else if(!getEmail.includes("@gmail.com")){
+        setMessage("email should be @gmail.com");
+        setColor('red');
+      }
       else{
         setMessage("congrats login is successful");
         setColor('green');
