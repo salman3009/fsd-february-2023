@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import '../styles/App.css';
 const App = () => {
    const [getUserName, setUserName] = useState('');
    const [getPassword, setPassword] = useState('');
@@ -20,7 +20,6 @@ const App = () => {
    }
 
    const onSubmitHandler = (event) => {
-    debugger;
           event.preventDefault();
         if(!getUserName || !getPassword || !getEmail){
             setColor('red');
