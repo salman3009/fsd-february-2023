@@ -44,7 +44,7 @@ const App = () => {
             <br />
             <button onClick={onSubmitHandler}>Login</button>
          </form>
-         <div style={{color:getColor}} lassname="error"> {getMessage}</div>
+         <div style={{color:getColor}} className="error"> {getMessage}</div>
       </div>
    );
 }
