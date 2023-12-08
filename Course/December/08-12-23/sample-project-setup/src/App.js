@@ -7,14 +7,17 @@ function App() {
   const[getEmail,setEmail] = useState('');
   const[getpassword,setPassword] = useState('');
   const[getMessage,setMessage] = useState('');
+  const[getColor,setColor] = useState('');
 
   const onSubmitHandler=(event)=>{
       event.preventDefault();
       if(!getEmail || !getpassword){
         setMessage("All fields must be filled");
+        setColor('red');
       }
       else{
         setMessage("congrats login is successful");
+        setColor('green');
       }
   }
 
@@ -35,7 +38,7 @@ function App() {
        <br/><br/>
        <button onClick={onSubmitHandler}>Login</button>
       </form>
-       <h1>{getMessage}</h1>
+       <h1 style={{color:getColor}}>{getMessage}</h1>
     </div>
   );
 }
