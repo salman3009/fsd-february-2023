@@ -19,8 +19,7 @@ const App = () => {
       setEmail(event.target.value);
    }
 
-   const onSubmitHandler = (event) => {
-          event.preventDefault();
+   const onSubmitHandler = () => {
         if(!getUserName || !getPassword || !getEmail){
             setColor('red');
             setMessage('All Fields must be filled');
