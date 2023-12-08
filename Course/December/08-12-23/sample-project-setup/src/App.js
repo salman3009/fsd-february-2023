@@ -6,11 +6,16 @@ function App() {
   
   const[getEmail,setEmail] = useState('');
   const[getpassword,setPassword] = useState('');
+  const[getMessage,setMessage] = useState('');
 
   const onSubmitHandler=(event)=>{
       event.preventDefault();
-      alert(getEmail);
-      alert(getpassword);
+      if(!getEmail || !getpassword){
+        setMessage("All fields must be filled");
+      }
+      else{
+        setMessage("congrats login is successful");
+      }
   }
 
   const setEmailHandler=(event)=>{
@@ -30,7 +35,7 @@ function App() {
        <br/><br/>
        <button onClick={onSubmitHandler}>Login</button>
       </form>
-      
+       <h1>{getMessage}</h1>
     </div>
   );
 }
