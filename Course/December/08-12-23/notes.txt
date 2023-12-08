@@ -12,3 +12,8 @@ javascript:
 //pagination 
 //local storage 
 ========================================================
+Reactjs 
+Inline style:
+<div style={{}}/>
+{width:"220px",backgroundColor:"red"}
+=====================================================
