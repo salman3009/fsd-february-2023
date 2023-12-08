@@ -80,5 +80,5 @@ api call in reactjs
 //for api call we can use async await code.
 //api call we should make in useeffect() 
 //api data we need inside the state. 
-
+========================================================
 

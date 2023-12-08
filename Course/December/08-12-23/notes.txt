@@ -1,0 +1,14 @@
+html+css+javascript:
+
+html/css 
+1.complete interview question from excel sheet  - 2hours
+2.movie deck - html/css - 5hours 
+
+javascript:
+1.complete interview question - 10hours 
+2.movie deck - javascript -5hours 
+//fetch api 
+//search functionality 
+//pagination 
+//local storage 
+========================================================
