@@ -36,15 +36,16 @@ const App = () => {
    return (
       <div id="main">
          <form>
-            <input type="text" onChange={setUserNameHandler} />
+            <input type="text" placeholder="username" onChange={setUserNameHandler} />
             <br />
-            <input type="password" onChange={setPasswordHandler} />
+            <input type="password" placeholder="password" onChange={setPasswordHandler} />
             <br />
-            <input type="email" onChange={setEmailHandler} />
+            <input type="email" placeholder="email"
+            onChange={setEmailHandler} />
             <br />
+            <div style={{color:getColor}} className="error"> {getMessage}</div>
             <button onClick={onSubmitHandler}>Login</button>
          </form>
-         <div style={{color:getColor}} className="error"> {getMessage}</div>
       </div>
    );
 }
