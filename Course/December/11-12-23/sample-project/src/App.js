@@ -42,6 +42,7 @@ function App() {
   //part 2 //part 5
   return (
     <div className="App">
+        {/* <input type="text" onChange={onChangeHandler}/> */}
         {
           keys.map((input)=>{
                return <span key={input}>
