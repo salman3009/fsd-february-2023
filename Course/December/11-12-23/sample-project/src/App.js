@@ -4,12 +4,15 @@ import {useEffect,useState} from 'react';
 
 function App() {
 
+  //part 1
  const[getQuote,setQuote] = useState('');
 
+ //part 3
   useEffect(()=>{
         initial();  
   },[])
 
+  //part 4
   const initial= async ()=>{
         try{ 
           let response = await fetch('https://api.quotable.io/random');
@@ -23,6 +26,7 @@ function App() {
   }
 
 
+  //part 2 //part 5
   return (
     <div className="App">
         <h1>{getQuote}</h1>
