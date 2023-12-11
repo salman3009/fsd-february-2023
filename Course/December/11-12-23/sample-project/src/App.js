@@ -1,13 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import {useEffect} from 'react';
 
 function App() {
+
+  useEffect(()=>{
+        initial();  
+  },[])
 
   const initial= async ()=>{
         try{ 
           let response = await fetch('https://api.quotable.io/random');
           response = await response.json();
-          console.log(response);
+          console.log(response.content);
 
         }catch(err){
           alert("error");
