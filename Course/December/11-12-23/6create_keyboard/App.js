@@ -12,9 +12,26 @@ const App = () => {
      setInput(getInput+event.target.value);
   }
 
-  if(getQuote){
-     return <div className="quote">{getQuote}</div>
+  useEffect(()=>{
+      initial();
+  },[getInput])
+
+  const initial=async ()=>{
+       try{
+        let response = await fetch("https://api.quotable.io/random");
+        response = await response.json();
+        setQuote(response.content);
+       }catch(err){
+           console.log("error");
+       }
   }
+
+  if(getQuote){
+     return (
+      <div className="quote">{getQuote}</div>
+      );
+  }
+
   return (
     <div className="keyboard">
       <div className="preview">{getInput}</div>
