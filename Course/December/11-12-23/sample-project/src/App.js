@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import {useEffect} from 'react';
+import {useEffect,useState} from 'react';
 
 function App() {
+
+ const[getQuote,setQuote] = useState('');
 
   useEffect(()=>{
         initial();  
@@ -13,6 +15,7 @@ function App() {
           let response = await fetch('https://api.quotable.io/random');
           response = await response.json();
           console.log(response.content);
+          setQuote(response.content);
 
         }catch(err){
           alert("error");
@@ -22,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-        hello world
+        <h1>{getQuote}</h1>
     </div>
   );
 }
