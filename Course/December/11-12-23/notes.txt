@@ -6,3 +6,13 @@ Writing Procedure for code
 3.function call 
 4.return 
 =================================
+useEffect
+//It will trigger only one time during initial load of the page
+1.useEffect(()=>{
+
+},[])
+//It will trigger everytime whenever there is change in state 
+2.useEffect(()=>{
+
+},[stateDependency])
+=================================

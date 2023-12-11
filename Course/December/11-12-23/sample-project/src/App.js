@@ -5,7 +5,7 @@ import {useEffect,useState} from 'react';
 function App() {
 
   //part 1
- const[getQuote,setQuote] = useState('');
+ const[getQuote,setQuote] = useState('hhh');
  const [getInput,setInput] = useState('');
 
  //part 3
@@ -14,7 +14,9 @@ function App() {
   },[])
 
   useEffect(()=>{
-    initial();  
+    if(getInput == "two"){
+      initial(); 
+    }
   },[getInput])
 
   //part 4
@@ -31,9 +33,9 @@ function App() {
   }
 
   const onChangeHandler=(event)=>{
-     setInput(event.target.value);
-    
-  }
+     setInput(event.target.value);//asynchronous code
+  
+    }
 
 
   //part 2 //part 5
