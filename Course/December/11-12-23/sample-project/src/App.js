@@ -6,11 +6,16 @@ function App() {
 
   //part 1
  const[getQuote,setQuote] = useState('');
+ const [getInput,setInput] = useState('');
 
  //part 3
   useEffect(()=>{
         initial();  
   },[])
+
+  useEffect(()=>{
+    initial();  
+  },[getInput])
 
   //part 4
   const initial= async ()=>{
@@ -25,11 +30,18 @@ function App() {
         }
   }
 
+  const onChangeHandler=(event)=>{
+     setInput(event.target.value);
+    
+  }
+
 
   //part 2 //part 5
   return (
     <div className="App">
         <h1>{getQuote}</h1>
+        <h1>{getInput}</h1>
+        <input type="text" onChange={onChangeHandler}/>
     </div>
   );
 }
