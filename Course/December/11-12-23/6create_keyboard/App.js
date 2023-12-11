@@ -8,8 +8,8 @@ const App = () => {
   const [getInput,setInput] = useState('');
   const [getQuote,setQuote] = useState('');
   
-  const onClickHandler=(event)=>{
-     setInput(getInput+event.target.value);
+  const onClickHandler=(key)=>{
+     setInput(getInput + key);
   }
 
   useEffect(()=>{
@@ -39,7 +39,7 @@ const App = () => {
       <div className="preview">{getInput}</div>
       <div>
         {keys.map(( key) => (
-          <button key={key} value={key} onClick={onClickHandler} id={key === " " ? `key-space` : `key-${key}`}>
+          <button key={key} onClick={()=>onClickHandler(key)} id={key === " " ? `key-space` : `key-${key}`}>
             {key === " " ? "Space" : key.toUpperCase()}
           </button>
         ))}
