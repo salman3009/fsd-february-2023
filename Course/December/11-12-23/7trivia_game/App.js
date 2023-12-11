@@ -20,8 +20,8 @@ const App = () => {
             let response = await fetch('https://opentdb.com/api.php?amount=1')
             response = await response.json();
             if (response.response_code == 0) {
-                setQuestion(data.results[0].question);
-                setAnswer(data.results[0].correct_answer);
+                setQuestion(response.results[0].question);
+                setAnswer(response.results[0].correct_answer);
                 setUserAnswer('');
                 setResult(' ')
             }
