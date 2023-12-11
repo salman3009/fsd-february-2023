@@ -6,9 +6,14 @@ const keys = "abcdefghijklmnopqrstuvwxyz0123456789 ".split("");
 const App = () => {
 
   const [getInput,setInput] = useState('');
+  const [getQuote,setQuote] = useState('');
   
   const onClickHandler=(event)=>{
      setInput(getInput+event.target.value);
+  }
+
+  if(getQuote){
+     return <div className="quote">{getQuote}</div>
   }
   return (
     <div className="keyboard">
