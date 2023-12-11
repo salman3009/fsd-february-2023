@@ -5,7 +5,7 @@ import {useEffect,useState} from 'react';
 function App() {
 
   //part 1
- const[getQuote,setQuote] = useState('hhh');
+ const[getQuote,setQuote] = useState('');
  const [getInput,setInput] = useState('');
 
  //part 3
@@ -37,12 +37,13 @@ function App() {
   
     }
 
+    if(getQuote){
+     return <div>{getQuote}</div>
+    }
 
   //part 2 //part 5
   return (
     <div className="App">
-        <h1>{getQuote}</h1>
-        <h1>{getInput}</h1>
         <input type="text" onChange={onChangeHandler}/>
     </div>
   );
