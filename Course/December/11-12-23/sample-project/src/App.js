@@ -46,7 +46,7 @@ function App() {
         {
           keys.map((input)=>{
                return <span key={input}>
-                 {input ==' '? <button id={input == ' '?"key-space":`key-${input}`}>space</button>:<button id={input == ' '?"key-space":`key-${input}`}>{input}</button>}
+                 {input ==' '? <button>space</button>:<button>{input}</button>}
                </span>
           })
         }
