@@ -13,7 +13,9 @@ const App = () => {
   }
 
   useEffect(()=>{
-      initial();
+    if(getInput == "forty two"){
+          initial();
+    }
   },[getInput])
 
   const initial=async ()=>{
