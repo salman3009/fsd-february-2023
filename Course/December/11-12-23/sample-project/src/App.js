@@ -44,9 +44,9 @@ function App() {
     <div className="App">
         <input type="text" onChange={onChangeHandler}/>
         {
-          keys.map((input,index)=>{
-               return <span key={index}>
-                 {input ==' '? <button>space</button>:<button>{input}</button>}
+          keys.map((input)=>{
+               return <span key={input}>
+                 {input ==' '? <button id={input == ' '?"key-space":`key-${input}`}>space</button>:<button id={input == ' '?"key-space":`key-${input}`}>{input}</button>}
                </span>
           })
         }
