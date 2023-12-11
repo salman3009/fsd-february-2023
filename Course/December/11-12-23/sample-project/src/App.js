@@ -31,6 +31,7 @@ function App() {
   }
 
   const onChangeHandler=(key)=>{
+     alert(key);
      setInput(key);//asynchronous code
   
     }
@@ -42,6 +43,7 @@ function App() {
   //part 2 //part 5
   return (
     <div className="App">
+        <button onClick={()=>onChangeHandler("details")}>Details</button>
         {/* <input type="text" onChange={onChangeHandler}/> */}
         {
           keys.map((input)=>{

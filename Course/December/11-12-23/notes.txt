@@ -23,3 +23,18 @@ useEffect
 5.return jsx
 6.map function with dyanmic 
 ======================================
+useEffect  -- two types 
+[]==> it will call callback function one time 
+[state] ==> whenever changes happen it will trigger the callback 
+
+api  call 
+async await 
+fetch method 
+update the state variable
+
+"".split() ==> array 
+map-->bind the data 
+
+
+input --> event.target.value --> {function}
+button -->{()=>function(44)};
