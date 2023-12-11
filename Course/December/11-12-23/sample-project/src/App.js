@@ -6,6 +6,9 @@ function App() {
 
   const[getQuestion,setQuestion] = useState('');
   const [getAnswer,setAnswer] = useState('');
+  const [getInput,setInput] = useState('');
+  const [getResult,setResult] = useState('');
+
   useEffect(()=>{
     intiail();
   },[])
@@ -23,10 +26,27 @@ function App() {
      }
   }
 
+  const onChangeHandler=(event)=>{
+    setInput(event.target.value);
+  }
+
+  const onSubmitHandler=()=>{
+     if(getInput === getAnswer){
+      setResult("correct");
+     }
+     else{
+      setResult("Incorrect");
+     }
+  }
+
   return (
     <div className="App">
         <h1>{getQuestion}</h1>
         <h2>{getAnswer}</h2>
+        <input type="text" onChange={onChangeHandler}/>
+        <br/>
+        <button onClick={onSubmitHandler}>Submit</button>
+        <h1>{getResult}</h1>
     </div>
   );
 }
