@@ -30,8 +30,8 @@ function App() {
         }
   }
 
-  const onChangeHandler=(event)=>{
-     setInput(event.target.value);//asynchronous code
+  const onChangeHandler=(key)=>{
+     setInput(key);//asynchronous code
   
     }
 
@@ -42,11 +42,10 @@ function App() {
   //part 2 //part 5
   return (
     <div className="App">
-        <input type="text" onChange={onChangeHandler}/>
         {
           keys.map((input)=>{
                return <span key={input}>
-                 {input ==' '? <button>space</button>:<button>{input}</button>}
+                 {input ==' '? <button onClick={()=>onChangeHandler(input)}>space</button>:<button onClick={()=>onChangeHandler(input)}>{input}</button>}
                </span>
           })
         }
