@@ -16,3 +16,10 @@ useEffect
 
 },[stateDependency])
 =================================
+1.useState 
+2.useEffect 
+3.api call 
+4.input tag value accessing in state 
+5.return jsx
+6.map function with dyanmic 
+======================================

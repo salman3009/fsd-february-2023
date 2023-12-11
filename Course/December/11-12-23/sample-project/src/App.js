@@ -4,6 +4,8 @@ import {useEffect,useState} from 'react';
 
 function App() {
 
+  const keys = "abcdefghijklmnopqrstuvwxyz0123456789 ".split("");
+  console.log(keys);
   //part 1
  const[getQuote,setQuote] = useState('');
  const [getInput,setInput] = useState('');
@@ -41,6 +43,13 @@ function App() {
   return (
     <div className="App">
         <input type="text" onChange={onChangeHandler}/>
+        {
+          keys.map((input,index)=>{
+               return <span key={index}>
+                 {input ==' '? <button>space</button>:<button>{input}</button>}
+               </span>
+          })
+        }
     </div>
   );
 }
