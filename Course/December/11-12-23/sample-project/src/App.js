@@ -8,11 +8,7 @@ function App() {
  const[getQuote,setQuote] = useState('');
  const [getInput,setInput] = useState('');
 
- //part 3
-  useEffect(()=>{
-        initial();  
-  },[])
-
+ 
   useEffect(()=>{
     if(getInput == "two"){
       initial(); 
