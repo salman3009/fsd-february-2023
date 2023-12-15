@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
+
+  const [getPokemon, setPokemon] = useState([]);
 
   const getAllDetails = async () => {
     try {
@@ -20,10 +22,12 @@ function App() {
       // })
 
       //sequential data
-      for await(let obj of list){
+      for await (let obj of list) {
         let responsePokemon = await fetch(obj.url);
         let dataPokemon = await responsePokemon.json();
         console.log(dataPokemon);
+        //setPokemon([...getPokemon, dataPokemon]);
+        setPokemon((currentList)=>[...currentList,dataPokemon]);
       }
 
     } catch (err) {
@@ -35,9 +39,25 @@ function App() {
     getAllDetails();
   }, [])
 
+  useEffect(()=>{
+      console.log(getPokemon);
+  },[getPokemon])
+
   return (
     <div className="App">
-      <h1>Hello world</h1>
+      <div className="container">
+        {getPokemon.map((obj, index) => {
+          return (<div className="box">
+            <div className="number">#1</div>
+            <img
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" />
+            <div className="details-wrapper">
+              <h3>BULBASAUR</h3>
+              <button className="pokeinfo">Know More...</button>
+            </div>
+          </div>)
+        })}
+      </div>
     </div>
   );
 }
