@@ -48,3 +48,7 @@ Inside Response
 second api call:
 https://content.newtonschool.co/v1/pr/64cc0d779d08d5aa491c7160/pokemons1
 ==============================
+Applying css
+//import app.css inside the app.js 
+example:
+import './app.css';
