@@ -12,5 +12,22 @@ Source Code to Start:
 src/App.js 
 To run the project: 
 inside the package.json give right click 
+=====================================
+Get API Call 
+//we are going to use fetch method from javascript 
+//we are going to use arrow function to write fetch method 
+//we are going to use async await to call promise from fetch 
+//we are going to use try/catch block from javascript 
+example:
+const getAllDetails= async ()=>{
+      try{
+        let response = await fetch("https://content.newtonschool.co/v1/pr/64ccef982071a9ad01d36ff6/pokemonspages1");
+        let data = await response.json();
+        console.log(data);
+      }catch(err){
+        console.log(err);
+      }
+   }
+========================================
 
 
