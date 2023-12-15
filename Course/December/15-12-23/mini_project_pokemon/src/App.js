@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import {useEffect} from 'react';
 
 function App() {
 
@@ -13,6 +14,9 @@ function App() {
       }
    }
 
+   useEffect(()=>{
+        alert("initial load");
+   },[])
 
   return (
     <div className="App">

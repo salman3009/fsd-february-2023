@@ -29,5 +29,13 @@ const getAllDetails= async ()=>{
       }
    }
 ========================================
+Calling api only one time using useEffect 
+
+import {useEffect} from 'react';
+1.During intial load of the page it will trigger only one time.
+  useEffect(()=>{
+
+   },[])
+=====================================
 
 
