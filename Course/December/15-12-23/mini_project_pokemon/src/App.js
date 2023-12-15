@@ -11,11 +11,20 @@ function App() {
       let data = await response.json();
       console.log(data[0].results);
       let list = data[0].results;
-      list.forEach(async (obj)=>{
+
+      //random data
+      // list.forEach(async (obj)=>{
+      //   let responsePokemon = await fetch(obj.url);
+      //   let dataPokemon = await responsePokemon.json();
+      //   console.log(dataPokemon);
+      // })
+
+      //sequential data
+      for await(let obj of list){
         let responsePokemon = await fetch(obj.url);
         let dataPokemon = await responsePokemon.json();
         console.log(dataPokemon);
-      })
+      }
 
     } catch (err) {
       console.log(err)
