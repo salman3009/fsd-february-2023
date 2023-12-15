@@ -1,0 +1,16 @@
+Mini project - pokeman 
+Reactjs:
+1.Get api call 
+2.usestate and Use Effect 
+3.map function inside the jsx 
+4.splitting the component 
+5.passing props
+===========================
+Creating React Project 
+cmd:npx create-react-app project_name
+Source Code to Start: 
+src/App.js 
+To run the project: 
+inside the package.json give right click 
+
+
