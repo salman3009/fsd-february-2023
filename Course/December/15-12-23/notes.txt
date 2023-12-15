@@ -37,5 +37,13 @@ import {useEffect} from 'react';
 
    },[])
 =====================================
+To Debug Api call in the browser 
+//right click --> inspect --> network tab --> XHR 
+Inside Headers: 
+//Request URL: -> verify your url
+//Status Code: -> check for 200 
+Inside Response 
+//check data is coming or not 
+==================================
 
 
