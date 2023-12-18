@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import {useEffect} from 'react';
 
 function App() {
 
@@ -12,6 +13,10 @@ function App() {
       console.log(err);
      }
   }
+
+  useEffect(()=>{
+    getAllPokemon();
+  },[])
 
   return (
     <div className="App">
