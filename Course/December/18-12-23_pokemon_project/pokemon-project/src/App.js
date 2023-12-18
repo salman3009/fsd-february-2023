@@ -5,12 +5,14 @@ import { useEffect, useState } from 'react';
 function App() {
 
   const [getList, setList] = useState([]);
+  const[getAPI,setAPI] = useState('https://content.newtonschool.co/v1/pr/64ccef982071a9ad01d36ff6/pokemonspages1');
 
   const getAllPokemon = async () => {
     try {
-      let response = await fetch('https://content.newtonschool.co/v1/pr/64ccef982071a9ad01d36ff6/pokemonspages1');
+      let response = await fetch(getAPI);
       let data = await response.json();
       console.log(data[0].results);
+      setAPI(data[0].next);
       let list = data[0].results;
       for await (let obj of list) {
         let responsePokemon = await fetch(obj.url);
@@ -26,6 +28,10 @@ function App() {
   useEffect(() => {
     getAllPokemon();
   }, [])
+
+  const nextLoadData = ()=>{
+    getAllPokemon();
+  }
 
   return (
     <div className="App">
@@ -46,6 +52,7 @@ function App() {
               </div>)
             })}
           </div>
+          <button class="load-more" onClick={nextLoadData}>More Pokemons</button>
         </div>
       </div>
 
