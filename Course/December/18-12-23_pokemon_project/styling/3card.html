@@ -1,0 +1,101 @@
+<html>
+
+<head></head>
+
+<body>
+    <div class="container">
+        <div class="thumb-container grass">
+            <div class="number"><small>#1</small></div><img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+                alt="bulbasaur">
+            <div class="detail-wrapper">
+                <h3>BULBASAUR</h3><small>Type: grass</small><button class="pokeinfo">Know more...</button>
+            </div>
+        </div>
+        <div class="thumb-container poison">
+            <div class="number"><small>#2</small></div><img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+                alt="bulbasaur">
+            <div class="detail-wrapper">
+                <h3>BULBASAUR</h3><small>Type: grass</small><button class="pokeinfo">Know more...</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .thumb-container {
+        padding: 10px 15px;
+        margin: 5px;
+        border: 1px solid #efefef;
+        border-radius: 1rem;
+        width: 200px;
+        text-align: center;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+    }
+
+    .thumb-container:hover {
+        transform: scale(1.2);
+        border-radius: 10px;
+    }
+
+    .thumb-container .number {
+        border-radius: 8px;
+        padding: 10px 10px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .thumb-container img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .detail-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    h3 {
+        margin-bottom: 0.2rem;
+    }
+
+    .thumb-container small {
+        text-transform: capitalize;
+    }
+
+    .detail-wrapper button {
+        color: rgb(22, 22, 22);
+        padding: .5rem;
+        margin-top: 1rem;
+        border: none;
+        border-radius: 0.2rem;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.185);
+    }
+
+    .grass {
+        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    }
+
+    .poison {
+        background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+    }
+
+    .pokeinfo {
+        margin: 0 25px;
+        background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+    }
+
+    .pokeinfo:hover {
+        background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+    }
+</style>
+
+</html>
