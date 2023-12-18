@@ -7,4 +7,8 @@ Creating New Project:
 //npx create-react-app project_name 
 To Run the project:
 right click package.json --> npm start 
+Main source file for code 
+App.js 
+Remove strict mode in index.js
+<React.StrictMode>
 =======================================
