@@ -16,6 +16,7 @@ function App() {
         let responsePokemon = await fetch(obj.url);
         let dataPokemon = await responsePokemon.json();
         console.log(dataPokemon);
+        setList((currentData)=>[...currentData,dataPokemon[0]]);
        }
      }catch(err){
       console.log(err);
