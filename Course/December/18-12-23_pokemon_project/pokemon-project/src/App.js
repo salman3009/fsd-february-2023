@@ -39,7 +39,7 @@ function App() {
         <div className="pokemon-container">
           <div className="all-container">
             {getList.map((obj, index) => {
-              return (<div key={index} className="thumb-container normal">
+              return (<div key={index} className={`thumb-container ${obj.type}`}>
                 <div className="number">
                   <small>{obj.id}</small>
                 </div>
@@ -52,7 +52,7 @@ function App() {
               </div>)
             })}
           </div>
-          <button class="load-more" onClick={nextLoadData}>More Pokemons</button>
+          <button className="load-more" onClick={nextLoadData}>More Pokemons</button>
         </div>
       </div>
 
