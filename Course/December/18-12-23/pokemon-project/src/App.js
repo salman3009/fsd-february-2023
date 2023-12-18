@@ -8,7 +8,7 @@ function App() {
      try{
        let response = await fetch('https://content.newtonschool.co/v1/pr/64ccef982071a9ad01d36ff6/pokemonspages1');
        let data = await response.json();
-       console.log(data);
+       console.log(data[0].results);
      }catch(err){
       console.log(err);
      }
