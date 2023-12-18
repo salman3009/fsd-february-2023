@@ -52,3 +52,7 @@ Applying css
 //import app.css inside the app.js 
 example:
 import './app.css';
+====================================
+Updating state with existing data 
+useState((previous)=>[...previous,newdata])
+===================================

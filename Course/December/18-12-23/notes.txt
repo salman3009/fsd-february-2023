@@ -1,0 +1,10 @@
+Pokemon Project:
+1.Api Data from backend 
+2.Load More button bring new 20 data from backend 
+3.inside the card button pop will open will get detailed data.
+===================================================
+Creating New Project:
+//npx create-react-app project_name 
+To Run the project:
+right click package.json --> npm start 
+=======================================

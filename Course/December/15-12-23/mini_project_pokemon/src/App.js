@@ -39,9 +39,7 @@ function App() {
     getAllDetails();
   }, [])
 
-  useEffect(()=>{
-      console.log(getPokemon);
-  },[getPokemon])
+  
 
   return (
     <div className="App">
