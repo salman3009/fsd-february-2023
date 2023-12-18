@@ -28,3 +28,12 @@ Calling API in first load of the page:
     getAllPokemon();
   },[])
 ============================================================
+Handling multiple api call one after the other 
+//Multiple api will be given in array ["http://newtonschool.com/1","http://newtonschool.com/2","http://newtonschool.com/3"]
+//loop for await() 
+example:
+for await(let obj of []){
+    let response = await fetch(url);
+    let dataq = await response.json();
+}
+=================================================
