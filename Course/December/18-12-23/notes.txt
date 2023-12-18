@@ -38,3 +38,14 @@ for await(let obj of list){
     let dataq = await response.json();
 }
 =================================================
+useState:
+//All api data should be inserted inside the useState.
+==================================================
+Using map function:
+const [getList,setList] = useState([]);
+ {getList.map((obj)=>{
+           return (<>
+             <h1>HELLO</h1>
+           </>)
+      })}
+===================================================

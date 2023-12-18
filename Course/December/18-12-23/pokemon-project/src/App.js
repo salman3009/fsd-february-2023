@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import {useEffect} from 'react';
+import {useEffect,useState} from 'react';
 
 function App() {
+
+  const [getList,setList] = useState([]);
 
   const getAllPokemon= async ()=>{
      try{
@@ -26,7 +28,11 @@ function App() {
 
   return (
     <div className="App">
-       <h1>Hello world</h1>
+      {getList.map((obj)=>{
+           return (<>
+             <h1>HELLO</h1>
+           </>)
+      })}
     </div>
   );
 }
