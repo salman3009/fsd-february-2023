@@ -29,10 +29,10 @@ function App() {
 
   return (
     <div className="App">
-      {getList.map((obj)=>{
-           return (<>
-             <h1>HELLO</h1>
-           </>)
+      {getList.map((obj,index)=>{
+             return (<div key={index}>
+                <h1>hello - {index}</h1>
+             </div>)
       })}
     </div>
   );
