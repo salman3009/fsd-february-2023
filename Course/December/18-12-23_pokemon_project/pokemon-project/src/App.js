@@ -6,6 +6,7 @@ function App() {
 
   const [getList, setList] = useState([]);
   const [getAPI, setAPI] = useState('https://content.newtonschool.co/v1/pr/64ccef982071a9ad01d36ff6/pokemonspages1');
+  const [getModal,setModal] = useState(false);
 
   const getAllPokemon = async () => {
     try {
@@ -33,6 +34,10 @@ function App() {
     getAllPokemon();
   }
 
+  const modalEventHandler=()=>{
+    setModal(!getModal);
+  }
+
   return (
     <div className="App">
       <div className="app-container">
@@ -47,7 +52,7 @@ function App() {
                 <div className="detail-wrapper">
                   <h3>{obj.name.toUpperCase()}</h3>
                   <small>Type: {obj.type}</small>
-                  <button className="pokeinfo">Know more...</button>
+                  <button onClick={modalEventHandler} className="pokeinfo">Know more...</button>
                 </div>
               </div>)
             })}
@@ -57,7 +62,7 @@ function App() {
       </div>
 
 
-      <div class="expanded-overlay normal visible"><button class="close-button normal ">X</button>
+     {getModal && <div class="expanded-overlay normal visible"><button onClick={modalEventHandler} class="close-button normal ">X</button>
         <div class="expanded-left"><img class="expanded-image"
           src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/19.svg"
           alt="rattata" />
@@ -145,7 +150,7 @@ function App() {
             </tbody>
           </table>
         </div>
-      </div>
+      </div>} 
 
     </div>
   );
