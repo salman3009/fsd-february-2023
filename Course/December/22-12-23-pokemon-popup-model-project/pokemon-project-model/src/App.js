@@ -35,8 +35,8 @@ function App() {
     getAllPokemon();
   }
 
-  const modalEventHandler=(id)=>{
-    console.log(id);
+  const modalEventHandler=(event)=>{
+    console.log(event);
     setModal(!getModal);
   }
 
@@ -54,7 +54,7 @@ function App() {
                 <div className="detail-wrapper">
                   <h3>{obj.name.toUpperCase()}</h3>
                   <small>Type: {obj.type}</small>
-                  <button onClick={()=>modalEventHandler(index)} className="pokeinfo">Know more...</button>
+                  <button onClick={modalEventHandler} className="pokeinfo">Know more...</button>
                 </div>
               </div>)
             })}

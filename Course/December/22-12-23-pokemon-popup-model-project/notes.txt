@@ -1,0 +1,8 @@
+Event object in Events:
+//Every function that is binded with events will have event object 
+example:
+const onClickHandler=(event)=>{
+    console.log(event);
+}
+<div id="demo" onClick={onClickHandler}></div>
+=================================================
