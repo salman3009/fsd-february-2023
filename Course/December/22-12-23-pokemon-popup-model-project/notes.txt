@@ -6,3 +6,10 @@ const onClickHandler=(event)=>{
 }
 <div id="demo" onClick={onClickHandler}></div>
 =================================================
+If we put function with parenthesis react will call that function immediately without functionclick
+example:
+<div id="demo" onClick={onClickHandler()}></div>
+===================================================
+Passing explicit parameter apart from event object 
+<div id="demo" onClick={()=>onClickHandler(2)}></div>
+==================================================
