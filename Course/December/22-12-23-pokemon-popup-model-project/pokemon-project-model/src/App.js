@@ -93,27 +93,27 @@ function App() {
                     <tbody>
                       <tr>
                         <td>Stat1:</td>
-                        <td>hp</td>
+                        <td>{getList[getId].stats[0].base_stat}</td>
                       </tr>
                       <tr>
                         <td>Stat2:</td>
-                        <td>attack</td>
+                        <td>{getList[getId].stats[1].base_stat}</td>
                       </tr>
                       <tr>
                         <td>Stat3:</td>
-                        <td>defense</td>
+                        <td>{getList[getId].stats[2].base_stat}</td>
                       </tr>
                       <tr>
                         <td>Stat4:</td>
-                        <td>special-attack</td>
+                        <td>{getList[getId].stats[3].base_stat}</td>
                       </tr>
                       <tr>
                         <td>Stat5:</td>
-                        <td>special-defense</td>
+                        <td>{getList[getId].stats[4].base_stat}</td>
                       </tr>
                       <tr>
                         <td>Stat6:</td>
-                        <td>speed</td>
+                        <td>{getList[getId].stats[5].base_stat}</td>
                       </tr>
                     </tbody>
                   </table>
