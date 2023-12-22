@@ -37,6 +37,7 @@ function App() {
 
   const modalEventHandler=(id)=>{
     console.log(id);
+    setId(id);
     setModal(!getModal);
   }
 
@@ -66,8 +67,8 @@ function App() {
 
      {getModal && <div class="expanded-overlay normal visible"><button onClick={modalEventHandler} class="close-button normal ">X</button>
         <div class="expanded-left"><img class="expanded-image"
-         src={getList[0].image} alt={getList[0].name} />
-          <h3 class="expanded-name">{getList[0].name}</h3>
+         src={getList[getId].image} alt={getList[getId].name} />
+          <h3 class="expanded-name">{getList[getId].name}</h3>
         </div>
         <div class="expanded-right  normal ">
           <table class="expanded-table normal ">
