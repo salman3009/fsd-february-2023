@@ -93,27 +93,27 @@ function App() {
                     <tbody>
                       <tr>
                         <td>Stat1:</td>
-                        <td>{getList[getId].stats[0].base_stat}</td>
+                        <td>{getList[getId].stats[0].stat.name}</td>
                       </tr>
                       <tr>
                         <td>Stat2:</td>
-                        <td>{getList[getId].stats[1].base_stat}</td>
+                        <td>{getList[getId].stats[1].stat.name}</td>
                       </tr>
                       <tr>
                         <td>Stat3:</td>
-                        <td>{getList[getId].stats[2].base_stat}</td>
+                        <td>{getList[getId].stats[2].stat.name}</td>
                       </tr>
                       <tr>
                         <td>Stat4:</td>
-                        <td>{getList[getId].stats[3].base_stat}</td>
+                        <td>{getList[getId].stats[3].stat.name}</td>
                       </tr>
                       <tr>
                         <td>Stat5:</td>
-                        <td>{getList[getId].stats[4].base_stat}</td>
+                        <td>{getList[getId].stats[4].stat.name}</td>
                       </tr>
                       <tr>
                         <td>Stat6:</td>
-                        <td>{getList[getId].stats[5].base_stat}</td>
+                        <td>{getList[getId].stats[5].stat.name}</td>
                       </tr>
                     </tbody>
                   </table>
@@ -123,27 +123,27 @@ function App() {
                     <tbody>
                       <tr>
                         <td>Bs1:</td>
-                        <td>30</td>
+                        <td>{getList[getId].stats[0].base_stat}</td>
                       </tr>
                       <tr>
                         <td>Bs2:</td>
-                        <td>56</td>
+                        <td>{getList[getId].stats[1].base_stat}</td>
                       </tr>
                       <tr>
                         <td>Bs3:</td>
-                        <td>35</td>
+                        <td>{getList[getId].stats[2].base_stat}</td>
                       </tr>
                       <tr>
                         <td>Bs4:</td>
-                        <td>25</td>
+                        <td>{getList[getId].stats[3].base_stat}</td>
                       </tr>
                       <tr>
                         <td>Bs5:</td>
-                        <td>35</td>
+                        <td>{getList[getId].stats[4].base_stat}</td>
                       </tr>
                       <tr>
                         <td>Bs6:</td>
-                        <td>72</td>
+                        <td>{getList[getId].stats[5].base_stat}</td>
                       </tr>
                     </tbody>
                   </table>
