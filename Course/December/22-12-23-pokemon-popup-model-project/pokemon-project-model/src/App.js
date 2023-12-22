@@ -65,13 +65,13 @@ function App() {
       </div>
 
 
-     {getModal && <div class="expanded-overlay normal visible"><button onClick={modalEventHandler} class="close-button normal ">X</button>
-        <div class="expanded-left"><img class="expanded-image"
+     {getModal && <div className="expanded-overlay normal visible"><button onClick={modalEventHandler} className="close-button normal ">X</button>
+        <div className="expanded-left"><img className="expanded-image"
          src={getList[getId].image} alt={getList[getId].name} />
-          <h3 class="expanded-name">{getList[getId].name}</h3>
+          <h3 className="expanded-name">{getList[getId].name}</h3>
         </div>
-        <div class="expanded-right  normal ">
-          <table class="expanded-table normal ">
+        <div className="expanded-right  normal ">
+          <table className="expanded-table normal ">
             <tbody>
               <tr>
                 <td>
@@ -79,11 +79,11 @@ function App() {
                     <tbody>
                       <tr>
                         <td>Weight:</td>
-                        <td>35</td>
+                        <td>{getList[getId].weight}</td>
                       </tr>
                       <tr>
                         <td>Height:</td>
-                        <td>3</td>
+                        <td>{getList[getId].height}</td>
                       </tr>
                     </tbody>
                   </table>
