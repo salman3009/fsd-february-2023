@@ -7,6 +7,7 @@ function App() {
   const [getList, setList] = useState([]);
   const [getAPI, setAPI] = useState('https://content.newtonschool.co/v1/pr/64ccef982071a9ad01d36ff6/pokemonspages1');
   const [getModal,setModal] = useState(false);
+  const [getId,setId] = useState(0);
 
   const getAllPokemon = async () => {
     try {
@@ -34,7 +35,8 @@ function App() {
     getAllPokemon();
   }
 
-  const modalEventHandler=()=>{
+  const modalEventHandler=(id)=>{
+    console.log(id);
     setModal(!getModal);
   }
 
@@ -52,7 +54,7 @@ function App() {
                 <div className="detail-wrapper">
                   <h3>{obj.name.toUpperCase()}</h3>
                   <small>Type: {obj.type}</small>
-                  <button onClick={modalEventHandler} className="pokeinfo">Know more...</button>
+                  <button onClick={()=>modalEventHandler(index)} className="pokeinfo">Know more...</button>
                 </div>
               </div>)
             })}
