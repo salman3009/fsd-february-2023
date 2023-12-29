@@ -1,3 +1,7 @@
+class component code link:
+https://code.newtonschool.co/newton-box/uofkcf5a3num/
+=======================================================
+
 1.Clone the project - clone button - copy http link 
 2.In your local system any location - git clone url 
 3.copy the code from given location - https://github.com/salman3009/Context-Theme-Toggler---React-Mini-Project-1-Add-more-Functionalities-Class-ba---glxnotn0nz61
@@ -38,7 +42,7 @@ class App extends React.Component{
 
 }
 code:
-https://code.newtonschool.co/newton-box/uofkcf5a3num/
+
 ==================================
 How to use State in class component:
 //Declare state variable inside the constructor by using this keyword.
@@ -98,3 +102,5 @@ export class App extends React.Component{
       </div>)
   }
 }
+
+==============================
