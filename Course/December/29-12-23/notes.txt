@@ -37,3 +37,30 @@ class App extends React.Component{
     }
 
 }
+code:
+https://code.newtonschool.co/newton-box/uofkcf5a3num/
+==================================
+How to use State in class component:
+//Declare state variable inside the constructor by using this keyword.
+//state should be always object inside the class component.
+//only one state we can have inside the class component but multiple property is possible.
+
+
+class App extends React.Component{
+
+    constructor(props){
+       super(props);
+       this.state = {
+        count:0
+       }
+    }
+
+   //predefined method
+    render(){
+       return (<div>
+        {this.state.count}
+        <h1>welcome to class component</h1>
+       </div>)  
+    }
+
+}
