@@ -64,3 +64,37 @@ class App extends React.Component{
     }
 
 }
+
+==================================
+Writing custom method inside the class component 
+//writing arrow method inside the component 
+//To call any method this keyword we need to use it.
+//If you write normal method bind is mandatory to access any data.
+
+export class App extends React.Component{
+
+  constructor(props){
+    super(props);
+    this.state={
+      count:1
+    }
+    this.getCountDetailsNormalMethod = this.getCountDetailsNormalMethod.bind(this);
+  }
+
+    getCountDetailsArrowMethod=()=>{
+        alert(this.state.count);
+    }
+
+    getCountDetailsNormalMethod(){
+          alert(this.state.count);
+    }
+
+  render(){
+      return (<div>
+      {this.state.count}
+       <h1>Welcome to class component</h1>
+       <button onClick={this.getCountDetailsArrowMethod}>Add Count Arrow Method</button>
+        <button onClick={this.getCountDetailsNormalMethod}>Add Count Normal Method</button>
+      </div>)
+  }
+}
