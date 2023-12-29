@@ -109,3 +109,10 @@ this.setState({
     count:this.state.count+1
 })
 ===================================
+lifecyle hooks in class component 
+//To call only one time for api load 
+componentDidMount(){
+
+}
+
+============================
