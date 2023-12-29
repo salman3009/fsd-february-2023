@@ -5,3 +5,35 @@
 5.git commit -m "code"
 6.git push 
 ===========================================
+Two types of component:
+1.functional component - latest
+2.class component - old
+//In react 16.8 both class and functional component is supported 
+//In react below 16.8 only class component is supported and hooks is not supported in functional component.
+basic class syntax:
+class Product{
+    constructor(){
+
+    }
+    addCardDetails(){
+
+    }
+}
+=============================
+React class component:
+import React from 'react';
+
+class App extends React.Component{
+
+    constructor(props){
+       super(props);
+    }
+
+   //predefined method
+    render(){
+       return (<div>
+        <h1>welcome to class component</h1>
+       </div>)  
+    }
+
+}
