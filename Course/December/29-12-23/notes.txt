@@ -1,0 +1,7 @@
+1.Clone the project - clone button - copy http link 
+2.In your local system any location - git clone url 
+3.copy the code from given location - https://github.com/salman3009/Context-Theme-Toggler---React-Mini-Project-1-Add-more-Functionalities-Class-ba---glxnotn0nz61
+4.git add .
+5.git commit -m "code"
+6.git push 
+===========================================
