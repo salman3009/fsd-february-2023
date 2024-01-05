@@ -98,6 +98,7 @@ export class App extends React.Component{
        <h1>Welcome to class component</h1>
        <button onClick={this.getCountDetailsArrowMethod}>Add Count Arrow Method</button>
         <button onClick={this.getCountDetailsNormalMethod}>Add Count Normal Method</button>
+         <button onClick={()=>this.setState(this.state.count+1)}>Add Count Arrow Method</button>
       </div>)
   }
 }
@@ -114,5 +115,8 @@ lifecyle hooks in class component
 componentDidMount(){
 
 }
+similar to 
+useEffect(()=>{
 
+},[])
 ============================
