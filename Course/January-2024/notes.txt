@@ -16,8 +16,87 @@ https://my.newtonschool.co/playground/project/cp0doe0u3fx9?params=project%2Ccp0d
 class component componentDidMount 
 link:
 https://code.newtonschool.co/newton-box/galb6xr1wpqv/
+import React from 'react';
+
+export class App extends React.Component{
+
+    constructor(props){
+      //alert("constructor");
+      super(props);
+      this.state={
+        date:new Date(),
+        count:0
+      }
+    }
+
+    componentDidMount(){
+     //alert("componentDidMount");
+     setInterval(()=>{
+        this.tick();
+     },1000)
+    }
+
+    tick=()=>{
+      this.setState({
+        date:new Date()
+      })
+    }
 
 
-
-
+    render(){
+       //alert("render");
+       return <>
+        <h1>Hello world</h1>
+        <h1>{this.state.date.toLocaleTimeString()}</h1>
+        <h1>{this.state.count}</h1>
+       </>
+    }
+}
 ============================================================
+Routing:
+Code Link:https://code.newtonschool.co/newton-box/klc225pwqaii/
+1.Package for routing--> react-router-dom
+2.we need to create multiple components such as login,register,dashboard 
+3.import{BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
+App.js 
+<Router>
+  <Routes>
+        <Route path="/" element={<Login/>}/>
+        <Route path="/register" element={<Register/>}/>
+       <Route path="/dashboard" element={<Dashboard/>}/>
+  </Routes>
+</Router>
+example:
+import React from 'react';
+import './index.css'; // Link to your CSS file
+import Login from './Login';
+import { Register } from './Register';
+import { Dashboard } from './Dashboard';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
+
+export function App() {
+  return (
+    <div className="App">
+      <Router>
+        <ul>
+         <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/register">Register</Link>
+          </li>
+           <li>
+            <Link to="/dashboard">Dashboard</Link>
+          </li>
+        </ul>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={<Dashboard/>}/>
+        </Routes>
+      </Router>
+    </div>
+  );
+}
+=====================================================================
