@@ -15,8 +15,12 @@ const Blog = () => {
           Graph Data Structures
         </a>
       </h3>
+      <Link href="/info">
       <button id='blog-to-info'> Go to Info</button>
+      </Link>
+      <Link href="/">
       <button id='blog-to-home'> Go to Home</button>
+      </Link>
     </div>
   );
 };
