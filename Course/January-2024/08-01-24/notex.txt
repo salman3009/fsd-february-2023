@@ -1,0 +1,16 @@
+Nextjs
+//It is framework to develop full stack application.
+//Routing pattern is changed 
+//serverside rendering of UI 
+//we can write only reactjs by using nextjs 
+//we can write both frontend and backend in one framework.
+To setup nextjs in your local system:
+npx create-next-app@latest project_name
+Two types of routing mechanism:
+1.App Routing 
+main file --> src/app/page.js
+2.Page Routing 
+main file --> pages/index.js
+//cmd:npm i
+Running project 
+cmd:npm run dev
