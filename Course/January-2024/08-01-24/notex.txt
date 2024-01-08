@@ -14,3 +14,19 @@ main file --> pages/index.js
 //cmd:npm i
 Running project 
 cmd:npm run dev
+=============================
+Creating your own page routing:
+Approach 1:
+//create new folder inside the pages and inside that create one file with index.js 
+example:
+Pages 
+    blog 
+       index.js 
+Approach 2:
+//create direct files inside the pages folder 
+example:
+Pages 
+   blog.js 
+=================================================
+
+
