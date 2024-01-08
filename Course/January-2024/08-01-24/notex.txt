@@ -28,5 +28,27 @@ example:
 Pages 
    blog.js 
 =================================================
+How to create Dynamic routing inside Page router?
+//create one folder inside that we need to create file name with arraybracket 
+example:
+pages 
+    blogs 
+        [id].js 
+======================================================
+How to access dynamic routing params inside the application 
+//we need to import useRouter package from next/router 
+//Inside that package we have query parameter to access that data 
+example:
+import {useRouter} from 'next/router';
 
-
+function PostDetails(){
+    const router = useRouter();
+    const{id} = router.query;
+}
+================================
+New Things inside the Nextjs 
+1.Entire routing system is changed. It is filed based.
+2.Giving link to another page we need to use from next/link package.
+3.Creating dynamic routes we need to follow steps given by next 
+4.Importing dynamic routes parameter we need to use next/router 
+========================================================

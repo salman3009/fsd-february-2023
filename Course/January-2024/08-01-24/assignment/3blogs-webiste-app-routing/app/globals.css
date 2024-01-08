@@ -1,0 +1,21 @@
+nav {
+  padding: 5px;
+  font-size: 20px !important;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  font-size: 18px;
+  margin-left: 10px;
+  color: black !important;
+}
