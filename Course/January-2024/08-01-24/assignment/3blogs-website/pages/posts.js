@@ -12,7 +12,15 @@ function Posts() {
   return (
     <div className='posts'>
       <h1>Post List</h1>
-      <ul>{/* Render a list of Links from the posts object   */}</ul>
+      <ul>
+        {
+          posts.map((obj,index)=>{
+               return (<li key={index}>
+                  <Link href={obj.path}>{obj.name}</Link>  
+               </li>)
+          })
+        }
+      </ul>
     </div>
   );
 }
