@@ -15,21 +15,21 @@
     url:https://academics.newtonschool.co/api/v1/music/album?limit=50
     headers:
     projectId:f104bi07c490
-    params:
+    query params:
     ?limit=100
     ======================================================
     list of songs api: //How to filter data
     url: https://academics.newtonschool.co/api/v1/music/song?filter={"mood":"romantic"}
     headers:
     projectId:f104bi07c490
-    params:
+    query params:
     ?filter={"mood":"romantic"}
     ==================================================================
     list of songs api: //How to sort the data 
     url:https://academics.newtonschool.co/api/v1/music/song?sort={"release":1}
     headers:
     projectId:f104bi07c490
-    params:
+    query params:
     ?sort={"release":1}
     ascending order: 1
     descending order: -1
@@ -38,6 +38,13 @@
     https://academics.newtonschool.co/api/v1/music/song?page=2&limit=10
     headers:
     projectId:f104bi07c490
-    params:
+    query params:
     ?&page=2&limit=10
-    =================================================================
+    ================================================================= 
+    list of music api: //path params //dynamic url
+    url:https://academics.newtonschool.co/api/v1/music/album/:id
+    headers:
+   'projectId': 'YOUR_PROJECT_ID'
+    path params:
+    :id
+    =======================================================================

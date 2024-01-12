@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "dc103269-cba9-4b3c-9461-cdb3d0bef72f",
+		"_postman_id": "04f08c74-12c6-4335-b5d2-bda2db774b75",
 		"name": "feb-a-project-api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "3305659"
@@ -123,6 +123,95 @@
 						}
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "list_of_album_limit_page",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "projectId",
+						"value": "f104bi07c490",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://academics.newtonschool.co/api/v1/music/song?page=2&limit=10",
+					"protocol": "https",
+					"host": [
+						"academics",
+						"newtonschool",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"music",
+						"song"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list_of_songs_search",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "projectId",
+						"value": "f104bi07c490",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://academics.newtonschool.co/api/v1/music/song?search={\"title\":\"Chak De India\"}",
+					"protocol": "https",
+					"host": [
+						"academics",
+						"newtonschool",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"music",
+						"song"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "{\"title\":\"Chak De India\"}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "album_path_params",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "projectId",
+						"value": "f104bi07c490",
+						"type": "text"
+					}
+				],
+				"url": "https://academics.newtonschool.co/api/v1/music/album/64cee72fe41f6d0a8b0cd0aa"
 			},
 			"response": []
 		}
