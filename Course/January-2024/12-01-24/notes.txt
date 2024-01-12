@@ -34,3 +34,10 @@
     ascending order: 1
     descending order: -1
     =========================================================================
+    list of songs api: //Page+limit 
+    https://academics.newtonschool.co/api/v1/music/song?page=2&limit=10
+    headers:
+    projectId:f104bi07c490
+    params:
+    ?&page=2&limit=10
+    =================================================================
