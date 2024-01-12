@@ -72,9 +72,21 @@
         password: 'user_password',
         appType: 'music',
     })
-})
+   })
 
-
+   url:https://academics.newtonschool.co/api/v1/user/signup
+   method:'POST'
+   headers
+   Content-Type : 'application/json'
+   BODY: 
+    {
+        "name": 'salman3009',
+        "email": 'salman444@gmail.com',
+        "password": '12345',
+        "appType": 'music',
+    }
+   //For sending body:
+   //body-->raw-->json
 
 
 
