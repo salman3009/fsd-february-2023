@@ -48,3 +48,34 @@
     path params:
     :id
     =======================================================================
+    Current Topics:
+    1.postman 
+    2.get method 
+    3.headers
+    4.query params 
+       //It is optional data start with question mark
+       example:https://academics.newtonschool.co/api/v1/music/song?page=2&limit=10
+
+    5.path params 
+       //It is mandatory data you will find with /:id
+       example: url:https://academics.newtonschool.co/api/v1/music/album/232323
+    ===================================================================
+    Sign up:
+    fetch('https://academics.newtonschool.co/api/v1/user/signup', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        name: 'user_name',
+        email: 'user_email',
+        password: 'user_password',
+        appType: 'music',
+    })
+})
+
+
+
+
+
+=====================================================================
