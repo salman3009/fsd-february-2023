@@ -11,17 +11,26 @@
     headers:
     projectId:f104bi07c490
     ========================================================
-    list of album api:
+    list of album api: //How to limit data
     url:https://academics.newtonschool.co/api/v1/music/album?limit=50
     headers:
     projectId:f104bi07c490
     params:
     ?limit=100
     ======================================================
-    list of songs api:
+    list of songs api: //How to filter data
     url: https://academics.newtonschool.co/api/v1/music/song?filter={"mood":"romantic"}
     headers:
     projectId:f104bi07c490
     params:
     ?filter={"mood":"romantic"}
     ==================================================================
+    list of songs api: //How to sort the data 
+    url:https://academics.newtonschool.co/api/v1/music/song?sort={"release":1}
+    headers:
+    projectId:f104bi07c490
+    params:
+    ?sort={"release":1}
+    ascending order: 1
+    descending order: -1
+    =========================================================================

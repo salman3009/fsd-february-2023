@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "dc103269-cba9-4b3c-9461-cdb3d0bef72f",
+		"name": "feb-a-project-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "3305659"
+	},
+	"item": [
+		{
+			"name": "list_of_music_get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "projectId",
+						"value": "f104bi07c490",
+						"type": "text"
+					}
+				],
+				"url": "https://academics.newtonschool.co/api/v1/music/song"
+			},
+			"response": []
+		},
+		{
+			"name": "list_of_album_limit",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "projectId",
+						"value": "f104bi07c490",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://academics.newtonschool.co/api/v1/music/album?limit=50",
+					"protocol": "https",
+					"host": [
+						"academics",
+						"newtonschool",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"music",
+						"album"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list_of_songs_filter",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "projectId",
+						"value": "f104bi07c490",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://academics.newtonschool.co/api/v1/music/song?filter={\"mood\":\"romantic\"}",
+					"protocol": "https",
+					"host": [
+						"academics",
+						"newtonschool",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"music",
+						"song"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "{\"mood\":\"romantic\"}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list_of_songs_sort",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "projectId",
+						"value": "f104bi07c490",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://academics.newtonschool.co/api/v1/music/song?sort={\"release\":1}",
+					"protocol": "https",
+					"host": [
+						"academics",
+						"newtonschool",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"music",
+						"song"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "{\"release\":1}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
