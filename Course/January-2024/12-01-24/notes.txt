@@ -18,3 +18,10 @@
     params:
     ?limit=100
     ======================================================
+    list of songs api:
+    url: https://academics.newtonschool.co/api/v1/music/song?filter={"mood":"romantic"}
+    headers:
+    projectId:f104bi07c490
+    params:
+    ?filter={"mood":"romantic"}
+    ==================================================================
