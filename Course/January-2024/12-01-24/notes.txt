@@ -77,17 +77,17 @@
    url:https://academics.newtonschool.co/api/v1/user/signup
    method:'POST'
    headers
-   Content-Type : 'application/json'
+   Content-Type : application/json
+   projectId:f104bi07c490
    BODY: 
-    {
-        "name": 'salman3009',
-        "email": 'salman444@gmail.com',
-        "password": '12345',
-        "appType": 'music',
+     {
+        "name": "salman3009",
+        "email": "salman444@gmail.com",
+        "password": "12345",
+        "appType": "music"
     }
    //For sending body:
    //body-->raw-->json
-
-
+   //always pass unique email
 
 =====================================================================

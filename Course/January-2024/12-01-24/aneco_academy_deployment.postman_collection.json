@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "f3b51e34-988e-4ec2-a8c9-a3150cd6ee84",
+		"name": "aneco_academy_deployment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "3305659"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\":\"potter\",\n    \"email\": \"potter@gmail.com\",\n    \"password\":\"12345\",\n    \"roles\":\"admin\"\n}"
+				},
+				"url": "https://aneco-backend-deployment.onrender.com/api/user/register"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"potter@gmail.com\",\n    \"password\":\"12345\"\n}"
+				},
+				"url": "https://aneco-backend-deployment.onrender.com/api/user/login"
+			},
+			"response": []
+		},
+		{
+			"name": "createProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODg3MDIyMDgsImV4cCI6MTY4ODcwNTgwOH0.qk_A7tAfNitGIn6ciSYi7uWqjxE4UrNkVfgcr8JyKEE",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODkxMjUyMTQsImV4cCI6MTY4OTEyODgxNH0.A9pgDC2-sz8QO9kuAT-D0aTwwAGMKvF70QXIHY9tGd4"
+					},
+					{
+						"key": "email",
+						"value": "potter@gmail.com"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"productName\":\"whirlpool\",\n   \"price\":5000,\n   \"discount\":true,\n   \"discountPrice\":200,\n   \"stock\":40\n}"
+				},
+				"url": "https://aneco-backend-deployment.onrender.com/api/product/create"
+			},
+			"response": []
+		},
+		{
+			"name": "updateProduct",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODg3MDIyMDgsImV4cCI6MTY4ODcwNTgwOH0.qk_A7tAfNitGIn6ciSYi7uWqjxE4UrNkVfgcr8JyKEE",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODkxMjUyMTQsImV4cCI6MTY4OTEyODgxNH0.A9pgDC2-sz8QO9kuAT-D0aTwwAGMKvF70QXIHY9tGd4"
+					},
+					{
+						"key": "email",
+						"value": "potter@gmail.com"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"price\":8000\n   \n}"
+				},
+				"url": "https://aneco-backend-deployment.onrender.com/api/product/list/64adfb1819422de847263db2"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODg3MDIyMDgsImV4cCI6MTY4ODcwNTgwOH0.qk_A7tAfNitGIn6ciSYi7uWqjxE4UrNkVfgcr8JyKEE",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODg3MDIyMDgsImV4cCI6MTY4ODcwNTgwOH0.qk_A7tAfNitGIn6ciSYi7uWqjxE4UrNkVfgcr8JyKEE"
+					},
+					{
+						"key": "email",
+						"value": "salman@gmail.com"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"productName\":\"whirlpool\",\n   \"price\":5000,\n   \"discount\":true,\n   \"discountPrice\":200,\n   \"stock\":40\n}"
+				},
+				"url": "https://aneco-backend-deployment.onrender.com/api/product/list/64a78d7ab4390ca5c2fba0f7"
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODg3MDIyMDgsImV4cCI6MTY4ODcwNTgwOH0.qk_A7tAfNitGIn6ciSYi7uWqjxE4UrNkVfgcr8JyKEE",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODkxMjUyMTQsImV4cCI6MTY4OTEyODgxNH0.A9pgDC2-sz8QO9kuAT-D0aTwwAGMKvF70QXIHY9tGd4"
+					},
+					{
+						"key": "email",
+						"value": "potter@gmail.com"
+					}
+				],
+				"url": "https://aneco-backend-deployment.onrender.com/api/product/list"
+			},
+			"response": []
+		}
+	]
+}
