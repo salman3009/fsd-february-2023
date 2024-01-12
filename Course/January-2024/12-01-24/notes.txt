@@ -10,3 +10,11 @@
     url:https://academics.newtonschool.co/api/v1/music/song
     headers:
     projectId:f104bi07c490
+    ========================================================
+    list of album api:
+    url:https://academics.newtonschool.co/api/v1/music/album?limit=50
+    headers:
+    projectId:f104bi07c490
+    params:
+    ?limit=100
+    ======================================================
