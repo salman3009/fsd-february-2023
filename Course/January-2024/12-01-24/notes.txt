@@ -1,0 +1,12 @@
+    Testing RESTAPI:
+    1.Swagger 
+    2.Postman 
+    //It is a tool.
+    url:https://www.postman.com/downloads/
+    ===========================================
+    Project Discussion:
+    url:https://learn.newtonschool.co/n/lolht6773qin/preview
+    list of music api:
+    url:https://academics.newtonschool.co/api/v1/music/song
+    headers:
+    projectId:f104bi07c490
