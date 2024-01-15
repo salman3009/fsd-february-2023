@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
-
+import { useNavigate } from 'react-router-dom';
 
 function Register() {
 
@@ -11,6 +11,8 @@ function Register() {
     appType: 'music'
   })
 
+  const navigate = useNavigate();
+
 
   const onChangeHandler = (event) => {
     setData({ ...getData, [event.target.name]: event.target.value })
@@ -20,11 +22,11 @@ function Register() {
     event.preventDefault();
     axios.post("https://academics.newtonschool.co/api/v1/user/signup",getData).then((response)=>{
                console.log(response);
+               navigate('/login');
     }).catch((error)=>{
       console.log(error);
     })
   }
-
 
 
   return (<>
