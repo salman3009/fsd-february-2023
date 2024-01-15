@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import axios from 'axios';
 
 
 function Register() {
 
   const [getData, setData] = useState({
     email: '',
-    userName: '',
+    name: '',
     password: '',
     appType: 'music'
   })
@@ -14,11 +15,14 @@ function Register() {
   const onChangeHandler = (event) => {
     setData({ ...getData, [event.target.name]: event.target.value })
   }
-  
+
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    alert("submit");
-    console.log(getData);
+    axios.post("https://academics.newtonschool.co/api/v1/user/signup",getData).then((response)=>{
+               console.log(response);
+    }).catch((error)=>{
+      console.log(error);
+    })
   }
 
 
@@ -29,7 +33,7 @@ function Register() {
       <button>LEARN MORE</button>
       <form onSubmit={onSubmitHandler}>
         <input type="email" name="email" id="email" value={getData.email} onChange={onChangeHandler} placeholder="Email address" required autoComplete="off" />
-        <input type="text" name="userName" id="userName" value={getData.userName} onChange={onChangeHandler} placeholder="User Name" required autoComplete="off" />
+        <input type="text" name="name" id="name" value={getData.userName} onChange={onChangeHandler} placeholder="User Name" required autoComplete="off" />
         <input type="password" name="password" id="password"  value={getData.password} onChange={onChangeHandler} placeholder="Password" required autoComplete="off" />
 
         <label for="appType">App Type</label>
