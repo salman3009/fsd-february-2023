@@ -1,3 +1,12 @@
 email:"rakesh@gmail.com"
 name: "rakesh"
 password: "12345"
+=============================================
+Project setup 
+routing setup 
+Creating multiple components 
+Form Submission 
+axios post method 
+error handling 
+navigation 
+=============================================
