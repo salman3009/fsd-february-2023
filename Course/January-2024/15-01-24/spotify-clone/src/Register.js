@@ -31,7 +31,7 @@ function Register() {
 
   return (<>
     <section id="students-offer">
-      <h3>Special discount for eligible students in university</h3>
+      <h3>Please Register here</h3>
       <button>LEARN MORE</button>
       <form onSubmit={onSubmitHandler}>
         <input type="email" name="email" id="email" value={getData.email} onChange={onChangeHandler} placeholder="Email address" required autoComplete="off" />
