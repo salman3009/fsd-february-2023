@@ -1,0 +1,507 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* Nav Section */
+body {
+    margin: 0;
+    background-color: rgb(25, 20, 20);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 25px;
+}
+
+nav img {
+    height: 60px;
+    width: 60px;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+li a:hover {
+    color: rgb(30, 215, 96);
+}
+
+/* Main Section */
+
+#download {
+    background-color: inherit;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+}
+
+#download h1 {
+    font-weight: 700;
+    line-height: 2;
+}
+
+#download h2 {
+    font-weight: 500;
+    line-height: 3;
+}
+
+#download button {
+    background-color: rgb(255, 255, 255);
+    padding: 12px;
+    font-family: inherit;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+
+#download button:hover {
+    transform: scale(1.02);
+}
+
+@media (width <= 650px) {
+    #download button {
+        width: 100%;
+        margin-bottom: 10px; 
+    }
+}
+
+/* Table Section */
+#difference-table {
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+    padding: 20px 40px;
+}
+
+#difference-table table {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px 45px;
+}
+
+table th {
+    font-weight: 300;
+}
+
+table td {
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+.fa-circle-check {
+    color: rgb(30, 215, 96);
+    font-size: 30px;
+}
+
+.fa-circle-xmark {
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+}
+
+#difference-table h1 {
+    padding: 0 50px;
+    font-weight: 700;
+}
+
+#difference-table button {
+    background-color: rgb(25, 20, 20);
+    padding: 12px 40px;
+    font-family: inherit;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+/* Article Section */
+#premium {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+#premium h2 {
+    margin: 0;
+}
+
+.price-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left;
+    padding: 20px 100px;
+}
+
+.price-cards > article {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(170, 170, 170);
+    padding: 20px;
+}
+
+article button {
+    background-color: rgb(25, 20, 20);
+    padding: 12px 40px;
+    font-family: inherit;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+article button:hover {
+    transform: scale(1.02);
+}
+
+.card-header {
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+.card-header span {
+    display: inline-block;
+    font-size: .75rem;
+    background-color: rgb(13, 114, 234);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.card-header h3 {
+    margin-bottom: 0;
+}
+
+.card-header p {
+    margin: 0;
+    font-weight: 300;
+}
+
+.card-header li {
+    font-weight: 500;
+}
+
+@media (width <= 650px) {
+    .price-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        padding: 20px;
+    }
+
+    .card-header span {
+        display: inline-block;
+    }
+}
+
+/* Form Section */
+#students-offer {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+#students-offer button{
+    background-color: rgb(255, 255, 255);
+    padding: 12px 40px;
+    font-family: inherit;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(25, 20, 20);
+}
+
+#students-offer button:hover {
+    transform: scale(1.02);
+}
+
+form {
+    margin-top: 20px;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left;
+}
+
+input#email {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-family: inherit;
+}
+
+input#first-name, input#last-name {
+    width: 46%;
+    padding: 5px;
+    font-family: inherit;
+}
+
+@media (width <= 650px) {
+    input#first-name, input#last-name {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+form p {
+    margin-bottom: 0;
+}
+
+select#country, select#college-university {
+    width: 100%;
+    padding: 5px;
+    font-family: inherit;
+    margin-bottom: 10px;
+}
+
+input#contact-number {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: inherit;
+    margin-bottom: 10px;
+}
+
+input#consent-checkbox {
+    cursor: pointer;
+}
+
+form button {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Footer Section */
+footer {
+    padding: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer i {
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+footer i:hover {
+    color: rgb(30, 215, 96);
+}
+
+footer p {
+    color: rgb(170, 170, 170);
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<nav>
+    <a href="/">
+        <img src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/78dbd1a43af24c48a5bc7ba17d4cb2dc.png" alt="spotify-logo" />
+    </a>
+    <ul>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+        <li>
+            <a href="#">Premium</a>
+        </li>
+        <li>
+            <a href="#">Download</a>
+        </li>
+    </ul>
+</nav>
+<main id="download">
+    <h1>Introducing Premium Mini</h1>
+    <h2>₹7 for 1 day. ₹25 for 1 week.</h2>
+    <section>
+        <button>
+            <i class="fa-brands fa-google-play fa-xl"></i> 
+            DOWNLOAD
+        </button>
+        <button>
+            <i class="fa-brands fa-apple fa-xl"></i>
+            DOWNLOAD
+        </button>
+    </section>
+</main>
+<section id="difference-table">
+    <h1>Experience the difference</h1>
+    <table>
+        <tr>
+            <th>What you get</th>
+            <th>Premium Plan</th>
+            <th>Free Plan</th>
+        </tr>
+        <tr>
+            <td>Access to all audio content</td>
+            <td><i class="fa-regular fa-circle-check"></i></td>
+            <td><i class="fa-regular fa-circle-check"></i></td>
+        </tr>
+        <tr>
+            <td>Ad-free music listening</td>
+            <td><i class="fa-regular fa-circle-check"></i></td>
+            <td><i class="fa-regular fa-circle-xmark"></i></td>
+        </tr>
+        <tr>
+            <td>Enhanced playlists</td>
+            <td><i class="fa-regular fa-circle-check"></i></td>
+            <td><i class="fa-regular fa-circle-xmark"></i></td>
+        </tr>
+        <tr>
+            <td>Download songs</td>
+            <td><i class="fa-regular fa-circle-check"></i></td>
+            <td><i class="fa-regular fa-circle-xmark"></i></td>
+        </tr>
+        <tr>
+            <td>Group sessions</td>
+            <td><i class="fa-regular fa-circle-check"></i></td>
+            <td><i class="fa-regular fa-circle-xmark"></i></td>
+        </tr>
+        <tr>
+            <td>Highest audio quality</td>
+            <td><i class="fa-regular fa-circle-check"></i></td>
+            <td><i class="fa-regular fa-circle-xmark"></i></td>
+        </tr>
+    </table>
+    <section>
+        <h1>Get 3 months of Premium for free.</h1>
+        <button>GET 3 MONTHS FOR ₹0</button>
+    </section>
+</section>
+<section id="premium">
+    <section>
+        <h2>Pick your Premium</h2>
+        <p>Listen without limits on your phone, speaker, and other devices.</p>
+    </section>
+    <section class="price-cards">
+        <article>
+            <section class="card-header">
+                <span>One-time plans available</span>
+                <h3>Mini</h3>
+                <p>From ₹7/day</p>
+                <p>1 account</p>
+            </section>
+            <section class="card-body">
+                <ol>
+                    <li>Ad-free music listening on mobile</li>
+                    <li>Group Session</li>
+                    <li>Download 30 songs on 1 mobile device</li>
+                </ol>
+                <button>VIEW PLANS</button>
+            </section>
+        </article>
+        <article>
+            <section class="card-header">
+                <span>3 months free</span>
+                <span>One-time plans available</span>
+                <h3>Individual</h3>
+                <p>₹119/month after offer period</p>
+                <p>1 account</p>
+            </section>
+            <section class="card-body">
+                <ol>
+                    <li>Ad-free music listening</li>
+                    <li>Group Session</li>
+                    <li>Download 10k songs/device on 5 devices</li>
+                </ol>
+                <button>VIEW PLANS</button>
+            </section>
+        </article>
+        <article>
+            <section class="card-header">
+                <span>1 months free</span>
+                <span>One-time plans available</span>
+                <h3>Duo</h3>
+                <p>₹149/month after offer period</p>
+                <p>2 accounts</p>
+            </section>
+            <section class="card-body">
+                <ol>
+                    <li>For couples who live together</li>
+                    <li>Ad-free music listening on mobile</li>
+                    <li>Group Session</li>
+                    <li>Download 10k songs/devices, on 5 device per account</li>
+                </ol>
+                <button>VIEW PLANS</button>
+            </section>
+        </article>
+        <article>
+            <section class="card-header">
+                <span>1 months free</span>
+                <span>One-time plans available</span>
+                <h3>Family</h3>
+                <p>₹179/month after offer period</p>
+                <p>Up to 6 accounts</p>
+            </section>
+            <section class="card-body">
+                <ol>
+                    <li>For family who live together</li>
+                    <li>Block explicit music</li>
+                    <li>Ad-free music listening on mobile</li>
+                    <li>Group Session</li>
+                    <li>Download 10k songs/device, on 5 devices</li>
+                </ol>
+                <button>VIEW PLANS</button>
+            </section>
+        </article>
+    </section>
+</section>
+<section id="students-offer">
+    <h3>Special discount for eligible students in university</h3>
+    <button>LEARN MORE</button>
+    <form>
+        <input type="email" name="email" id="email" placeholder="Email address" required autocomplete="off" />
+        <input type="text" name="first-name" id="first-name" placeholder="First Name" required required autocomplete="off" />
+        <input type="text" name="last-name" id="last-name" placeholder="Last Name" required required autocomplete="off" />
+        <p>Where do you go to school?</p>
+        <label for="country">Country</label>
+        <select name="country" id="country" required>
+            <option value="india">India</option>
+            <option value="spain">Spain</option>
+            <option value="germany">Germany</option>
+            <option value="japan">Japan</option>
+            <option value="france">France</option>
+        </select>
+        <label for="college-university">Name of college/ university</label>
+        <select name="college-university" id="college-university" required>
+            <option value="indian-school-business">Indian School of Business</option>
+            <option value="delhi-university">Delhi University</option>
+            <option value="iit">IIT</option>
+            <option value="bits">BITS</option>
+            <option value="imi">IMI</option>
+        </select>
+        <label for="contact-number">Contact Number</label>
+        <input type="number" name="contact-number" id="contact-number" placeholder="Contact Number" required autocomplete="off" />
+        <input type="checkbox" name="consent-checkbox" id="consent-checkbox" required/>
+        <span>By checking this box and clicking "Submit", you consent to use information for verification.</span>
+        <button type="submit">SUBMIT</button>
+    </form>
+</section>
+<footer id="contact">
+    <a href="#">
+        <i class="fa-brands fa-twitter"></i>
+    </a>
+    <a href="#">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="#">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+    <p>© Copyright 2022 Spotify</p>
+</footer>

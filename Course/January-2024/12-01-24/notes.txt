@@ -67,7 +67,7 @@
         'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-        name: 'user_name',
+        name: "user_name',
         email: 'user_email',
         password: 'user_password',
         appType: 'music',
