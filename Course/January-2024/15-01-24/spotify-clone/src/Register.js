@@ -1,30 +1,46 @@
+import { useState } from 'react';
+
+
+function Register() {
+
+  const [getData, setData] = useState({
+    email: '',
+    userName: '',
+    password: '',
+    appType: 'music'
+  })
+
+
+  const onChangeHandler = (event) => {
+    setData({ ...getData, [event.target.name]: event.target.value })
+  }
+  
+  const onSubmitHandler = (event) => {
+    event.preventDefault();
+    alert("submit");
+    console.log(getData);
+  }
 
 
 
-
-
-function Register(){
-     
-    return (<>
-     <section id="students-offer">
-    <h3>Special discount for eligible students in university</h3>
-    <button>LEARN MORE</button>
-    <form>
-        <input type="email" name="email" id="email" placeholder="Email address" required autocomplete="off" />
-        <input type="text" name="userName" id="userName" placeholder="User Name" required  autocomplete="off" />
-        <input type="password" name="password" id="password" placeholder="Password" required  autocomplete="off" />
+  return (<>
+    <section id="students-offer">
+      <h3>Special discount for eligible students in university</h3>
+      <button>LEARN MORE</button>
+      <form onSubmit={onSubmitHandler}>
+        <input type="email" name="email" id="email" value={getData.email} onChange={onChangeHandler} placeholder="Email address" required autoComplete="off" />
+        <input type="text" name="userName" id="userName" value={getData.userName} onChange={onChangeHandler} placeholder="User Name" required autoComplete="off" />
+        <input type="password" name="password" id="password"  value={getData.password} onChange={onChangeHandler} placeholder="Password" required autoComplete="off" />
 
         <label for="appType">App Type</label>
-        <select name="appType" id="appType" required>
-            <option value="music">music</option>
-            <option value="album">album</option>
+        <select name="appType" onChange={onChangeHandler} id="appType" required>
+          <option value="music">music</option>
+          <option value="album">album</option>
         </select>
-        <input type="checkbox" name="consent-checkbox" id="consent-checkbox" required/>
-        <span>By checking this box and clicking "Submit", you consent to use information for verification.</span>
         <button type="submit">SUBMIT</button>
-    </form>
-</section>
-    </>)
+      </form>
+    </section>
+  </>)
 
 }
 export default Register;
