@@ -19,8 +19,19 @@ function Home() {
   }, [])
 
   const onFilterSelection=async (input)=>{
-    axios.get(`https://academics.newtonschool.co/api/v1/music/song?filter={"featured":${input}}`).then((response)=>{
-      console.log(response);
+     console.log(input);
+     let url;
+    if(input == "Trending songs"){
+      url = `https://academics.newtonschool.co/api/v1/music/song?filter={"featured":"Trending songs"}`;
+    }
+    else if(input == "Top 50 of this month"){
+      url = `https://academics.newtonschool.co/api/v1/music/song?filter={"featured":"Top 50 of this month"}`;
+    }
+    else if(input == "Top 20 of this week"){
+      url = `https://academics.newtonschool.co/api/v1/music/song?filter={"featured":"Top 20 of this week"}`;
+    }
+    axios.get(url).then((response)=>{
+      setList(response.data.data);
     }).catch((error)=>{
               console.log(error)
     })
@@ -30,15 +41,15 @@ function Home() {
   return (<div class="price-cards">
      <div id="download" style={{width:"100%"}}>
       <section>
-        <button>
+        <button onClick={()=>onFilterSelection("Trending songs")}>
           <i class="fa-brands fa-google-play fa-xl"></i>
           Trending songs
         </button>
-        <button>
+        <button onClick={()=>onFilterSelection("Top 50 of this month")}>
           <i class="fa-brands fa-apple fa-xl"></i>
           Top 50 of this month
         </button>
-        <button>
+        <button onClick={()=>onFilterSelection("Top 20 of this week")}>
           <i class="fa-brands fa-apple fa-xl"></i>
           Top 20 of this week
         </button>
