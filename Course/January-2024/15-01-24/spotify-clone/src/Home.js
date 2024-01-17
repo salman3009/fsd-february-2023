@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 function Home() {
 
   const [getList, setList] = useState([]);
+  const [getSearch,setSearch] = useState('');
 
   const listOfDetails = async () => {
     axios.get('https://academics.newtonschool.co/api/v1/music/song').then((response) => {
@@ -37,6 +38,15 @@ function Home() {
     })
   }
 
+  const onSearchDetails=(event)=>{
+    console.log(event.target.value);
+   axios.get('https://academics.newtonschool.co/api/v1/music/song?search={"title":"kohinoor"}').then((response)=>{
+     setList(response.data.data);
+   }).catch((error)=>{
+             console.log(error)
+   })
+  }
+
 
   return (<div class="price-cards">
      <div id="download" style={{width:"100%"}}>
@@ -53,6 +63,7 @@ function Home() {
           <i class="fa-brands fa-apple fa-xl"></i>
           Top 20 of this week
         </button>
+        <div>Search:<input type="text" onChange={onSearchDetails}/></div> 
       </section>
     </div>
     {
