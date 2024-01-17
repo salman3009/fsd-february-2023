@@ -18,14 +18,6 @@ function Home() {
     listOfDetails();
   }, [])
 
-  const onFilterSelection=async (input)=>{
-    axios.get(`https://academics.newtonschool.co/api/v1/music/song?filter={"featured":${input}}`).then((response)=>{
-      console.log(response);
-    }).catch((error)=>{
-              console.log(error)
-    })
-  }
-
 
   return (<div class="price-cards">
      <div id="download" style={{width:"100%"}}>
