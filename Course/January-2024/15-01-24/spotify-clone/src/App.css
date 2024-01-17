@@ -133,12 +133,12 @@ table td {
 }
 
 .price-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    text-align: left;
-    padding: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    text-align: center;
+    gap:20px;
 }
 
 .price-cards > article {
@@ -155,7 +155,7 @@ article button {
     border-radius: 20px;
     cursor: pointer;
     color: rgb(255, 255, 255);
-    width: 100%;
+    width: 60%;
 }
 
 article button:hover {

@@ -1,33 +1,41 @@
 import axios from 'axios';
-import {useEffect,useState} from 'react';
+import { useEffect, useState } from 'react';
 
-function Home(){
-   
-  const[getList,setList]=useState([]);
+function Home() {
 
-   const listOfDetails=async ()=>{
-           axios.get('https://academics.newtonschool.co/api/v1/music/song').then((response)=>{
-                       console.log(response.data.data);
-                      setList(response.data.data);
-           }).catch((error)=>{
-                       console.log(error);
-           })
-        
-   }
-    useEffect(()=>{
-      listOfDetails();
-    },[])
+  const [getList, setList] = useState([]);
+
+  const listOfDetails = async () => {
+    axios.get('https://academics.newtonschool.co/api/v1/music/song').then((response) => {
+      console.log(response.data.data);
+      setList(response.data.data);
+    }).catch((error) => {
+      console.log(error);
+    })
+
+  }
+  useEffect(() => {
+    listOfDetails();
+  }, [])
 
 
-    return (<>
-       {
-        getList.map((obj,index)=>{
-                 return (<div key={index}>
-                  <img src={obj.thumbnail}/>
-                 </div>)
-        })
-       }
-    </>)
+  return (<div class="price-cards">
+    {
+      getList.map((obj, index) => {
+        return (
+          <section key={index}>
+            <article>
+              <section class="card-body">
+                <img style={{width:"200px"}} src={obj.thumbnail} />
+                <button>Like</button>
+              </section>
+            </article>
+          </section>
+        )
+      })
+    }
+
+  </div>)
 
 }
 export default Home;
