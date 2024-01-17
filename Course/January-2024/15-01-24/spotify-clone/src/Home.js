@@ -39,8 +39,12 @@ function Home() {
   }
 
   const onSearchDetails=(event)=>{
-    console.log(event.target.value);
-   axios.get('https://academics.newtonschool.co/api/v1/music/song?search={"title":"kohinoor"}').then((response)=>{
+    const queryString = {
+      title:event.target.value
+    }
+   axios.get('https://academics.newtonschool.co/api/v1/music/song?',{params:{
+         search:JSON.stringify(queryString)
+   }}).then((response)=>{
      setList(response.data.data);
    }).catch((error)=>{
              console.log(error)
