@@ -5,3 +5,7 @@ What is provider and consumer?
 children props 
 code link:https://code.newtonschool.co/newton-box/ikjr9t88s34d/
 ===========================================================
+email:"rakesh@gmail.com"
+name: "rakesh"
+password: "12345"
+========================================================

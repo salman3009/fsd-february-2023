@@ -7,8 +7,8 @@ function Home() {
   const [getList, setList] = useState([]);
   const [getSearch,setSearch] = useState('');
 
-  const {fullName,age} = useUser();
-  console.log(fullName,age);
+  const {getUser} = useUser();
+  console.log(getUser);
 
   const listOfDetails = async () => {
     axios.get('https://academics.newtonschool.co/api/v1/music/song').then((response) => {

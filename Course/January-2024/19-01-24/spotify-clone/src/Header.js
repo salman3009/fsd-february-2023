@@ -4,9 +4,9 @@ function Header() {
 
   return (<>
     <nav>
-      <a href="/">
-        <img src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/78dbd1a43af24c48a5bc7ba17d4cb2dc.png" alt="spotify-logo" />
-      </a>
+    <Link to="/">
+    <img src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/78dbd1a43af24c48a5bc7ba17d4cb2dc.png" alt="spotify-logo" />
+    </Link>
       <ul>
         <li>
           <Link to="/login">Login</Link>

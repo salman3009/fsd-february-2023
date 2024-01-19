@@ -11,9 +11,9 @@ function Login() {
     appType: 'music'
   })
 
-  const {fullName,age} = useUser();
-  console.log(fullName,age);
+  const {getUser,signInUser} = useUser();
   
+
   const[getError,setError] = useState("");
 
   const navigate = useNavigate();
@@ -27,7 +27,8 @@ function Login() {
     event.preventDefault();
     setError('');
     axios.post("https://academics.newtonschool.co/api/v1/user/login",getData).then((response)=>{
-               console.log(response);
+               console.log(response.data);
+               signInUser({status:response.data.status,token:response.data.token})
     }).catch((error)=>{
       console.log(error);
       if(error.response && error.response.data && error.response.data.message){
