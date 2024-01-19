@@ -22,16 +22,22 @@ function Home() {
   const onFilterSelection=async (input)=>{
      console.log(input);
      let url;
-    if(input == "Trending songs"){
-      url = `https://academics.newtonschool.co/api/v1/music/song?filter={"featured":"Trending songs"}`;
+    // if(input == "Trending songs"){
+    //   url = `https://academics.newtonschool.co/api/v1/music/song?filter={"featured":"Trending songs"}`;
+    // }
+    // else if(input == "Top 50 of this month"){
+    //   url = `https://academics.newtonschool.co/api/v1/music/song?filter={"featured":"Top 50 of this month"}`;
+    // }
+    // else if(input == "Top 20 of this week"){
+    //   url = `https://academics.newtonschool.co/api/v1/music/song?filter={"featured":"Top 20 of this week"}`;
+    // }
+    
+    const queryString={
+      featured:input
     }
-    else if(input == "Top 50 of this month"){
-      url = `https://academics.newtonschool.co/api/v1/music/song?filter={"featured":"Top 50 of this month"}`;
-    }
-    else if(input == "Top 20 of this week"){
-      url = `https://academics.newtonschool.co/api/v1/music/song?filter={"featured":"Top 20 of this week"}`;
-    }
-    axios.get(url).then((response)=>{
+    axios.get('https://academics.newtonschool.co/api/v1/music/song',{params:{
+      filter:JSON.stringify(queryString)
+    }}).then((response)=>{
       setList(response.data.data);
     }).catch((error)=>{
               console.log(error)
