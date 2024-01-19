@@ -10,9 +10,14 @@ export const UserProvider = ({ children }) => {
         setUser(input);
     }
 
+    const signOutUser = ()=>{
+        setUser(null);
+    }
+
     const object={
         getUser,
-        signInUser
+        signInUser,
+        signOutUser
     }
 
 
