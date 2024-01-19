@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import {useUser} from './UserProvider';
 
 function Login() {
 
@@ -10,6 +11,9 @@ function Login() {
     appType: 'music'
   })
 
+  const {fullName,age} = useUser();
+  console.log(fullName,age);
+  
   const[getError,setError] = useState("");
 
   const navigate = useNavigate();

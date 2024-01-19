@@ -1,3 +1,7 @@
 What is provider and consumer?
 //Provider will provide the data 
 //Consumer will consume the given data 
+=========================================
+children props 
+code link:https://code.newtonschool.co/newton-box/ikjr9t88s34d/
+===========================================================

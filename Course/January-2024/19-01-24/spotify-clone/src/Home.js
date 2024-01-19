@@ -1,10 +1,14 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import {useUser} from './UserProvider';
 
 function Home() {
 
   const [getList, setList] = useState([]);
   const [getSearch,setSearch] = useState('');
+
+  const {fullName,age} = useUser();
+  console.log(fullName,age);
 
   const listOfDetails = async () => {
     axios.get('https://academics.newtonschool.co/api/v1/music/song').then((response) => {

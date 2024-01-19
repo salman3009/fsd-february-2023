@@ -1,4 +1,4 @@
-import { createContext } from "react"
+import { createContext, useContext } from "react"
 
 const UserContext = createContext();
 
@@ -11,4 +11,8 @@ export const UserProvider = ({ children }) => {
 
     </div>)
 
+}
+
+export function useUser(){
+    return useContext(UserContext);
 }
