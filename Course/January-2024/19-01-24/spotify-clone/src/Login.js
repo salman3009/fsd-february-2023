@@ -11,7 +11,7 @@ function Login() {
     appType: 'music'
   })
 
-  const {getUser,signInUser} = useUser();
+  const {signInUser} = useUser();
   
 
   const[getError,setError] = useState("");
