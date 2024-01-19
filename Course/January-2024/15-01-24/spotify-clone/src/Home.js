@@ -42,7 +42,7 @@ function Home() {
     const queryString = {
       title:event.target.value
     }
-   axios.get('https://academics.newtonschool.co/api/v1/music/song?',{params:{
+   axios.get('https://academics.newtonschool.co/api/v1/music/song',{params:{
          search:JSON.stringify(queryString)
    }}).then((response)=>{
      setList(response.data.data);
