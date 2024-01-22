@@ -22,3 +22,22 @@ https://code.newtonschool.co/newton-box/xsz3ajo67i9y/
 //we can use audio tag with src given in the api 
  <audio ref={audioRef} src="https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf908947ae38c3e33a1994.mp3"/>
 ==========================================================
+functionality:
+1.functional component 
+2.how to setup routing 
+3.useState,useEffect,useRef 
+4.protected routes 
+5.api call - get ,post,patch 
+6.api call - using params 
+7.api call - using headers 
+8.api call - using headers with token 
+9.audio system added 
+10.provider and consumer 
+11.authentication 
+12.authorization 
+13.form handling 
+14.navbar conditional handling(login,logout)
+15.display music
+16.filtering
+17.search 
+=======================================================
