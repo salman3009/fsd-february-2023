@@ -20,6 +20,19 @@ function Library() {
     })
 
   }
+
+  const onClickHandler=(songId)=>{
+    axios.patch('https://academics.newtonschool.co/api/v1/music/favorites/like',{ "songId" : songId},{headers:{
+      Authorization:`Bearer ${getUser.token}`
+     }}).then((response)=>{
+              console.log(response);
+              alert("successfully removed");
+              listOfDetails();
+     }).catch((error)=>{
+                console.log(error);
+     })
+  }
+
   useEffect(() => {
     listOfDetails();
   }, [])
@@ -32,7 +45,7 @@ function Library() {
             <article>
               <section class="card-body">
                 <img style={{width:"200px"}} src={obj.thumbnail} />
-                <button>UnLike</button>
+                <button onClick={()=>onClickHandler(obj._id)}>UnLike</button>
               </section>
             </article>
           </section>
