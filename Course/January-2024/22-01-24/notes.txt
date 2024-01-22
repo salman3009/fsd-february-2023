@@ -14,3 +14,5 @@ JWT Token - json web token
 //It consists of details regarding the current user. But everything is encrypted 
 //Once you like the songs or remove songs it will store in that particular user.
 =====================================================================
+music audio tag:
+https://code.newtonschool.co/newton-box/xsz3ajo67i9y/
