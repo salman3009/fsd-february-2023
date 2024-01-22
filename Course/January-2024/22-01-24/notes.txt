@@ -16,3 +16,9 @@ JWT Token - json web token
 =====================================================================
 music audio tag:
 https://code.newtonschool.co/newton-box/xsz3ajo67i9y/
+//using useRef to access current tag of audio 
+//useRef will give direct access to the tag similar to DOM manipulation 
+//useRef have 'current' property with that we can access play() and pause() functionality
+//we can use audio tag with src given in the api 
+ <audio ref={audioRef} src="https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf908947ae38c3e33a1994.mp3"/>
+==========================================================
