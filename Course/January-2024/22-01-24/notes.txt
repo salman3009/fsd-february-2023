@@ -5,9 +5,9 @@ application url:https://learn.newtonschool.co/n/lolht6773qin/preview
 How to add songs inside the favorite?
 ================================================
 http methods
-1.get - getting data 
-2.post - sending data 
-3.patch - (update purpose ) sending data
+1.get - getting data - there is no body
+2.post -(new data) sending data  - there is body
+3.patch - (update purpose ) sending data - there is body
 =================================================
 JWT Token - json web token 
 //Every login will have unique token 
