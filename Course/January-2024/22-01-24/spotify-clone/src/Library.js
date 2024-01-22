@@ -10,9 +10,11 @@ function Library() {
   console.log(getUser);
 
   const listOfDetails = async () => {
-    axios.get('https://academics.newtonschool.co/api/v1/music/song').then((response) => {
-      console.log(response.data.data);
-      setList(response.data.data);
+    axios.get('https://academics.newtonschool.co/api/v1/music/favorites/like',{headers:{
+      Authorization:`Bearer ${getUser.token}`
+     }}).then((response) => {
+      console.log(response.data.data.songs);
+      setList(response.data.data.songs);
     }).catch((error) => {
       console.log(error);
     })
@@ -30,7 +32,7 @@ function Library() {
             <article>
               <section class="card-body">
                 <img style={{width:"200px"}} src={obj.thumbnail} />
-                <button>Like</button>
+                <button>UnLike</button>
               </section>
             </article>
           </section>
