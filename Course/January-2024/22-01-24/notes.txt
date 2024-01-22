@@ -1,5 +1,16 @@
 email:"rakesh@gmail.com"
 password: "12345"
-
+application url:https://learn.newtonschool.co/n/lolht6773qin/preview
 =================================================================
 How to add songs inside the favorite?
+================================================
+http methods
+1.get - getting data 
+2.post - sending data 
+3.patch - (update purpose ) sending data
+=================================================
+JWT Token - json web token 
+//Every login will have unique token 
+//It consists of details regarding the current user. But everything is encrypted 
+//Once you like the songs or remove songs it will store in that particular user.
+=====================================================================

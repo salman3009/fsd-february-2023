@@ -51,6 +51,16 @@ function Home() {
    })
   }
 
+  const addToFavorite=(songId)=>{
+             axios.patch('https://academics.newtonschool.co/api/v1/music/favorites/like',{ "songId" : songId},{headers:{
+              Authorization:`Bearer ${getUser.token}`
+             }}).then((response)=>{
+                      console.log(response);
+             }).catch((error)=>{
+                        console.log(error);
+             })
+  } 
+
 
   return (<div class="price-cards">
      <div id="download" style={{width:"100%"}}>
@@ -77,7 +87,7 @@ function Home() {
             <article>
               <section class="card-body">
                 <img style={{width:"200px"}} src={obj.thumbnail} />
-                {getUser && getUser.status == "success" && <button>Like</button>}
+                {getUser && getUser.status == "success" && <button onClick={()=>addToFavorite(obj._id)}>Like</button>}
               </section>
             </article>
           </section>
