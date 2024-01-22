@@ -7,7 +7,6 @@ export const UserProvider = ({ children }) => {
     const [getUser,setUser] = useState(null);
 
     const signInUser = (input)=>{
-        debugger;
         setUser(input);
     }
 
