@@ -56,6 +56,7 @@ function Home() {
               Authorization:`Bearer ${getUser.token}`
              }}).then((response)=>{
                       console.log(response);
+                      alert("successfully stored");
              }).catch((error)=>{
                         console.log(error);
              })
