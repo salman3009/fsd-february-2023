@@ -74,12 +74,13 @@ function Home() {
   const audioRef = useRef();
 
   const startPlayerHandler = (url) => {
+    debugger;
     setAudio(url);
   }
 
   useEffect(() => {
     setcount(getcount+1);
-    if(getcount>1){
+    if(getcount>=1){
       audioRef.current.play();
     }
   }, [getAudio])
