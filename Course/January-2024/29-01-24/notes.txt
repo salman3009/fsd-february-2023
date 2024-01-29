@@ -89,4 +89,26 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom';
              <Route path="/products" element={<Products/>}/>
          </Routes>
 </BrowserRouter>
-3.
+3.Setting navigation 
+//To setup navigation link we need to use "Link" package from react-router-dom 
+//To navigate we need to use "to" attribute inside the "Link" package 
+example:
+Header.js
+import {Link} from 'react-router-dom';
+
+function Header(){
+    return (<div>
+        <nav>
+            <ul>
+                <li>
+                    <Link to="/cart">Cart</Link>
+                </li>
+                <li>
+                    <Link to="/products">Products</Link>
+                </li>
+            </ul>
+        </nav>
+    </div>)
+}
+export default Header;
+==============================================
