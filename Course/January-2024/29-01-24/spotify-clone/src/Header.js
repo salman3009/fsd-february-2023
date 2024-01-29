@@ -5,6 +5,7 @@ function Header() {
   const { getUser, signOutUser } = useUser();
 
   const onChangeHandler=()=>{
+    localStorage.removeItem("token");
     signOutUser();
   }
   return (<>

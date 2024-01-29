@@ -11,6 +11,7 @@ reactjs
 spotify clone adding local storage 
 localStorage.setItem("key","value");
 localStorage.getItem("key");
+localStorage.removetItem("key");
 //If you have array or object 
 localStorage.setItem("key",JSON.stringify(array or object));
 JSON.parse(localStorage.getItem("key"));
