@@ -38,3 +38,12 @@ extra topics
 18.internal navigation 
 19.useContext hooks 
 ============================================================
+Setting new react application:
+npx create-react-app app_name
+Setting up material UI 
+install below packages:
+npm install @mui/material 
+npm install @emotion/react 
+npm install @emotion/styled
+official website:
+https://mui.com/material-ui/react-button/
