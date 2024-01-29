@@ -111,4 +111,17 @@ function Header(){
     </div>)
 }
 export default Header;
+
+4.Setting styles for flex 
+example:
+ul {
+    width: 100%;
+    height: 50px;
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+}
 ==============================================
