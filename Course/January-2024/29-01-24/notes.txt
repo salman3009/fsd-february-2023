@@ -1,0 +1,39 @@
+email:"rakesh@gmail.com"
+password: "12345"
+application url:https://learn.newtonschool.co/n/lolht6773qin/preview
+==================================================
+Topic:
+html
+css 
+javascript 
+reactjs 
+================================================
+spotify clone adding local storage 
+localStorage.setItem("key","value");
+localStorage.getItem("key");
+//If you have array or object 
+localStorage.setItem("key",JSON.stringify(array or object));
+JSON.parse(localStorage.getItem("key"));
+==================================================
+Basic and core topic in reactjs 
+1.how to setup routing 
+2.dynamic routing and using link tag to navigate
+3.useEffect and useState 
+4.fetch 
+5.initial api call 
+6.map function 
+7.onclick function with custom data 
+8.using local storage 
+9.fetching from local strorage and removing data from local storage 
+10.binding dynamic image from api.
+11.accessing dynamic params inside the react application 
+12.writing conditional statement 
+13.adding loading during initial loading
+extra topics
+14.authentication and authorization 
+15.jwt token 
+16.private routes 
+17.interceptor using axios
+18.internal navigation 
+19.useContext hooks 
+============================================================
