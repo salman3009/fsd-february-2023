@@ -63,3 +63,30 @@ export default function TextButtons() {
 }
 ========================================================================
 e-commerce-project - https://fakestoreapi.com/products
+1.creating custom components
+//we have two ways of writing components in react 
+        (i)class component 
+        (ii)functional component 
+//Below way is functional component  
+function Products(){
+   return (<div>
+     <h1>Products</h1>
+   </div>)
+}
+export default Products;
+2.Setting up routing 
+//install the package 
+cmd:npm install react-router-dom
+//Inside the App.js import following three packages 
+BrowserRouter 
+Routes 
+Route 
+example:
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+<BrowserRouter>
+         <Routes>
+             <Route path="/cart" element={<Cart/>}/>
+             <Route path="/products" element={<Products/>}/>
+         </Routes>
+</BrowserRouter>
+3.
