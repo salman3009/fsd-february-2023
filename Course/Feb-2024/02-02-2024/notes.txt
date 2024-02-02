@@ -1,0 +1,70 @@
+Interview preparation:
+1.html 
+2.css 
+3.javascript 
+4.reactjs 
+5.project building 
+6.backend
+===========================================
+Project Specific Question:
+
+1.What new features can be added to the website, how can you make it work better?
+example:
+I am planning to implement the entire project in nextjs again for performance improvement.
+
+2.Which tech stack and designing packages used in project?
+example:
+html,css,javascript 
+javascript library:reactjs 
+css library:materialui
+
+3.What is your strong section in MERN Stack- Said FE
+example:
+javascript 
+
+4.
+They were asking the technical questions from whatever he was saying while explaining his project
+example:
+keep your project ready. Understand each set of library you have used. Also Understand whatever you can able to do customization for your plugin.
+
+
+5.
+Modify the changes in the assignment given 
+example:
+Please be strong in following topics 
+//Reactjs 
+//useState,useEffect 
+//fetch method 
+//routing
+//context 
+//validation 
+//token handling 
+//api with dynamic params 
+
+6.Which tech are you good at?
+//Frontend - html,css,javascript,reactjs library
+
+7.What are the database used in your projects?
+example:
+//currently I am using dummy api to fetch data. In future I will integrate with real time api that time I will use database.
+//Just now in newton school I am learning backend with nodejs,expressjs,mongodb. So i will become expert in mongodb.
+
+
+8. 
+Can you build the page of our website?
+example:
+//yes I can able to do that. I am good in css 
+//If you want me to develop using any css library exmaple boostrap 4,materialui. I can able to do that also.
+
+
+9.
+How much time did you take to complete the tasks?
+example:
+//It depends on complexity of the assignment 
+//Sometimes I can able to complete as soon as possible. If I know the algorithm already.
+//For building new algorithm I will think and able to do that also in limited time.
+
+10.
+Project was given and need to create that project
+example:
+It will send assignment in mail. we need to completed in some days or one day.
