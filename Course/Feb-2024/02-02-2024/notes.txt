@@ -68,3 +68,42 @@ example:
 Project was given and need to create that project
 example:
 It will send assignment in mail. we need to completed in some days or one day.
+
+===============================================================================
+Reactjs interview:
+1.routing 
+2.useEffect()
+3.lifecycle methods 
+    //please check with your panel. Question is related to class or functional component 
+     class component 
+           1.constructor 
+           2.render
+           3.componentDidMount 
+           4.componentDidUpdate 
+           5.componentWillUnMount 
+    functional component 
+           1.useEffect - [],[dependency]..
+4.useState() 
+5.class based component 
+6.functional component 
+7.props
+8.contextAPI,useContext hookas
+9.conditional content
+10.adding dynamic styles 
+11.event handlers 
+12.splitting component 
+13.form submission 
+14.map function with keys
+15.introduction to nextjs 
+16.nextjs - folder based routing(page router)
+17.fetch method 
+18.protected routes 
+
+Yet To complete 
+1.useRef 
+2.other types of hooks 
+3.useReducer 
+4.useMemo
+5.useCallback 
+========================================================================
+
