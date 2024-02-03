@@ -47,7 +47,7 @@ example:
 let input = document.querySelector("div");
 input.textContent = "hello world"
 
-//promise code 
+//promise code below
 function intial(){
     return new Promise((resolve,reject)=>{
          resolve("data");
