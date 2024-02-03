@@ -1,3 +1,4 @@
+//intro
 //To access any element from html to javascript 
 //document.querySelector --> To access single data 
 //document.querySelectorAll --> To access bulk data 
