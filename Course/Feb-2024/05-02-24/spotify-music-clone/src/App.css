@@ -66,3 +66,30 @@ body{
   font-weight: bold;
   padding: 0px 32px;
 }
+
+.footer{
+  margin:10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-footer{
+  display: flex;
+  gap:30px;
+  justify-content: space-around;
+}
+
+.right-footer{
+  margin-top:10px;
+  display: flex;
+  gap:30px;
+  justify-content: space-around;
+}
+
+ul li{
+  list-style: none;
+}
+
+li{
+  padding:15px;
+}

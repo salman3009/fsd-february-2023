@@ -58,6 +58,34 @@ function App() {
                 })
               }
             </div>
+            <div className="footer">
+               <div className="left-footer">
+                    <ul>
+                      <li>Company</li>
+                      <li>About</li>
+                      <li>Jobs</li>
+                      <li>For the Record</li>
+                    </ul>
+                    <ul>
+                      <li>Communities</li>
+                      <li>For Artists</li>
+                      <li>Developers</li>
+                      <li>Advertising</li>
+                      <li>Investors</li>
+                      <li>Vendors</li>
+                    </ul>
+                    <ul>
+                      <li>Useful links</li>
+                      <li>Support</li>
+                      <li>Free Mobile App</li>
+                    </ul>
+               </div>
+               <div className="right-footer">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+               </div>
+            </div>
           </div>
         </div>
       </div>
