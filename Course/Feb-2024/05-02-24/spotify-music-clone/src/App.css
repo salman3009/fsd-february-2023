@@ -29,3 +29,40 @@ body{
 .nav-menu{
   margin:5px;
 }
+
+.sub-container{
+  width: 100%;
+  margin-top:20px;
+  background-color: gray;
+}
+
+.sub-menu{
+  display:flex;
+  justify-content: space-between;
+  padding:10px;
+}
+
+.list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:20px;
+}
+
+.card-body{
+   width: 200px;
+   background-color: greenyellow;
+   padding-bottom:10px;
+}
+
+.image{
+  width: 140px;
+  display: block;
+  margin:15px auto;
+}
+
+.heading{
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0px 32px;
+}
