@@ -1,7 +1,24 @@
 import { useState, useEffect } from "react";
+import {useRouter} from "next/router";
 
 function CoinDetail() {
   const [coin, setCoin] = useState(null);
+  const router = useRouter();
+  const {coin_id} = router.query;
+  
+  const fetchCoin= async ()=>{
+     try{
+       const response = await fetch(`https://api.coinlore.net/api/ticker/?id=${coin_id}`);
+       const result = await response.json();
+       console.log(result);
+     }catch(err){
+      console.log(err);
+     }
+  }
+
+  useEffect(()=>{
+    fetchCoin();
+  },[coin_id])
 
   return (
     <div className="coin-detail">
