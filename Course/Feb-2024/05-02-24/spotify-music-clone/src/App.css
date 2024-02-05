@@ -1,0 +1,22 @@
+body{
+  background-color: black;
+}
+
+.main-container{
+  display: flex;
+  gap:20px;
+}
+
+.left-section{
+  width: 20%;
+  margin:10px;
+  height: 200px;
+  background-color: red;
+}
+
+.right-section{
+  width: 80%;
+  margin:10px;
+  height: 600px;
+  background-color: blue;
+}
