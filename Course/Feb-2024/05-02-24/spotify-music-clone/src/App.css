@@ -20,3 +20,12 @@ body{
   height: 600px;
   background-color: blue;
 }
+
+.nav-section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu{
+  margin:5px;
+}
