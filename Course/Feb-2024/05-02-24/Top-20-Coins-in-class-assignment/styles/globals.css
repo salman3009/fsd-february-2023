@@ -1,0 +1,21 @@
+.coins-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.coin-card {
+  padding: 15px;
+  border: 1px solid;
+}
+
+.coin-detail {
+  display: flex;
+  max-width: 400px;
+  margin: auto;
+  gap: 25px;
+  border: 1px solid;
+  padding: 15px;
+}
