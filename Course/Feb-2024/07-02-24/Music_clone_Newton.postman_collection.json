@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "a276d97c-6b9e-4ade-aa6d-4cd87bf53c76",
+		"name": "Music_clone_Newton",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3112594"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "projectid",
+						"value": "f104bi07c490",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"email\":\"akash11@gmail.com\",\n   \"password\":\"889977\",\n   \"appType\":\"music\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://academics.newtonschool.co/api/v1/user/login",
+					"protocol": "https",
+					"host": [
+						"academics",
+						"newtonschool",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "projectid",
+						"value": "f104bi07c490",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"email\":\"akash11@gmail.com\",\n   \"name\":\"akash11\",\n   \"password\":\"123456\",\n   \"appType\":\"music\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://academics.newtonschool.co/api/v1/user/signup",
+					"protocol": "https",
+					"host": [
+						"academics",
+						"newtonschool",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePassword",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzNhZDljNjQzNmM5MjRkNDBkMGNhNyIsImlhdCI6MTcwNzMyMjgzNCwiZXhwIjoxNzM4ODU4ODM0fQ.nCbr1DPRHNTWrHSIEJxEGrAl2Gte1Hxu07zTEN90Y0c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "projectid",
+						"value": "f104bi07c490",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"email\":\"akash11@gmail.com\",\n   \"name\":\"akash11\",\n   \"passwordCurrent\":\"123456\",\n    \"password\":\"889977\",\n   \"appType\":\"music\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://academics.newtonschool.co/api/v1/user/updateMyPassword",
+					"protocol": "https",
+					"host": [
+						"academics",
+						"newtonschool",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"updateMyPassword"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
