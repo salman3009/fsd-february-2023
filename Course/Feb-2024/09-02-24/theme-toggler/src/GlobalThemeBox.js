@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeProvider";
+import {LocalThemeBox} from './LocalThemeBox';
 
 export const GlobalThemeBox=()=>{
     
@@ -8,7 +9,7 @@ export const GlobalThemeBox=()=>{
     return (<>
    
             <div className={`box bg-${theme}`}>
-            {theme}
+                  <LocalThemeBox/> 
             </div>
             
        <button onClick={setThemeToggler}>Toggle button</button>
