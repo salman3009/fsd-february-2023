@@ -8,7 +8,7 @@ export const LocalThemeBox=()=>{
         setTheme(localtheme == 'light'?'dark':'light');
     }
 
-    const {theme,setThemeToggler} = useContext(ThemeContext);
+    const {theme} = useContext(ThemeContext);
 
     useEffect(()=>{
         setTheme(theme);

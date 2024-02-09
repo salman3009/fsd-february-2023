@@ -2,3 +2,29 @@ ContextAPI:
 //nextjs 
 //functional component in reactjs
 //class component in reactjs
+====================================
+email:potter@gmail.com 
+12345
+====================
+Creating component Inside the Project 
+//Setup the functional component 
+//Access global state from contextAPI if needed 
+//Setup Routing in App.js 
+//Setup Link in Navigation example Header.js 
+//Inside the component use useState and useEffect to execute the process 
+//Inside the component we can use api to send the data .
+======================================================
+Real Time Using of concepts:
+1.routing 
+2.contextAPI 
+3.useEffect
+4.useState 
+5.functional component 
+6.axios package(get,post,patch,delete)
+7.axios interceptor 
+8.axios headers 
+9.local storage and session storage 
+10.handling forms 
+12.handling error 
+13.filtering,pagination,search 
+======================================
