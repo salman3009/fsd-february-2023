@@ -13,7 +13,7 @@ function Home() {
   console.log(getUser);
 
   const listOfDetails = async () => {
-    axios.get('https://academics.newtonschool.co/api/v1/music/song').then((response) => {
+    axios.get('https://academics.newtonschool.co/api/v1/music/album').then((response) => {
       console.log(response.data.data);
       setList(response.data.data);
     }).catch((error) => {
@@ -114,7 +114,7 @@ function Home() {
           <section key={index}>
             <article>
               <section class="card-body">
-                <img style={{ width: "200px" }} src={obj.thumbnail} />
+                <img style={{ width: "200px" }} src={obj.image} />
                 <button onClick={() => startPlayerHandler(obj.audio_url)}>Play</button>
                 <button onClick={() => stopPlayerHandler()}>Stop</button>
                 {getUser && getUser.status == "success" && <button onClick={() => addToFavorite(obj._id)}>Like</button>}

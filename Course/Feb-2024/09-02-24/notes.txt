@@ -1,0 +1,4 @@
+ContextAPI:
+//nextjs 
+//functional component in reactjs
+//class component in reactjs

@@ -1,0 +1,13 @@
+.box{
+  width: 800px;
+  height: 800px;
+  border:2px solid red;
+}
+
+.bg-light{
+  background-color: #eeeeee;
+}
+
+.bg-dark{
+  background-color: #1f1d36;
+}
