@@ -11,7 +11,8 @@ function UpdatePassword() {
     email:getUser.email?getUser.email:'',
     name:getUser.name?getUser.name:'',
     passwordCurrent:'',
-    password: ''
+    password: '',
+    appType:"music"
   })
 
   
@@ -29,21 +30,24 @@ function UpdatePassword() {
   const onSubmitHandler = (event) => {
     event.preventDefault();
     setError('');
-    // axios.post("https://academics.newtonschool.co/api/v1/user/login",getData).then((response)=>{
-    //            console.log(response.data);
-    //            debugger;
-    //            localStorage.setItem("token",response.data.token);
-    //            signInUser({status:response.data.status,token:response.data.token,name:response.data.data.name,email:response.data.data.email})
-    //            navigate('/');
-    // }).catch((error)=>{
-    //   console.log(error);
-    //   if(error.response && error.response.data && error.response.data.message){
-    //     setError(error.response.data.message);
-    //   }
-    //   else{
-    //     setError("unknow error please try after sometime");
-    //   }
-    // })
+    axios.patch("https://academics.newtonschool.co/api/v1/user/updateMyPassword",getData,{
+      headers: {
+        Authorization: `Bearer ${getUser.token}`
+      }
+    }).then((response)=>{
+               console.log(response.data);
+               debugger;
+               localStorage.setItem("token",response.data.token);
+               navigate('/');
+    }).catch((error)=>{
+      console.log(error);
+      if(error.response && error.response.data && error.response.data.message){
+        setError(error.response.data.message);
+      }
+      else{
+        setError("unknow error please try after sometime");
+      }
+    })
   }
 
 
