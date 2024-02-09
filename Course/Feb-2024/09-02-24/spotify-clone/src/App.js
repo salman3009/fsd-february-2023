@@ -5,6 +5,7 @@ import Register from './Register';
 import Home from './Home';
 import Header from './Header';
 import Library from './Library';
+import UpdatePassword from './UpdatePassword';
 import { Navigate, BrowserRouter, Routes, Route } from 'react-router-dom';
 import axios from 'axios';
 import { useUser } from './UserProvider';
@@ -35,6 +36,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/update" element={<UpdatePassword/>}/>
           <Route path="/library" element={<ProtectedRoute>
             <Library />
           </ProtectedRoute>} />

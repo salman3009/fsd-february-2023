@@ -26,6 +26,9 @@ function Header() {
           {getUser && getUser.status == "success" &&  <li>
             <Link to="/" onClick={onChangeHandler}>Logout</Link>
           </li>}
+          {getUser && getUser.status == "success" &&  <li>
+            <Link to="/update">UpdatePassword</Link>
+          </li>}
 
       </ul>
     </nav>
