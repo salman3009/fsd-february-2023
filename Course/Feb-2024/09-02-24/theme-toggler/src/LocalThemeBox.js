@@ -1,20 +1,23 @@
-import { useState,useContext} from "react"
+import { useState,useContext,useEffect} from "react"
 import { ThemeContext } from "./ThemeProvider";
 
 export const LocalThemeBox=()=>{
-    // const [theme,setTheme] = useState('light');
+    const [localtheme,setTheme] = useState('light');
     
-    // const onChangeHandler=()=>{
-    //     setTheme(theme == 'light'?'dark':'light');
-    // }
+    const onChangeHandler=()=>{
+        setTheme(localtheme == 'light'?'dark':'light');
+    }
 
     const {theme,setThemeToggler} = useContext(ThemeContext);
 
+    useEffect(()=>{
+        setTheme(theme);
+    },[theme])
+
     return (<>
-    <div className={`local-box bg-${theme}`}>
+    <div className={`local-box bg-${localtheme}`}>
          local box
-         {/* <button onClick={onChangeHandler}>Local box toggler</button> */}
-         <button onClick={setThemeToggler}>Local box toggler</button>
+         <button onClick={onChangeHandler}>Local box toggler</button>
     </div>
     </>)
 }
