@@ -7,14 +7,15 @@ function App() {
   
    const startTime = useRef(0);
    const intervalRef = useRef(0);
-   const [currenTime,setCurrentTime] = useState(0);
+  const [currenTime,setCurrentTime] = useState(0);
+
 
    let secondsElapsed = 0;
 
    const startStopWatch=()=>{
     startTime.current = Date.now();
     intervalRef.current = setInterval(()=>{
-      setCurrentTime(Date.now());
+       setCurrentTime(Date.now());
     },10)
    }
 
