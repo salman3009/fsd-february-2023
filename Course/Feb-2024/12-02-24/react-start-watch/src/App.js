@@ -19,6 +19,17 @@ function App() {
     },10)
    }
 
+   const stopWatch=()=>{
+      clearInterval(intervalRef.current)
+   }
+
+   const resetWatch=()=>{
+      setCurrentTime(0);
+      secondsElapsed = 0;
+      startTime.current=0;
+      clearInterval(intervalRef.current);   
+   }
+
    secondsElapsed = (currenTime - startTime.current)/1000;
 
   return (
@@ -26,6 +37,8 @@ function App() {
       <h1>{secondsElapsed.toFixed(3)}</h1>
       <section>
         <button onClick={startStopWatch}>Start</button>
+        <button onClick={stopWatch}>Stop</button>
+        <button onClick={resetWatch}>Reset</button>
       </section>
     </div>
   );
