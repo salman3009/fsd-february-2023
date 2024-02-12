@@ -1,0 +1,29 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#main {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    margin: 1rem;
+}
+
+section.buttons {
+    display: flex;
+    gap: .5rem;
+}
+
+section.lap-section {
+    text-align: center;
+}
