@@ -1,0 +1,5 @@
+Date.now()
+//It will return number of milliseconds 
+current Time d1= Date.now();
+difference Time d2= Date.now();-->every 10 milliseconds 
+d2-d1 = milliseconds
