@@ -19,13 +19,13 @@ function Home() {
 
   const stopWatch=()=>{
      clearInterval(intervalRef.current)
+     intervalRef.current = 0;
   }
 
   const resetWatch=()=>{
      setCurrentTime(0);
      secondsElapsed = 0;
      startTime.current=0;
-     clearInterval(intervalRef.current); 
      setLaps([]);  
   }
 
