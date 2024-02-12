@@ -1,8 +1,7 @@
 'use client'
 import React, { useRef, useState } from 'react'
 
-function Home() {
-
+const Home = () => {
   const startTime = useRef(0);
   const intervalRef = useRef(0);
   const [currentTime, setCurrentTime] = useState(0);
@@ -10,57 +9,55 @@ function Home() {
 
   let secondsElapsed = 0;
 
-  const startStopWatch=()=>{
-   startTime.current = Date.now();
-   intervalRef.current = setInterval(()=>{
+  const startStopWatch = () => {
+    startTime.current = Date.now();
+    intervalRef.current = setInterval(() => {
       setCurrentTime(Date.now());
-   },10)
+    }, 10);
   }
 
-  const stopWatch=()=>{
-     clearInterval(intervalRef.current)
-     intervalRef.current = 0;
+  const stopStopWatch = () => {
+    clearInterval(intervalRef.current);
+    intervalRef.current = 0;
   }
 
-  const resetWatch=()=>{
-     setCurrentTime(0);
-     secondsElapsed = 0;
-     startTime.current=0;
-     setLaps([]);  
+  secondsElapsed = ((currentTime - startTime.current) / 1000);
+
+  const resetStopWatch = () => {
+    setCurrentTime(0);
+    startTime.current = 0;
+    secondsElapsed = 0;
+    setLaps([]);
   }
 
-  secondsElapsed = (currentTime - startTime.current)/1000;
-
-  const lapWatch=()=>{
-   setLaps([...laps,secondsElapsed]);
+  const trackLaps = () => {
+    setLaps([...laps, secondsElapsed])
   }
-
 
   return (
     <div id="main">
       <section>
-        <h1 className='seconds-elapsed'>{secondsElapsed}</h1>
+        <h1 className='seconds-elapsed'>{secondsElapsed.toFixed(3)}</h1>
         <section className='buttons'>
           <button onClick={startStopWatch} className="start-btn">START</button>
-          <button onClick={stopWatch} className="stop-btn">STOP</button>
-          <button onClick={lapWatch} className="lap-btn">LAP</button>
-          <button onClick={resetWatch} className="reset-btn">RESET</button>
+          <button onClick={stopStopWatch} className="stop-btn">STOP</button>
+          <button onClick={trackLaps} className="lap-btn">LAP</button>
+          <button onClick={resetStopWatch} className="reset-btn">RESET</button>
         </section>
       </section>
-      <section className='lap-section'>
-        <h2>Laps</h2>
-        <section className='laps'>
-        {
-        laps.map((obj)=>{
-          return (<p key={obj}>
-              {obj}
-          </p>)
-        })
-       }
+      {laps?.length ? (
+        <section className='lap-section'>
+          <h2>Laps</h2>
+          <section className='laps'>
+            {laps.map((lap) => (
+              <p key={lap}>{lap}</p>
+            ))}
+          </section>
         </section>
-      </section>
+      ) : null}
     </div>
   )
 }
 
-export default Home
+
+export default Home;
