@@ -11,7 +11,7 @@ export default function Home() {
   const[showToolTip,setShowToolTip] = useState(false);
   return (
     <>
-      <span onMouseEnter={()=>(setShowToolTip(true))}>Hover over this text to see the dynamic tooltip</span>
+      <span onMouseEnter={()=>(setShowToolTip(true))} onMouseLeave={()=>(setShowToolTip(false))}>Hover over this text to see the dynamic tooltip</span>
       {showToolTip && <DynamicTooltip/>}
     </>
   );
