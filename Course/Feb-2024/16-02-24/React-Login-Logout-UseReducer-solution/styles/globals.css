@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.invalid-error {
+  color: red;
+}
+
+form,
+section.logout-section {
+  border: 1px solid;
+  border-radius: 7px;
+  padding: 20px;
+  text-align: center;
+}
+
+section.username-input,
+section.password-input {
+  margin-bottom: 10px;
+}
+
+button {
+  cursor: pointer;
+}
