@@ -1,0 +1,3 @@
+useReducer hotel  practice code link:
+https://code.newtonschool.co/newton-box/nr4xm7be6zbz/
+==================================================

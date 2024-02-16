@@ -1,0 +1,25 @@
+<script>
+    let arrayList=[
+        {
+            city:"delhi",
+            name:"hotel A"
+        },
+        {
+            city:"Mumbai",
+            name:"hotel B"
+        },{
+            city:"pune",
+            name:"hotel c"
+        }
+    ];
+
+    let first = "delhi";
+    let second = "lhi";
+    let result = first.includes(second);
+    console.log(result);
+
+    let filter = arrayList.filter((obj)=>{
+        return obj.city.toLowerCase().includes(first.toLowerCase());
+    });
+    console.log(filter);
+</script>
