@@ -1,0 +1,17 @@
+.App{
+  display: flex;
+  gap:5px;
+  justify-content: center;
+}
+
+.leftBar{
+  width: 18%;
+  height: 1000px;
+  background-color: red;
+}
+
+.rightBar{
+  width: 78%;
+  height: 1000px;
+  background-color: blue;
+}
