@@ -7,7 +7,8 @@ import { Browse } from './Browse';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+<div className="App">
        <BrowserRouter>
        <div className="leftBar">
            <SideBar/>
@@ -19,9 +20,15 @@ function App() {
         </Routes>
        </div> 
        </BrowserRouter>
-      
-      
     </div>
+    <div className="footer">
+        <div className="sectionOne">Section 1</div>
+        <div className="sectionTwo">Section 2</div>
+        <div className="sectionThree">Section 3</div>
+        <div className="sectionFour">Section 4</div>
+       </div>
+    </div>
+    
   );
 }
 

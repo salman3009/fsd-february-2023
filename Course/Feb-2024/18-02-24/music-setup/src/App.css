@@ -15,3 +15,32 @@
   height: 1000px;
   background-color: blue;
 }
+
+.footer{
+  display: flex;
+  justify-content: center;
+}
+
+.sectionOne{
+  width: 25%;
+  height: 400px;
+  background-color: yellow;
+}
+
+.sectionTwo{
+  width: 25%;
+  height: 400px;
+  background-color: green;
+}
+
+.sectionThree{
+  width: 25%;
+  height: 400px;
+  background-color: rgb(25, 0, 255);
+}
+
+.sectionFour{
+  width: 25%;
+  height: 400px;
+  background-color: pink;
+}
