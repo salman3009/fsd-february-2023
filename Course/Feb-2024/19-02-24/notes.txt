@@ -9,3 +9,10 @@ problem:
 https://code.newtonschool.co/newton-box/ubun65jdqquu/
 solution:
 https://code.newtonschool.co/newton-box/g2hsnzsjxrcj/
+==================================================
+Interview Purpose:
+useMemo:
+https://code.newtonschool.co/newton-box/f89uby1dj5g0/
+useCallback:
+https://code.newtonschool.co/newton-box/2gk5imzn8ukq/
+================================================
