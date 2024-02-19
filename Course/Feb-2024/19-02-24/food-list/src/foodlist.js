@@ -13,6 +13,11 @@ function FoodList() {
 
     const addFoodHandler=()=>{
         setIsFirstCardEnabled(true);
+        setIsSecondCardEnabled(true);
+    }
+
+    const handleFormClick=()=>{
+        setIsFormEnabled(true);
     }
 	return (
 		<>
@@ -35,7 +40,11 @@ function FoodList() {
 								disabled={!isFirstCardEnabled}
 							/>
 							<div className={`card`}>
-								<form>
+								<form
+                                 style={{opacity:isFormEnabled?1:0.5}}
+                                 onSubmit={(e)=>{e.preventDefault()}}
+                                 onClick={handleFormClick}
+                                >
 									<h2>Spiciness Level:</h2>
 									<input
 										name="spicinessLevel"
