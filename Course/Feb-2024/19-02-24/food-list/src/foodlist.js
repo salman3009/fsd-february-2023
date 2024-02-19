@@ -22,7 +22,18 @@ function FoodList() {
 
     const onSaveHandler=()=>{
         setFoods([...foods,{itemName:itemName,foodType:foodType,spicinessLevel:spicinessLevel}])
+        setIsFirstCardEnabled(false);
+        setIsSecondCardEnabled(false);
+        setIsFormEnabled(false);
     }
+
+    const onDeleteHandler=(index)=>{
+     let list = [...foods];
+     list.splice(index,1);
+     setFoods(list);
+    }
+
+
 	return (
 		<>
 			<div className="container">
@@ -71,7 +82,7 @@ function FoodList() {
                           return (<li key={index}>
 							{obj.itemName} ({obj.foodType}) - Spiciness Level:{" "}
 							{obj.spicinessLevel}
-							<button>Delete</button>
+							<button onClick={()=>onDeleteHandler(index)}>Delete</button>
 						</li>)
                      })}
 				</ul>
