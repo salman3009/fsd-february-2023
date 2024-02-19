@@ -2,3 +2,10 @@ usecallback example1:
 Problem:
 https://code.newtonschool.co/newton-box/ov2y92pod98e/
 solution:
+https://code.newtonschool.co/newton-box/2gk5imzn8ukq/
+=======================================================
+usecallback example2:
+problem:
+https://code.newtonschool.co/newton-box/ubun65jdqquu/
+solution:
+https://code.newtonschool.co/newton-box/g2hsnzsjxrcj/
