@@ -19,6 +19,10 @@ function FoodList() {
     const handleFormClick=()=>{
         setIsFormEnabled(true);
     }
+
+    const onSaveHandler=()=>{
+        setFoods([...foods,{itemName:itemName,foodType:foodType,spicinessLevel:spicinessLevel}])
+    }
 	return (
 		<>
 			<div className="container">
@@ -31,12 +35,14 @@ function FoodList() {
 							<input
 								name="itemName"
 								type="text"
+                                onChange={(e)=>setItemName(e.target.value)}
 								disabled={!isFirstCardEnabled}
 							/>
 							<h2>Food Type:</h2>
 							<input
 								name="foodType"
 								type="text"
+                                onChange={(e)=>setFoodType(e.target.value)}
 								disabled={!isFirstCardEnabled}
 							/>
 							<div className={`card`}>
@@ -49,6 +55,7 @@ function FoodList() {
 									<input
 										name="spicinessLevel"
 										type="text"
+                                        onChange={(e)=>setSpicinessLevel(e.target.value)}
 										disabled={!isFormEnabled}
 									/>
 								</form>
@@ -56,15 +63,17 @@ function FoodList() {
 						</>}
 				</div>
                 <div className={`card ${isSecondCardEnabled ? "" : "disabled"}`}>
-						<button>Save</button>
+						<button onClick={onSaveHandler}>Save</button>
 				</div>
 
 				<ul className="list">
-                        <li>
-							{itemName} ({foodType}) - Spiciness Level:{" "}
-							{spicinessLevel}
+                     {foods.map((obj,index)=>{
+                          return (<li key={index}>
+							{obj.itemName} ({obj.foodType}) - Spiciness Level:{" "}
+							{obj.spicinessLevel}
 							<button>Delete</button>
-						</li>
+						</li>)
+                     })}
 				</ul>
 			</div>
 		</>
