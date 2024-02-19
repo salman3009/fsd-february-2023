@@ -5,13 +5,16 @@ export default function Home() {
     const [items, setItems] = useState([]);
     const [message, setMessage] = useState('');
 
-    const addItem = useCallback(()=>{
-        setItems([...items, `Items ${items.length + 1}`])
-        setMessage("Item add successfully!");
+    const addItem = useCallback(() => {
+        setItems(prevItems => [...prevItems, `Item ${prevItems.length + 1}`]);
+        setMessage('Item added successfully!');
+
         setTimeout(() => {
-          setMessage("");
-        }, 3000)
-    },[message])
+            setMessage('');
+        }, 3000);
+    }, [message]);  
+
+    
 
     return (
         <div>
