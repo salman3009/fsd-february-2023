@@ -16,3 +16,6 @@ https://code.newtonschool.co/newton-box/f89uby1dj5g0/
 useCallback:
 https://code.newtonschool.co/newton-box/2gk5imzn8ukq/
 ================================================
+important point:
+//whenever state updates for previous result inside useCallback function please use useState with callback function to update previous value.
+==========================================================
