@@ -20,14 +20,20 @@ function App() {
 
 
   const likeHandler=async (id)=>{
-    const result = await axios.post(`https://academics.newtonschool.co/api/v1/facebook/like/${id}`,null,
-    {
-      'headers':{
-      projectID:"f104bi07c490",
-      Authorization:`Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzNhZDljNjQzNmM5MjRkNDBkMGNhNyIsImlhdCI6MTcwODcwNDY5MiwiZXhwIjoxNzQwMjQwNjkyfQ.Hf-3bx4_u_uk_v99TjdojbPs2TL-6-edHh7V81rhUPE`
-    }    
-    })
-    console.log(result);
+    try{
+      const result = await axios.post(`https://academics.newtonschool.co/api/v1/facebook/like/${id}`,null,
+      {
+        'headers':{
+        projectID:"f104bi07c490",
+        Authorization:`Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzNhZDljNjQzNmM5MjRkNDBkMGNhNyIsImlhdCI6MTcwODcwNDY5MiwiZXhwIjoxNzQwMjQwNjkyfQ.Hf-3bx4_u_uk_v99TjdojbPs2TL-6-edHh7V81rhUPE`
+      }    
+      })
+      intial();
+    }catch(err){
+       alert(err.message);
+    }
+
+    //intial();
   }
 
   return (
