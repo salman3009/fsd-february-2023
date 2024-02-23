@@ -8,6 +8,7 @@ function Header() {
     localStorage.removeItem("token");
     signOutUser();
   }
+  
   return (<>
     <nav>
       <Link to="/">
