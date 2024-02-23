@@ -1,6 +1,7 @@
 import './App.css';
 import {useState,useEffect} from 'react';
 import axios from 'axios';
+import Quora from './Quora';
 
 function App() {
   const[getData,setData] = useState([]);
@@ -38,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      {
+      {/* {
         getData.map((obj,index)=>{
            return (<div key={index}>
             <h1>{obj._id}</h1>
@@ -46,7 +47,8 @@ function App() {
             <button onClick={()=>likeHandler(obj._id)}>Like</button>
            </div>)
         })
-      }
+      } */}
+      <Quora/>
     </div>
   );
 }
