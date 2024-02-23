@@ -3,17 +3,20 @@ import axios from 'axios';
 
 function Quora(){
 
-    const postDetails=async ()=>{
+    const postDetails=async (event)=>{
+         event.preventDefault();
         //  let body={
         //     'title': 'Newton',
         //     'content': 'postContent',
         //     'images': 'https://academics.newtonschool.co/car.png',
         //  }
 
+         let imageData = document.getElementById('images').files[0];
+         console.log(imageData);
          let formData = new FormData();
          formData.append('title', 'Newton');
          formData.append('content', 'postContent');
-         formData.append('images', 'https://academics.newtonschool.co/car.png');
+         formData.append('images',imageData);
 
         try{
           const result = await axios.post('https://academics.newtonschool.co/api/v1/quora/post/',formData,
@@ -32,7 +35,11 @@ function Quora(){
 
    return (<div>
       <h1>Quora</h1>
+      <form>
+       <input type="file" name="images" id="images"/>
       <button onClick={postDetails}>Post Details</button>
+      </form>
+     
    </div>)
 }
 export default Quora;
