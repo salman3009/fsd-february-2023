@@ -1,0 +1,15 @@
+Pages
+Home 
+Login 
+Register 
+Library
+components
+Music 
+    MusicCard 
+    MusicPlayer 
+Favorites 
+    AddFavorites
+    listFavorites
+helpers
+fetch.js 
+providers
