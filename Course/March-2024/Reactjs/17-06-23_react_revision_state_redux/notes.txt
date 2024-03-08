@@ -64,16 +64,3 @@ Single file
 angular - two way binding 
 reactjs - one way binding 
 ===================================
-Redux implementation:
-//state management 
-//centralized state 
-Flux architecture 
-//one way binding -- unidirectional flow 
-1.view  - UI component
-2.Action - methods to update state 
-3.Dispatcher - calling method and passing state value 
-4.store  - data 
-==============================================
-redux toolkit 
-https://redux-toolkit.js.org/tutorials/quick-start
-==================================================
