@@ -1,0 +1,38 @@
+Project Files:
+store - central storage
+reducer - multiple slice we can have 
+<React.StrictMode> - it will renders two times every async code for testing purpose in development mode.
+provider - to provide store to all the component 
+==============================================
+createSlice:
+1.initial state 
+2.state name 
+3.reducers - multiple action 
+4.asyncthunk - async api call 
+5.extraReducers - fullfilled,pending,rejected
+
+useSelector 
+//to access current state
+
+useDispatch 
+//To trigger action 
+
+createAsyncThunk 
+//To trigger api in async away 
+//It consists of three state:pending,fullfilled,rejected 
+//By using extraReducers inside the slice.
+=================================================
+Flow 
+counterSlice--->store.js----->index.js(provider)--App
+   |------------------------------------------------|
+
+=========================================================  
+hooks:
+useEffect
+
+1.Initial rendering - backend
+
+2.update state -- backend
+
+3.unmount state
+=============================

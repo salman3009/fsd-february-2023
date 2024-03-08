@@ -1,0 +1,11 @@
+How to improve the performance in reactjs 
+1.useContext 
+ //To avoid chaining of props
+2.useMemo
+ // memoization for particular function
+3.useCallback
+//memoization for the entire component
+4.custom hooks 
+//reusable code function we can write it 
+example:
+ //get api call 
